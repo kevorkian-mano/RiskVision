@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiskVision - Real-time Transaction Stream</title>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+        }
+        
+        .controls {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .control-group label {
+            font-weight: 600;
+            font-size: 0.9em;
+            color: #495057;
+        }
+        
+        input, select, button {
+            padding: 10px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            min-width: 120px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .status {
+            padding: 15px 20px;
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            margin: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .status.connected {
+            background: #e8f5e8;
+            border-left-color: #4caf50;
+        }
+        
+        .status.disconnected {
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #f44336;
+            animation: pulse 2s infinite;
+        }
+        
+        .status.connected .status-indicator {
+            background: #4caf50;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .streams {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .stream {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .stream h3 {
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .stream-icon {
+            font-size: 1.2em;
+        }
+        
+        .transaction-list, .alert-list {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            background: white;
+        }
+        
+        .transaction-item, .alert-item {
+            padding: 15px;
+            border-bottom: 1px solid #f1f3f4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .transaction-item:hover, .alert-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .transaction-item:last-child, .alert-item:last-child {
+            border-bottom: none;
+        }
+        
+        .transaction-info, .alert-info {
+            flex: 1;
+        }
+        
+        .transaction-amount {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .transaction-details {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .alert-risk {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .risk-high {
+            background: #dc3545;
+        }
+        
+        .risk-medium {
+            background: #fd7e14;
+        }
+        
+        .risk-low {
+            background: #28a745;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6c757d;
+        }
+        
+        .empty-state .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+        
+        @media (max-width: 768px) {
+            .streams {
+                grid-template-columns: 1fr;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 RiskVision</h1>
+            <p>Real-time Transaction Monitoring & Fraud Detection</p>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="serverUrl">Server URL:</label>
+                <input type="text" id="serverUrl" value="http://localhost:5000" placeholder="Server URL">
+            </div>
+            
+            <div class="control-group">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" placeholder="Enter user ID">
+            </div>
+            
+            <div class="control-group">
+                <label for="userRole">Role:</label>
+                <select id="userRole">
+                    <option value="admin">Admin</option>
+                    <option value="compliance">Compliance</option>
+                    <option value="investigator">Investigator</option>
+                    <option value="auditor">Auditor</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label>&nbsp;</label>
+                <button id="connectBtn" onclick="connect()">Connect</button>
+            </div>
+            
+            <div class="control-group">
+                <label>&nbsp;</label>
+                <button id="disconnectBtn" onclick="disconnect()" disabled>Disconnect</button>
+            </div>
+        </div>
+        
+        <div id="status" class="status disconnected">
+            <div class="status-indicator"></div>
+            <span>Disconnected</span>
+        </div>
+        
+        <div class="streams">
+            <div class="stream">
+                <h3><span class="stream-icon">💳</span> Live Transactions</h3>
+                <div id="transactionList" class="transaction-list">
+                    <div class="empty-state">
+                        <div class="icon">💳</div>
+                        <p>No transactions yet</p>
+                        <p>Connect to start receiving real-time updates</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stream">
+                <h3><span class="stream-icon">🚨</span> Live Alerts</h3>
+                <div id="alertList" class="alert-list">
+                    <div class="empty-state">
+                        <div class="icon">🚨</div>
+                        <p>No alerts yet</p>
+                        <p>Alerts will appear here when suspicious transactions are detected</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalTransactions">0</div>
+                <div class="stat-label">Total Transactions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="totalAlerts">0</div>
+                <div class="stat-label">Total Alerts</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="connectedUsers">0</div>
+                <div class="stat-label">Connected Users</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgAmount">$0</div>
+                <div class="stat-label">Average Amount</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let socket = null;
+        let transactionCount = 0;
+        let alertCount = 0;
+        
+        function connect() {
+            const serverUrl = document.getElementById('serverUrl').value;
+            const userId = document.getElementById('userId').value;
+            const userRole = document.getElementById('userRole').value;
+            
+            if (!userId) {
+                alert('Please enter a User ID');
+                return;
+            }
+            
+            try {
+                socket = io(serverUrl);
+                
+                socket.on('connect', () => {
+                    updateStatus('Connected', true);
+                    document.getElementById('connectBtn').disabled = true;
+                    document.getElementById('disconnectBtn').disabled = false;
+                    
+                    // Authenticate with the server
+                    socket.emit('authenticate', { userId, userRole });
+                });
+                
+                socket.on('authenticated', (data) => {
+                    console.log('Authenticated:', data);
+                    
+                    // Subscribe to streams
+                    socket.emit('subscribe-transactions');
+                    socket.emit('subscribe-alerts');
+                    
+                    // Update stats periodically
+                    updateStats();
+                    setInterval(updateStats, 10000); // Update every 10 seconds
+                });
+                
+                socket.on('new-transaction', (data) => {
+                    addTransaction(data.data);
+                    transactionCount++;
+                    document.getElementById('totalTransactions').textContent = transactionCount;
+                });
+                
+                socket.on('new-alert', (data) => {
+                    addAlert(data.data);
+                    alertCount++;
+                    document.getElementById('totalAlerts').textContent = alertCount;
+                });
+                
+                socket.on('disconnect', () => {
+                    updateStatus('Disconnected', false);
+                    document.getElementById('connectBtn').disabled = false;
+                    document.getElementById('disconnectBtn').disabled = true;
+                });
+                
+                socket.on('error', (error) => {
+                    console.error('Socket error:', error);
+                    alert('Connection error: ' + error.message);
+                });
+                
+            } catch (error) {
+                console.error('Connection error:', error);
+                alert('Failed to connect: ' + error.message);
+            }
+        }
+        
+        function disconnect() {
+            if (socket) {
+                socket.disconnect();
+                socket = null;
+            }
+        }
+        
+        function updateStatus(message, connected) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = connected ? 'status connected' : 'status disconnected';
+        }
+        
+        function addTransaction(transaction) {
+            const list = document.getElementById('transactionList');
+            
+            // Remove empty state if present
+            if (list.querySelector('.empty-state')) {
+                list.innerHTML = '';
+            }
+            
+            const item = document.createElement('div');
+            item.className = 'transaction-item';
+            
+            const riskClass = transaction.alertGenerated ? 'risk-high' : 'risk-low';
+            const riskText = transaction.alertGenerated ? 'ALERT' : 'CLEAR';
+            
+            item.innerHTML = `
+                <div class="transaction-info">
+                    <div class="transaction-amount">$${transaction.amount.toLocaleString()}</div>
+                    <div class="transaction-details">
+                        ${transaction.userId.name} • ${transaction.country} • ${new Date(transaction.timestamp).toLocaleTimeString()}
+                    </div>
+                </div>
+                <div class="alert-risk ${riskClass}">${riskText}</div>
+            `;
+            
+            list.insertBefore(item, list.firstChild);
+            
+            // Keep only last 20 transactions
+            while (list.children.length > 20) {
+                list.removeChild(list.lastChild);
+            }
+        }
+        
+        function addAlert(alert) {
+            const list = document.getElementById('alertList');
+            
+            // Remove empty state if present
+            if (list.querySelector('.empty-state')) {
+                list.innerHTML = '';
+            }
+            
+            const item = document.createElement('div');
+            item.className = 'alert-item';
+            
+            const riskClass = alert.riskScore > 80 ? 'risk-high' : alert.riskScore > 60 ? 'risk-medium' : 'risk-low';
+            
+            item.innerHTML = `
+                <div class="alert-info">
+                    <div class="transaction-amount">$${alert.transactionId.amount.toLocaleString()}</div>
+                    <div class="transaction-details">
+                        ${alert.reason} • ${new Date(alert.createdAt).toLocaleTimeString()}
+                    </div>
+                </div>
+                <div class="alert-risk ${riskClass}">${alert.riskScore}</div>
+            `;
+            
+            list.insertBefore(item, list.firstChild);
+            
+            // Keep only last 20 alerts
+            while (list.children.length > 20) {
+                list.removeChild(list.lastChild);
+            }
+        }
+        
+        async function updateStats() {
+            if (!socket) return;
+            
+            try {
+                const response = await fetch('/api/transactions/stats', {
+                    headers: {
+                        'Authorization': 'Bearer ' + localStorage.getItem('token') || ''
+                    }
+                });
+                
+                if (response.ok) {
+                    const stats = await response.json();
+                    document.getElementById('connectedUsers').textContent = stats.connectedUsers || 0;
+                    document.getElementById('avgAmount').textContent = '$' + Math.round(stats.avgAmount || 0).toLocaleString();
+                }
+            } catch (error) {
+                console.error('Failed to update stats:', error);
+            }
+        }
+        
+        // Auto-connect on page load (for demo purposes)
+        window.addEventListener('load', () => {
+            // Generate a random user ID for demo
+            const randomId = 'user_' + Math.random().toString(36).substr(2, 9);
+            document.getElementById('userId').value = randomId;
+        });
+    </script>
+</body>
+</html> 

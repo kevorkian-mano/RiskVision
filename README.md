@@ -37,6 +37,13 @@ A comprehensive backend API for financial fraud detection and risk management, b
 - Dynamic risk scoring
 - Rule management interface
 
+### 🔌 Real-time Streaming
+- **WebSocket-based live transaction streaming**
+- **Real-time alert notifications**
+- **Live case updates**
+- **Role-based streaming permissions**
+- **Live dashboard with statistics**
+
 ## 🏗️ Architecture
 
 ```
@@ -49,6 +56,12 @@ A comprehensive backend API for financial fraud detection and risk management, b
                        ┌─────────────────┐
                        │   Risk Engine   │
                        │   (Rules)       │
+                       └─────────────────┘
+                              │
+                              ▼
+                       ┌─────────────────┐
+                       │   WebSocket     │
+                       │   (Real-time)   │
                        └─────────────────┘
 ```
 
@@ -101,6 +114,83 @@ A comprehensive backend API for financial fraud detection and risk management, b
 
 The API will be available at `http://localhost:5000`
 
+## 🔌 Real-time Streaming
+
+### WebSocket Connection
+The system provides real-time transaction streaming via WebSocket connections:
+
+```javascript
+// Connect to WebSocket server
+const socket = io('http://localhost:5000');
+
+// Authenticate with user credentials
+socket.emit('authenticate', { 
+  userId: 'user_id', 
+  userRole: 'admin' 
+});
+
+// Subscribe to transaction stream
+socket.emit('subscribe-transactions');
+
+// Listen for new transactions
+socket.on('new-transaction', (data) => {
+  console.log('New transaction:', data);
+});
+
+// Listen for new alerts
+socket.on('new-alert', (data) => {
+  console.log('New alert:', data);
+});
+```
+
+### Live Transaction Generation
+Test the real-time streaming with live transaction generation:
+
+```bash
+# Start continuous transaction generation
+npm run live-transactions
+
+# Generate a burst of 10 transactions
+npm run live-burst 10
+
+# Generate a single transaction
+npm run live-single
+```
+
+### Test Client
+Open `test-client.html` in your browser to see real-time streaming in action:
+
+```bash
+# Open the test client
+open backend/test-client.html
+```
+
+### Streaming Events
+
+#### Transaction Events
+- `new-transaction` - New transaction processed
+- `transaction-update` - Transaction status updated
+
+#### Alert Events
+- `new-alert` - New fraud alert generated
+- `alert-resolved` - Alert marked as resolved
+
+#### Case Events
+- `case-update` - Case status or details updated
+- `case-assigned` - Case assigned to investigator
+
+#### System Events
+- `system-message` - General system notifications
+
+### Role-based Streaming Permissions
+
+| Role | Transactions | Alerts | Cases | Logs |
+|------|-------------|--------|-------|------|
+| Admin | ✅ | ✅ | ✅ | ✅ |
+| Compliance | ✅ | ✅ | ✅ | ❌ |
+| Investigator | ✅ | ❌ | ✅ | ❌ |
+| Auditor | ✅ | ❌ | ❌ | ✅ |
+
 ## 📚 API Documentation
 
 ### Authentication Endpoints
@@ -115,6 +205,7 @@ The API will be available at `http://localhost:5000`
 - `POST /api/transactions/` - Add new transaction
 - `GET /api/transactions/` - Get all transactions
 - `GET /api/transactions/user/:id` - Get transactions by user
+- `GET /api/transactions/stats` - Get transaction statistics
 
 ### Alert Endpoints
 - `GET /api/alerts/` - Get all alerts
@@ -151,24 +242,28 @@ The API will be available at `http://localhost:5000`
 - User management
 - Rule management
 - System monitoring
+- All real-time streams
 
 ### Compliance Officer
 - Alert monitoring and resolution
 - Case creation and management
 - Investigator assignment
 - Case closure
+- Transaction and alert streams
 
 ### Investigator
 - Case investigation
 - Evidence collection
 - Status updates
 - Comments and findings
+- Transaction and case streams
 
 ### Auditor
 - Log viewing and analysis
 - Report generation
 - Compliance monitoring
 - Export capabilities
+- Transaction and log streams
 
 ## 🧪 Testing
 
@@ -179,6 +274,18 @@ npm run generate-data
 
 # Seed database with test data
 npm run seed-db
+```
+
+### Live Transaction Testing
+```bash
+# Start live transaction generation
+npm run live-transactions
+
+# Generate burst of transactions
+npm run live-burst 20
+
+# Test single transaction
+npm run live-single
 ```
 
 ### Test Credentials (after seeding)
@@ -240,6 +347,9 @@ npm run seed-db
 - `npm run dev` - Start development server with nodemon
 - `npm run seed-db` - Seed database with test data
 - `npm run generate-data` - Generate JSON dataset
+- `npm run live-transactions` - Start live transaction generation
+- `npm run live-burst` - Generate burst of transactions
+- `npm run live-single` - Generate single transaction
 
 ### Project Structure
 ```
@@ -249,8 +359,10 @@ backend/
 ├── models/         # MongoDB schemas
 ├── routes/         # API routes
 ├── scripts/        # Database seeding & utilities
+├── services/       # WebSocket service
 ├── app.js          # Express app setup
 ├── server.js       # Server entry point
+├── test-client.html # WebSocket test client
 └── package.json    # Dependencies & scripts
 ```
 
@@ -270,6 +382,7 @@ The system detects various fraud patterns:
 - **Scalable architecture** for high transaction volumes
 - **Efficient database queries** with proper indexing
 - **Role-based caching** for improved response times
+- **WebSocket optimization** for low-latency streaming
 
 ## 🔒 Security
 
@@ -278,6 +391,7 @@ The system detects various fraud patterns:
 - **Password hashing** with bcrypt
 - **Input validation** and sanitization
 - **Audit logging** for all system activities
+- **WebSocket authentication** and authorization
 
 ## 🤝 Contributing
 
@@ -308,6 +422,8 @@ For support and questions:
 - [ ] API rate limiting and throttling
 - [ ] Multi-tenant architecture
 - [ ] Advanced analytics and insights
+- [ ] Real-time transaction analytics
+- [ ] WebSocket clustering for high availability
 
 ---
 

@@ -26,6 +26,23 @@ const auditor = (req, res, next) => {
   next();
 };
 
+// Generic role checker that accepts an array of allowed roles
+const requireRole = (allowedRoles) => {
+  return (req, res, next) => {
+    if (!req.user) {
+      return res.status(401).json({ error: 'Authentication required.' });
+    }
+    
+    if (!allowedRoles.includes(req.user.role)) {
+      return res.status(403).json({ 
+        error: `Access denied. Required roles: ${allowedRoles.join(', ')}` 
+      });
+    }
+    
+    next();
+  };
+};
+
 // Allow any authenticated user (for general endpoints)
 const anyRole = (req, res, next) => {
   if (!req.user) {
@@ -39,5 +56,6 @@ module.exports = {
   compliance,
   investigator,
   auditor,
+  requireRole,
   anyRole
 }; 
