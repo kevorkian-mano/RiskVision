@@ -11,13 +11,13 @@ app.use(express.json());
 // Health check routes
 app.use('/', require('./routes/healthRoutes'));
 
-// API routes - temporarily commented out to isolate the error
-// app.use('/api/users', require('./routes/userRoutes'));
-// app.use('/api/transactions', require('./routes/transactionRoutes'));
-// app.use('/api/alerts', require('./routes/alertRoutes'));
-// app.use('/api/cases', require('./routes/caseRoutes'));
-// app.use('/api/logs', require('./routes/logRoutes'));
-// app.use('/api/rules', require('./routes/ruleRoutes'));
+
+app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/transactions', require('./routes/transactionRoutes'));
+app.use('/api/alerts', require('./routes/alertRoutes'));
+app.use('/api/cases', require('./routes/caseRoutes'));
+app.use('/api/logs', require('./routes/logRoutes'));
+app.use('/api/rules', require('./routes/ruleRoutes'));
 
 // 404 handler
 app.use('*', (req, res) => {

@@ -26,6 +26,33 @@ const amountRanges = [
   { min: 15000, max: 50000, weight: 2 }   // Very high-risk transactions
 ];
 
+// Calculate risk score based on transaction characteristics
+function calculateRiskScore(amount, country, timestamp) {
+  let score = 0;
+  
+  // Amount-based risk
+  if (amount > 10000) score += 30;
+  if (amount > 50000) score += 20;
+  if (amount < 20) score += 25; // Micro-transactions
+  
+  // Country-based risk
+  const suspiciousCountries = ['nigeria', 'russia', 'ukraine', 'belarus', 'iran', 'syria', 'north korea'];
+  if (suspiciousCountries.includes(country.toLowerCase())) {
+    score += 40;
+  }
+  
+  // Time-based risk (late night transactions)
+  const hour = new Date(timestamp).getHours();
+  if (hour >= 23 || hour <= 5) {
+    score += 15;
+  }
+  
+  // Random variation to make it more realistic
+  score += Math.floor(Math.random() * 20) - 10;
+  
+  return Math.min(100, Math.max(0, Math.round(score)));
+}
+
 // Generate random amount based on weighted ranges
 function generateAmount() {
   const totalWeight = amountRanges.reduce((sum, range) => sum + range.weight, 0);
@@ -61,13 +88,18 @@ async function generateTransaction() {
     const userId = await getRandomUserId();
     const amount = generateAmount();
     const country = generateCountry();
+    const timestamp = new Date();
     
-    // Create transaction with timestamp
+    // Calculate risk score
+    const riskScore = calculateRiskScore(amount, country, timestamp);
+    
+    // Create transaction with timestamp and risk score
     const transaction = await Transaction.create({
       userId,
       amount,
       country,
-      timestamp: new Date()
+      timestamp,
+      riskScore
     });
     
     // Populate user info
@@ -76,10 +108,10 @@ async function generateTransaction() {
     // Broadcast to WebSocket subscribers
     socketService.broadcastTransaction({
       ...transaction.toObject(),
-      alertGenerated: false // Will be determined by risk engine
+      alertGenerated: riskScore > 70 // High risk transactions generate alerts
     });
     
-    console.log(`💳 Generated transaction: $${amount} from ${country} by ${transaction.userId.name}`);
+    console.log(`💳 Generated transaction: $${amount} from ${country} by ${transaction.userId.name} (Risk: ${riskScore})`);
     
     return transaction;
   } catch (error) {

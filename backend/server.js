@@ -20,6 +20,8 @@ mongoose.connect(process.env.MONGO_URI)
     server.listen(PORT, () => {
       console.log(`🚀 Server running on port ${PORT}`);
       console.log(`🔌 WebSocket server ready for real-time connections`);
+      // Start live transaction generator
+      require('./scripts/liveTransactionGenerator.js');
     });
   })
   .catch(err => console.log(err));

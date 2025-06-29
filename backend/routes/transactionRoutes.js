@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const transactionController = require('../controllers/transactionController');
 const auth = require('../middleware/auth');
+const { admin, compliance } = require('../middleware/roles');
 
 // Add a new transaction    
-
 router.post('/', auth, transactionController.addTransaction);
 
 // Get all transactions
@@ -15,5 +15,11 @@ router.get('/user/:id', auth, transactionController.getByUser);
 
 // Get transaction statistics
 router.get('/stats', auth, transactionController.getStats);
+
+// Delete old transactions (Compliance only) - MUST come before /:id route
+router.delete('/cleanup/old', auth, compliance, transactionController.deleteOldTransactions);
+
+// Delete transaction by ID (Compliance only) - MUST come after specific routes
+router.delete('/:id', auth, compliance, transactionController.deleteTransaction);
 
 module.exports = router; 

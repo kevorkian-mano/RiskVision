@@ -1,10 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { CssBaseline, Box } from '@mui/material';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
-import Login from './components/Login';
-import Dashboard from './components/Dashboard';
+import { CssBaseline } from '@mui/material';
+import { AuthProvider } from './contexts/AuthContext.jsx';
+import AppRoutes from './routes/AppRoutes.jsx';
 
 // Create theme
 const theme = createTheme({
@@ -36,53 +35,15 @@ const theme = createTheme({
   },
 });
 
-// Protected Route Component
-const ProtectedRoute = ({ children }) => {
-  const { user, loading } = useAuth();
-
-  if (loading) {
-    return (
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="100vh"
-      >
-        <div>Loading...</div>
-      </Box>
-    );
-  }
-
-  return user ? children : <Navigate to="/login" replace />;
-};
-
-// Main App Component
-const AppContent = () => {
-  return (
-    <Router>
-      <CssBaseline />
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </Router>
-  );
-};
-
 // App with Providers
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <AuthProvider>
-        <AppContent />
+        <Router>
+          <CssBaseline />
+          <AppRoutes />
+        </Router>
       </AuthProvider>
     </ThemeProvider>
   );

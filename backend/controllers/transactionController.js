@@ -3,36 +3,59 @@ const Alert = require('../models/Alert');
 const mongoose = require('mongoose');
 const socketService = require('../services/socketService');
 
+// Calculate risk score based on transaction characteristics
+function calculateRiskScore(amount, country, timestamp) {
+  let score = 0;
+  
+  // Amount-based risk
+  if (amount > 10000) score += 30;
+  if (amount > 50000) score += 20;
+  if (amount < 20) score += 25; // Micro-transactions
+  
+  // Country-based risk
+  const suspiciousCountries = ['nigeria', 'russia', 'ukraine', 'belarus', 'iran', 'syria', 'north korea'];
+  if (suspiciousCountries.includes(country.toLowerCase())) {
+    score += 40;
+  }
+  
+  // Time-based risk (late night transactions)
+  const hour = new Date(timestamp).getHours();
+  if (hour >= 23 || hour <= 5) {
+    score += 15;
+  }
+  
+  // Random variation to make it more realistic
+  score += Math.floor(Math.random() * 20) - 10;
+  
+  return Math.min(100, Math.max(0, Math.round(score)));
+}
+
 // Placeholder risk rule engine
 async function riskRuleEngine(transaction) {
   let alertCreated = null;
   
-  // Example: trigger alert if amount > 10000
-  if (transaction.amount > 10000) {
-    alertCreated = await Alert.create({
-      transactionId: transaction._id,
-      reason: 'Amount exceeds threshold',
-      riskScore: 90
-    });
-  }
+  // Calculate risk score for the transaction
+  const riskScore = calculateRiskScore(transaction.amount, transaction.country, transaction.timestamp);
   
-  // Additional risk rules
-  const suspiciousCountries = ['nigeria', 'russia', 'ukraine', 'belarus'];
-  if (suspiciousCountries.includes(transaction.country.toLowerCase())) {
-    alertCreated = await Alert.create({
-      transactionId: transaction._id,
-      reason: `Suspicious country: ${transaction.country}`,
-      riskScore: 85
-    });
-  }
+  // Update transaction with risk score
+  transaction.riskScore = riskScore;
+  await transaction.save();
   
-  // Late night transactions (between 11 PM and 5 AM)
-  const hour = new Date(transaction.timestamp).getHours();
-  if (hour >= 23 || hour <= 5) {
+  // Generate alert if risk score is high
+  if (riskScore > 70) {
+    let reason = 'High risk transaction';
+    if (transaction.amount > 10000) reason = 'Amount exceeds threshold';
+    else if (['nigeria', 'russia', 'ukraine', 'belarus'].includes(transaction.country.toLowerCase())) {
+      reason = `Suspicious country: ${transaction.country}`;
+    }
+    else if (new Date(transaction.timestamp).getHours() >= 23 || new Date(transaction.timestamp).getHours() <= 5) {
+      reason = 'Late night transaction';
+    }
+    
     alertCreated = await Alert.create({
       transactionId: transaction._id,
-      reason: 'Late night transaction',
-      riskScore: 70
+      reason: reason,
+      riskScore: riskScore
     });
   }
   
@@ -116,6 +139,75 @@ exports.getByUser = async (req, res) => {
   }
 };
 
+// Delete transaction by ID
+exports.deleteTransaction = async (req, res) => {
+  try {
+    const transaction = await Transaction.findByIdAndDelete(req.params.id);
+    if (!transaction) {
+      return res.status(404).json({ error: 'Transaction not found' });
+    }
+    
+    // Broadcast deletion to WebSocket subscribers
+    socketService.broadcastTransactionDeletion(transaction._id);
+    
+    res.json({ message: 'Transaction deleted successfully' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
+// Delete old transactions (keep only last N transactions)
+exports.deleteOldTransactions = async (req, res) => {
+  try {
+    const { keepCount = 20 } = req.body;
+    
+    // Get total count of transactions
+    const totalCount = await Transaction.countDocuments();
+    
+    if (totalCount <= keepCount) {
+      return res.json({ 
+        message: 'No transactions to delete', 
+        deletedCount: 0,
+        remainingCount: totalCount 
+      });
+    }
+    
+    // Find the cutoff date by getting the timestamp of the Nth most recent transaction
+    const cutoffTransaction = await Transaction.find()
+      .sort({ timestamp: -1 })
+      .skip(keepCount - 1)
+      .limit(1)
+      .select('timestamp');
+    
+    if (cutoffTransaction.length === 0) {
+      return res.json({ 
+        message: 'No transactions to delete', 
+        deletedCount: 0,
+        remainingCount: totalCount 
+      });
+    }
+    
+    const cutoffDate = cutoffTransaction[0].timestamp;
+    
+    // Delete transactions older than the cutoff date
+    const deleteResult = await Transaction.deleteMany({
+      timestamp: { $lt: cutoffDate }
+    });
+    
+    // Broadcast cleanup to WebSocket subscribers
+    socketService.broadcastTransactionCleanup(deleteResult.deletedCount);
+    
+    res.json({
+      message: `Deleted ${deleteResult.deletedCount} old transactions`,
+      deletedCount: deleteResult.deletedCount,
+      remainingCount: totalCount - deleteResult.deletedCount,
+      cutoffDate: cutoffDate
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 // Get transaction statistics
 exports.getStats = async (req, res) => {
   try {
@@ -127,7 +219,9 @@ exports.getStats = async (req, res) => {
           totalAmount: { $sum: '$amount' },
           avgAmount: { $avg: '$amount' },
           maxAmount: { $max: '$amount' },
-          minAmount: { $min: '$amount' }
+          minAmount: { $min: '$amount' },
+          avgRiskScore: { $avg: '$riskScore' },
+          highRiskCount: { $sum: { $cond: [{ $gte: ['$riskScore', 70] }, 1, 0] } }
         }
       }
     ]);

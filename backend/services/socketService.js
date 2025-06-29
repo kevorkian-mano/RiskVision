@@ -202,6 +202,26 @@ class SocketService {
         }
     }
 
+    broadcastTransactionDeletion(transactionId) {
+        if (this.io) {
+            this.io.to('transaction-stream').emit('transaction-deleted', {
+                type: 'transaction-deleted',
+                transactionId: transactionId,
+                timestamp: new Date()
+            });
+        }
+    }
+
+    broadcastTransactionCleanup(deletedCount) {
+        if (this.io) {
+            this.io.to('transaction-stream').emit('transaction-cleanup', {
+                type: 'transaction-cleanup',
+                deletedCount: deletedCount,
+                timestamp: new Date()
+            });
+        }
+    }
+
     broadcastAlert(alert) {
         if (this.io) {
             this.io.to('alert-stream').emit('new-alert', {
@@ -222,13 +242,39 @@ class SocketService {
         }
     }
 
-    broadcastSystemMessage(message, room = 'general') {
+    broadcastCase(newCase, targetRole = null) {
         if (this.io) {
-            this.io.to(room).emit('system-message', {
+            const eventData = {
+                type: 'new-case',
+                data: newCase,
+                timestamp: new Date()
+            };
+
+            if (targetRole) {
+                // Send to specific role room
+                this.io.to(targetRole).emit('new-case', eventData);
+            } else {
+                // Send to case stream (all case subscribers)
+                this.io.to('case-stream').emit('new-case', eventData);
+            }
+        }
+    }
+
+    broadcastSystemMessage(message, room = 'general', userId = null) {
+        if (this.io) {
+            const eventData = {
                 type: 'system',
                 message,
                 timestamp: new Date()
-            });
+            };
+
+            if (userId) {
+                // Send to specific user
+                this.sendToUser(userId, 'system-message', eventData);
+            } else {
+                // Send to room
+                this.io.to(room).emit('system-message', eventData);
+            }
         }
     }
 

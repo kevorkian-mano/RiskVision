@@ -29,6 +29,7 @@ export const AuthProvider = ({ children }) => {
 
   const checkAuthStatus = async () => {
     try {
+      setLoading(true);
       const response = await authAPI.getCurrentUser();
       setUser(response.data);
       
@@ -46,8 +47,10 @@ export const AuthProvider = ({ children }) => {
       }
     } catch (error) {
       console.error('Auth check failed:', error);
+      // Clear invalid token and user data
       localStorage.removeItem('token');
       setUser(null);
+      socketService.disconnect();
     } finally {
       setLoading(false);
     }
@@ -56,6 +59,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (credentials) => {
     try {
       setError(null);
+      setLoading(true);
       const response = await authAPI.login(credentials);
       const { token } = response.data;
       
@@ -66,6 +70,7 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       const errorMessage = error.response?.data?.error || 'Login failed';
       setError(errorMessage);
+      setLoading(false);
       return { success: false, error: errorMessage };
     }
   };

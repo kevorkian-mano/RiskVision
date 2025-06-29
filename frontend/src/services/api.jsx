@@ -44,6 +44,15 @@ export const authAPI = {
   getAllUsers: () => api.get('/users'),
   updateUserRole: (userId, role) => api.put(`/users/${userId}/role`, { role }),
   deleteUser: (userId) => api.delete(`/users/${userId}`),
+  sendEmail: (emailData) => api.post('/users/send-email', emailData),
+};
+
+// User API (alias for authAPI for consistency)
+export const userAPI = {
+  getAll: () => api.get('/users'),
+  getById: (userId) => api.get(`/users/${userId}`),
+  updateRole: (userId, role) => api.put(`/users/${userId}/role`, { role }),
+  delete: (userId) => api.delete(`/users/${userId}`),
 };
 
 // Transaction API
@@ -52,6 +61,8 @@ export const transactionAPI = {
   getByUser: (userId) => api.get(`/transactions/user/${userId}`),
   create: (transaction) => api.post('/transactions', transaction),
   getStats: () => api.get('/transactions/stats'),
+  delete: (transactionId) => api.delete(`/transactions/${transactionId}`),
+  deleteOld: (keepCount = 20) => api.delete('/transactions/cleanup/old', { data: { keepCount } }),
 };
 
 // Alert API
@@ -67,13 +78,17 @@ export const alertAPI = {
 export const caseAPI = {
   getAll: () => api.get('/cases'),
   getById: (id) => api.get(`/cases/${id}`),
-  create: (caseData) => api.post('/cases', caseData),
+  getStats: () => api.get('/cases/stats'),
+  createFromTransaction: (caseData) => api.post('/cases/from-transaction', caseData),
+  createFromAlert: (caseData) => api.post('/cases/from-alert', caseData),
   assignInvestigator: (id, investigatorId) => 
     api.put(`/cases/${id}/assign`, { investigatorId }),
-  updateStatus: (id, status) => api.put(`/cases/${id}/status`, { status }),
+  assignToSelf: (id) => api.put(`/cases/${id}/assign-self`),
+  getInvestigators: () => api.get('/users/by-role/investigator'),
+  updateStatus: (id, status, notes) => api.put(`/cases/${id}/status`, { status, notes }),
   addComment: (id, text) => api.post(`/cases/${id}/comment`, { text }),
   uploadEvidence: (id, evidence) => api.post(`/cases/${id}/evidence`, evidence),
-  close: (id) => api.put(`/cases/${id}/close`),
+  closeCase: (id, resolution) => api.put(`/cases/${id}/close`, { resolution }),
   delete: (id) => api.delete(`/cases/${id}`),
 };
 

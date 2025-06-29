@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import { Security, Visibility, VisibilityOff } from '@mui/icons-material';
 import { useAuth } from '../contexts/AuthContext.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -21,6 +22,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   
   const { login, error, clearError } = useAuth();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -41,7 +43,9 @@ const Login = () => {
     
     try {
       const result = await login(credentials);
-      if (!result.success) {
+      if (result.success) {
+        navigate('/');
+      } else {
         setLoading(false);
       }
     } catch (error) {
