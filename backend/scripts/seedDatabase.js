@@ -131,8 +131,23 @@ async function generateTransactions(users) {
   const transactions = [];
   const countries = ['United States', 'Canada', 'United Kingdom', 'Germany', 'France', 'Australia', 'Japan', 'Nigeria', 'Russia', 'Brazil'];
   
+  // Customer names for transactions (separate from system users)
+  const customerNames = [
+    'John Smith', 'Sarah Johnson', 'Michael Brown', 'Emily Davis', 'David Wilson',
+    'Lisa Anderson', 'Robert Taylor', 'Jennifer Martinez', 'William Garcia', 'Amanda Rodriguez',
+    'James Lopez', 'Michelle White', 'Christopher Lee', 'Jessica Hall', 'Daniel Allen',
+    'Ashley Young', 'Matthew King', 'Nicole Wright', 'Joshua Green', 'Stephanie Baker',
+    'Andrew Adams', 'Rebecca Nelson', 'Kevin Carter', 'Laura Mitchell', 'Brian Perez',
+    'Rachel Roberts', 'Steven Turner', 'Amber Phillips', 'Timothy Campbell', 'Megan Parker',
+    'Jason Evans', 'Heather Edwards', 'Ryan Collins', 'Melissa Stewart', 'Jacob Morris',
+    'Crystal Rogers', 'Eric Reed', 'Tiffany Cook', 'Stephen Morgan', 'Brandy Bell',
+    'Gregory Murphy', 'Samantha Bailey', 'Frank Rivera', 'Vanessa Cooper', 'Raymond Richardson',
+    'Tracy Cox', 'Lawrence Howard', 'Dawn Ward', 'Carlos Torres', 'Stacy Peterson'
+  ];
+  
   for (let i = 0; i < NUM_TRANSACTIONS; i++) {
     const user = users[Math.floor(Math.random() * users.length)];
+    const customerName = faker.helpers.arrayElement(customerNames);
     const amount = faker.number.int({ min: 10, max: 50000 });
     const country = faker.helpers.arrayElement(countries);
     const timestamp = faker.date.between({ from: '2024-01-01', to: '2024-12-31' });
@@ -146,9 +161,11 @@ async function generateTransactions(users) {
     
     const transaction = new Transaction({
       userId: user._id,
+      customerName: customerName,
       amount: amount,
       country: country,
-      timestamp: timestamp
+      timestamp: timestamp,
+      riskScore: riskScore
     });
     
     transactions.push(transaction);

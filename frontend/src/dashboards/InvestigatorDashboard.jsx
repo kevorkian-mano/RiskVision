@@ -8,6 +8,8 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import CommentIcon from '@mui/icons-material/Comment';
 import { useAuth } from '../contexts/AuthContext';
+import AnnouncementDisplay from '../components/AnnouncementDisplay.jsx';
+import PointsDisplay from '../components/PointsDisplay.jsx';
 
 // Case status color coding
 const getCaseStatusColor = (status) => {
@@ -378,6 +380,16 @@ const InvestigatorDashboard = () => {
         <IconButton onClick={fetchCases} color="primary" size="large" aria-label="Refresh cases">
           <RefreshIcon />
         </IconButton>
+      </Box>
+
+      {/* Announcements Section */}
+      <Box sx={{ mb: 4 }}>
+        <AnnouncementDisplay maxDisplay={2} showBadge={true} />
+      </Box>
+
+      {/* Points Section */}
+      <Box sx={{ mb: 4 }}>
+        <PointsDisplay compact={true} />
       </Box>
 
       {/* Statistics Cards */}

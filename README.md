@@ -22,6 +22,22 @@ A comprehensive financial fraud detection and case management system built with 
 - **Real-time Updates**: Case status changes, assignments, and notifications
 - **Decision Workflow**: Multiple fraud decision options with automated status updates
 
+### 🏆 Points & Gamification System
+- **Points Tracking**: Users earn points for various activities
+- **Compliance Officers**: Earn points for creating cases and when cases are closed
+- **Investigators**: Earn points for making decisions and closing cases
+- **Admin Points Management**: Comprehensive dashboard to track all users' points
+- **Bonus Points**: Admins can award bonus points to users with reason tracking
+- **Points History**: Detailed audit trail of all point-earning activities
+- **Leaderboards**: Role-based and overall leaderboards
+- **Points Display**: Real-time points display on user dashboards
+
+### 📢 Announcement System
+- **System-wide Announcements**: Admins can create and manage announcements
+- **Real-time Display**: Announcements appear on all user dashboards
+- **Announcement Management**: Create, edit, and delete announcements
+- **Notification Badges**: Visual indicators for new announcements
+
 ### 👥 User Management
 - **Admin Dashboard**: Create users, assign roles, manage system configuration
 - **Email Integration**: Welcome emails for new users, custom email communications
@@ -34,15 +50,16 @@ A comprehensive financial fraud detection and case management system built with 
 - Rule creation, editing, and deletion
 
 ### 📈 Dashboard Analytics
-- **Admin Dashboard**: System overview, user management, rule management
-- **Compliance Dashboard**: Transaction monitoring, case creation, assignment management
-- **Investigator Dashboard**: Assigned cases, available cases, decision making
+- **Admin Dashboard**: System overview, user management, rule management, points management
+- **Compliance Dashboard**: Transaction monitoring, case creation, assignment management, points display
+- **Investigator Dashboard**: Assigned cases, available cases, decision making, points display
 - **Auditor Dashboard**: System logs, audit trails, compliance reporting
 
 ### 🔔 Real-time Notifications
 - Socket.io integration for live updates
 - Email notifications for case assignments
 - System-wide announcements and alerts
+- Points notifications and leaderboard updates
 
 ## 🛠️ Technology Stack
 
@@ -74,22 +91,22 @@ Before running this application, make sure you have the following installed:
 ## 🚀 Installation & Setup
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/RiskVision.git
+   ```bash
+   git clone https://github.com/yourusername/RiskVision.git
 cd RiskVision
-```
+   ```
 
 ### 2. Backend Setup
-```bash
+   ```bash
 cd backend
-npm install
-```
+   npm install
+   ```
 
 ### 3. Environment Configuration
-Create a `.env` file in the backend directory:
-```env
+   Create a `.env` file in the backend directory:
+   ```env
 # Server Configuration
-PORT=5000
+   PORT=5000
 NODE_ENV=development
 
 # Database Configuration
@@ -116,16 +133,16 @@ npm install
 
 ### 5. Database Setup
 Make sure MongoDB is running on your system:
-```bash
+   ```bash
 # Start MongoDB (macOS with Homebrew)
-brew services start mongodb-community
-
+   brew services start mongodb-community
+   
 # Or start MongoDB manually
-mongod
-```
+   mongod
+   ```
 
 ### 6. Seed Data (Optional)
-```bash
+   ```bash
 cd backend
 npm run seed
 ```
@@ -135,7 +152,7 @@ npm run seed
 ### Development Mode
 
 1. **Start Backend Server**
-```bash
+   ```bash
 cd backend
 npm run dev
 ```
@@ -178,6 +195,8 @@ After running the seed script, you can log in with these default accounts:
 ### Admin Dashboard
 - **User Management**: Create, edit, delete users and assign roles
 - **Risk Rules**: Create and manage fraud detection rules
+- **Points Management**: Track all users' points, award bonus points, view points history
+- **Announcement Management**: Create, edit, and delete system-wide announcements
 - **Email Communication**: Send emails to users directly from the dashboard
 - **System Overview**: Monitor system statistics and user activity
 
@@ -316,6 +335,7 @@ If you encounter any issues or have questions:
 - **v1.1.0** - Added email integration and user management
 - **v1.2.0** - Enhanced case management and decision workflow
 - **v1.3.0** - Added real-time notifications and improved UI
+- **v1.4.0** - Added comprehensive points management system and announcement features
 
 ## 🙏 Acknowledgments
 

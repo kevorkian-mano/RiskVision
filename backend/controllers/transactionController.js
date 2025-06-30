@@ -65,12 +65,13 @@ async function riskRuleEngine(transaction) {
 // Add new transaction
 exports.addTransaction = async (req, res) => {
   try {
-    const { amount, country } = req.body;
+    const { amount, country, customerName } = req.body;
     const userId = req.user.id; // Assume req.user is set by auth middleware
     
     // Create transaction with timestamp
     const transaction = await Transaction.create({ 
       userId, 
+      customerName: customerName || 'Unknown Customer', // Add customer name
       amount, 
       country,
       timestamp: new Date()

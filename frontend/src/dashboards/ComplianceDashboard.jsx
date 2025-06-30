@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Typography, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, CircularProgress, IconButton, FormControl, InputLabel, Select, MenuItem, Slider, Chip, Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField, Tabs, Tab, Alert, Snackbar, Tooltip, TableSortLabel
+  Typography, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, CircularProgress, IconButton, FormControl, InputLabel, Select, MenuItem, Slider, Chip, Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField, Tabs, Tab, Alert, Snackbar, Tooltip, TableSortLabel, Grid
 } from '@mui/material';
 import { transactionAPI, caseAPI } from '../services/api.jsx';
 import RefreshIcon from '@mui/icons-material/Refresh';
@@ -10,6 +10,8 @@ import DeleteSweepIcon from '@mui/icons-material/DeleteSweep';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { useAuth } from '../contexts/AuthContext';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import AnnouncementDisplay from '../components/AnnouncementDisplay.jsx';
+import PointsDisplay from '../components/PointsDisplay.jsx';
 
 const sortOptions = [
   { value: 'timestamp', label: 'Timestamp (Newest First)' },
@@ -178,7 +180,7 @@ const ComplianceDashboard = () => {
     setSelectedTransaction(transaction);
     setCaseForm({
       title: `High Risk Transaction - $${transaction.amount} from ${transaction.country}`,
-      description: `Transaction ID: ${transaction._id}\nAmount: $${transaction.amount}\nCountry: ${transaction.country}\nRisk Score: ${transaction.riskScore}\nUser: ${transaction.userId?.name || 'N/A'}`,
+      description: `Transaction ID: ${transaction._id}\nAmount: $${transaction.amount}\nCountry: ${transaction.country}\nRisk Score: ${transaction.riskScore}\nUser: ${transaction.customerName || transaction.userId?.name || 'N/A'}`,
       priority: transaction.riskScore >= 70 ? 'High' : 'Medium',
       assignedInvestigator: ''
     });
@@ -309,8 +311,8 @@ const ComplianceDashboard = () => {
     let aValue = a[sortBy];
     let bValue = b[sortBy];
     if (sortBy === 'user') {
-      aValue = a.userId?.name || '';
-      bValue = b.userId?.name || '';
+      aValue = a.customerName || a.userId?.name || '';
+      bValue = b.customerName || b.userId?.name || '';
     }
     if (sortBy === 'timestamp') {
       aValue = new Date(a.timestamp);
@@ -429,6 +431,16 @@ const ComplianceDashboard = () => {
         </Box>
       </Box>
 
+      {/* Announcements Section */}
+      <Box sx={{ mb: 3 }}>
+        <AnnouncementDisplay maxDisplay={2} showBadge={true} />
+      </Box>
+
+      {/* Points Section */}
+      <Box sx={{ mb: 3 }}>
+        <PointsDisplay compact={true} />
+      </Box>
+
       <Tabs value={activeTab} onChange={(e, newValue) => setActiveTab(newValue)} sx={{ mb: 3 }}>
         <Tab label={`Transactions (${transactions.length})`} />
         <Tab label={`Open Cases (${openCases.length})`} />
@@ -496,7 +508,7 @@ const ComplianceDashboard = () => {
                       sx={newTransactionIds.includes(tx._id) ? { backgroundColor: '#d4edda' } : {}}
                     >
                       <TableCell>${tx.amount.toLocaleString()}</TableCell>
-                      <TableCell>{tx.userId?.name || 'N/A'}</TableCell>
+                      <TableCell>{tx.customerName || tx.userId?.name || 'N/A'}</TableCell>
                       <TableCell>{tx.country}</TableCell>
                       <TableCell>{new Date(tx.timestamp).toLocaleString()}</TableCell>
                       <TableCell>
@@ -607,15 +619,15 @@ const ComplianceDashboard = () => {
                         </Button>
                       )}
                       {c.assignedTo && (
-                        <Button
-                          size="small"
+                      <Button
+                        size="small"
                           startIcon={<AssignmentIcon />}
                           onClick={() => handleAssignInvestigator(c)}
-                          variant="outlined"
+                        variant="outlined"
                           color="secondary"
-                        >
+                      >
                           Reassign
-                        </Button>
+                      </Button>
                       )}
                     </TableCell>
                   </TableRow>
@@ -740,7 +752,7 @@ const ComplianceDashboard = () => {
                 <Typography variant="body2">Amount: ${selectedTransaction.amount.toLocaleString()}</Typography>
                 <Typography variant="body2">Country: {selectedTransaction.country}</Typography>
                 <Typography variant="body2">Risk Score: {selectedTransaction.riskScore}</Typography>
-                <Typography variant="body2">User: {selectedTransaction.userId?.name || 'N/A'}</Typography>
+                <Typography variant="body2">User: {selectedTransaction.customerName || selectedTransaction.userId?.name || 'N/A'}</Typography>
               </Box>
             )}
           </Box>
@@ -779,8 +791,8 @@ const ComplianceDashboard = () => {
         autoHideDuration={6000}
         onClose={() => setSnackbar({ ...snackbar, open: false })}
       >
-        <Alert 
-          onClose={() => setSnackbar({ ...snackbar, open: false })} 
+        <Alert
+          onClose={() => setSnackbar({ ...snackbar, open: false })}
           severity={snackbar.severity}
         >
           {snackbar.message}

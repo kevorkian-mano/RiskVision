@@ -11,6 +11,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
 import EmailIcon from '@mui/icons-material/Email';
 import { useAuth } from '../contexts/AuthContext.jsx';
+import AnnouncementManager from '../components/AnnouncementManager.jsx';
+import AdminPointsManager from '../components/AdminPointsManager.jsx';
 
 const roleOptions = ['admin', 'compliance', 'investigator', 'auditor'];
 
@@ -432,7 +434,9 @@ const AdminDashboard = () => {
       <Tabs value={activeTab} onChange={(e, newValue) => setActiveTab(newValue)} sx={{ mb: 3 }}>
         <Tab label="User Management" />
         <Tab label="Risk Rules" />
+        <Tab label="Points Management" />
         <Tab label="Email Communication" />
+        <Tab label="Announcements" />
       </Tabs>
 
       {/* User Management Tab */}
@@ -579,8 +583,8 @@ const AdminDashboard = () => {
                           <Typography variant="caption" color="textSecondary">
                             {user.role === 'admin' ? 'Admin' : 'Current User'}
                           </Typography>
-                        )}
-                      </TableCell>
+                    )}
+                  </TableCell>
                 </TableRow>
               ))
             )}
@@ -680,8 +684,15 @@ const AdminDashboard = () => {
         </Box>
       )}
 
-      {/* Email Communication Tab */}
+      {/* Points Management Tab */}
       {activeTab === 2 && (
+        <Box>
+          <AdminPointsManager />
+        </Box>
+      )}
+
+      {/* Email Communication Tab */}
+      {activeTab === 3 && (
         <Box>
           <Box mb={2} display="flex" justifyContent="space-between" alignItems="center">
             <Typography variant="h6">User Communication</Typography>
@@ -770,6 +781,13 @@ const AdminDashboard = () => {
               </TableBody>
             </Table>
           </TableContainer>
+        </Box>
+      )}
+
+      {/* Announcements Tab */}
+      {activeTab === 4 && (
+        <Box>
+          <AnnouncementManager />
         </Box>
       )}
 

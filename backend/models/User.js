@@ -6,7 +6,17 @@ const userSchema = new mongoose.Schema({
   email: { type: String, unique: true },
   password: String,
   role: { type: String, enum: ['admin', 'compliance', 'investigator', 'auditor'] },
-  lastActive: { type: Date, default: null }
+  lastActive: { type: Date, default: null },
+  points: { type: Number, default: 0 },
+  pointsHistory: [{
+    action: { type: String, required: true },
+    points: { type: Number, required: true },
+    description: { type: String, required: true },
+    relatedId: { type: mongoose.Schema.Types.ObjectId }, // ID of related case/transaction
+    awardedBy: { type: mongoose.Schema.Types.ObjectId }, // ID of admin who awarded bonus points
+    awardedByName: { type: String }, // Name of admin who awarded bonus points
+    earnedAt: { type: Date, default: Date.now }
+  }]
 });
 
 // Hash password before saving

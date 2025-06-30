@@ -206,7 +206,7 @@ class SocketService {
         if (this.io) {
             this.io.to('transaction-stream').emit('transaction-deleted', {
                 type: 'transaction-deleted',
-                transactionId: transactionId,
+                transactionId,
                 timestamp: new Date()
             });
         }
@@ -214,9 +214,9 @@ class SocketService {
 
     broadcastTransactionCleanup(deletedCount) {
         if (this.io) {
-            this.io.to('transaction-stream').emit('transaction-cleanup', {
-                type: 'transaction-cleanup',
-                deletedCount: deletedCount,
+            this.io.to('transaction-stream').emit('transactions-cleanup', {
+                type: 'transactions-cleanup',
+                deletedCount,
                 timestamp: new Date()
             });
         }
@@ -234,8 +234,8 @@ class SocketService {
 
     broadcastCaseUpdate(caseUpdate) {
         if (this.io) {
-            this.io.to('case-stream').emit('case-update', {
-                type: 'case',
+            this.io.to('case-stream').emit('case-updated', {
+                type: 'case-updated',
                 data: caseUpdate,
                 timestamp: new Date()
             });
@@ -244,7 +244,7 @@ class SocketService {
 
     broadcastCase(newCase, targetRole = null) {
         if (this.io) {
-            const eventData = {
+            const event = {
                 type: 'new-case',
                 data: newCase,
                 timestamp: new Date()
@@ -252,28 +252,83 @@ class SocketService {
 
             if (targetRole) {
                 // Send to specific role room
-                this.io.to(targetRole).emit('new-case', eventData);
+                this.io.to(targetRole).emit('new-case', event);
             } else {
-                // Send to case stream (all case subscribers)
-                this.io.to('case-stream').emit('new-case', eventData);
+                // Send to case stream
+                this.io.to('case-stream').emit('new-case', event);
             }
+        }
+    }
+
+    // Announcement broadcasting methods
+    broadcastAnnouncement(announcement, targetRoles = []) {
+        if (this.io) {
+            const event = {
+                type: 'new-announcement',
+                data: announcement,
+                timestamp: new Date()
+            };
+
+            // Send to specific role rooms
+            targetRoles.forEach(role => {
+                this.io.to(role).emit('new-announcement', event);
+            });
+
+            // Also send to admin room
+            this.io.to('admin').emit('new-announcement', event);
+        }
+    }
+
+    broadcastAnnouncementUpdate(announcement, targetRoles = []) {
+        if (this.io) {
+            const event = {
+                type: 'announcement-updated',
+                data: announcement,
+                timestamp: new Date()
+            };
+
+            // Send to specific role rooms
+            targetRoles.forEach(role => {
+                this.io.to(role).emit('announcement-updated', event);
+            });
+
+            // Also send to admin room
+            this.io.to('admin').emit('announcement-updated', event);
+        }
+    }
+
+    broadcastAnnouncementDeletion(announcementId, targetRoles = []) {
+        if (this.io) {
+            const event = {
+                type: 'announcement-deleted',
+                announcementId,
+                timestamp: new Date()
+            };
+
+            // Send to specific role rooms
+            targetRoles.forEach(role => {
+                this.io.to(role).emit('announcement-deleted', event);
+            });
+
+            // Also send to admin room
+            this.io.to('admin').emit('announcement-deleted', event);
         }
     }
 
     broadcastSystemMessage(message, room = 'general', userId = null) {
         if (this.io) {
-            const eventData = {
-                type: 'system',
+            const event = {
+                type: 'system-message',
                 message,
                 timestamp: new Date()
             };
 
             if (userId) {
                 // Send to specific user
-                this.sendToUser(userId, 'system-message', eventData);
+                this.sendToUser(userId, 'system-message', event);
             } else {
                 // Send to room
-                this.io.to(room).emit('system-message', eventData);
+                this.io.to(room).emit('system-message', event);
             }
         }
     }

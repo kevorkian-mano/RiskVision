@@ -5,6 +5,7 @@ const Comment = require('../models/Comment');
 const Evidence = require('../models/Evidence');
 const User = require('../models/User');
 const socketService = require('../services/socketService');
+const PointsService = require('../services/pointsService');
 
 // Create a fraud case from a transaction (compliance officer)
 exports.createCaseFromTransaction = async (req, res) => {
@@ -47,6 +48,14 @@ exports.createCaseFromTransaction = async (req, res) => {
       `📋 New case created: ${title} (Risk: ${transaction.riskScore})`,
       'compliance'
     );
+    
+    // Award points to compliance officer for creating case
+    try {
+      await PointsService.awardCaseCreation(req.user._id, newCase._id);
+    } catch (pointsError) {
+      console.error('Error awarding points for case creation:', pointsError);
+      // Don't fail the case creation if points awarding fails
+    }
     
     res.status(201).json(newCase);
   } catch (err) {
@@ -165,7 +174,7 @@ exports.assignInvestigator = async (req, res) => {
     const c = await Case.findByIdAndUpdate(
       req.params.id,
       { 
-        assignedTo: investigatorId,
+        assignedTo: investigatorId, 
         assignedToGroup: null, // Clear group assignment when assigning individual
         status: 'Assigned',
         $push: { 
@@ -277,6 +286,25 @@ exports.updateStatus = async (req, res) => {
     ]);
     
     if (!c) return res.status(404).json({ error: 'Case not found' });
+    
+    // Award points based on status change
+    try {
+      if (status === 'Closed' && req.user.role === 'investigator') {
+        // Investigator gets points for closing case
+        await PointsService.awardCaseClose(req.user._id, c._id);
+        
+        // Compliance officer gets points when their case is closed
+        if (c.createdBy._id.toString() !== req.user._id.toString()) {
+          await PointsService.awardCaseClosed(c.createdBy._id, c._id);
+        }
+      } else if (['Confirmed Fraud', 'Account Frozen', 'Transaction Reversed', 'Reported to Compliance', 'Added to Watchlist', 'Escalated', 'Customer Verification Requested'].includes(status) && req.user.role === 'investigator') {
+        // Investigator gets points for making a decision
+        await PointsService.awardDecision(req.user._id, c._id, status);
+      }
+    } catch (pointsError) {
+      console.error('Error awarding points for status update:', pointsError);
+      // Don't fail the status update if points awarding fails
+    }
     
     // Notify relevant parties
     if (c.createdBy._id.toString() !== req.user._id.toString()) {

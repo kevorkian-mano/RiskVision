@@ -9,6 +9,20 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('📊 Connected to MongoDB for live transaction generation'))
   .catch(err => console.error('MongoDB connection error:', err));
 
+// Customer names for transactions (separate from system users)
+const customerNames = [
+  'John Smith', 'Sarah Johnson', 'Michael Brown', 'Emily Davis', 'David Wilson',
+  'Lisa Anderson', 'Robert Taylor', 'Jennifer Martinez', 'William Garcia', 'Amanda Rodriguez',
+  'James Lopez', 'Michelle White', 'Christopher Lee', 'Jessica Hall', 'Daniel Allen',
+  'Ashley Young', 'Matthew King', 'Nicole Wright', 'Joshua Green', 'Stephanie Baker',
+  'Andrew Adams', 'Rebecca Nelson', 'Kevin Carter', 'Laura Mitchell', 'Brian Perez',
+  'Rachel Roberts', 'Steven Turner', 'Amber Phillips', 'Timothy Campbell', 'Megan Parker',
+  'Jason Evans', 'Heather Edwards', 'Ryan Collins', 'Melissa Stewart', 'Jacob Morris',
+  'Crystal Rogers', 'Eric Reed', 'Tiffany Cook', 'Stephen Morgan', 'Brandy Bell',
+  'Gregory Murphy', 'Samantha Bailey', 'Frank Rivera', 'Vanessa Cooper', 'Raymond Richardson',
+  'Tracy Cox', 'Lawrence Howard', 'Dawn Ward', 'Carlos Torres', 'Stacy Peterson'
+];
+
 // Countries for realistic transaction data
 const countries = [
   'United States', 'Canada', 'United Kingdom', 'Germany', 'France', 
@@ -73,7 +87,12 @@ function generateCountry() {
   return countries[Math.floor(Math.random() * countries.length)];
 }
 
-// Generate random user ID from existing users
+// Generate random customer name for transaction
+function generateCustomerName() {
+  return customerNames[Math.floor(Math.random() * customerNames.length)];
+}
+
+// Generate random user ID from existing users (for system tracking)
 async function getRandomUserId() {
   const users = await User.find().select('_id');
   if (users.length === 0) {
@@ -86,6 +105,7 @@ async function getRandomUserId() {
 async function generateTransaction() {
   try {
     const userId = await getRandomUserId();
+    const customerName = generateCustomerName();
     const amount = generateAmount();
     const country = generateCountry();
     const timestamp = new Date();
@@ -93,16 +113,17 @@ async function generateTransaction() {
     // Calculate risk score
     const riskScore = calculateRiskScore(amount, country, timestamp);
     
-    // Create transaction with timestamp and risk score
+    // Create transaction with customer name and timestamp
     const transaction = await Transaction.create({
       userId,
+      customerName, // Add customer name field
       amount,
       country,
       timestamp,
       riskScore
     });
     
-    // Populate user info
+    // Populate user info for system tracking
     await transaction.populate('userId', 'name email');
     
     // Broadcast to WebSocket subscribers
@@ -111,7 +132,7 @@ async function generateTransaction() {
       alertGenerated: riskScore > 70 // High risk transactions generate alerts
     });
     
-    console.log(`💳 Generated transaction: $${amount} from ${country} by ${transaction.userId.name} (Risk: ${riskScore})`);
+    console.log(`💳 Generated transaction: $${amount} from ${country} by ${customerName} (Risk: ${riskScore})`);
     
     return transaction;
   } catch (error) {
@@ -119,23 +140,20 @@ async function generateTransaction() {
   }
 }
 
-// Generate transactions at random intervals
+// Generate transactions at exactly 1 per minute
 function startLiveGeneration() {
   console.log('🚀 Starting live transaction generation...');
-  console.log('📊 Transactions will be generated at random intervals (1-10 seconds)');
+  console.log('📊 Transactions will be generated at exactly 1 per minute');
   console.log('🔌 Real-time updates will be broadcast via WebSocket');
   console.log('⏹️  Press Ctrl+C to stop\n');
   
-  function generateNext() {
-    const delay = Math.random() * 9000 + 1000; // 1-10 seconds
+  // Generate first transaction immediately
+  generateTransaction();
     
-    setTimeout(async () => {
+  // Then generate every minute (60000 milliseconds)
+  setInterval(async () => {
       await generateTransaction();
-      generateNext(); // Schedule next transaction
-    }, delay);
-  }
-  
-  generateNext();
+  }, 60000); // Exactly 1 minute
 }
 
 // Generate burst of transactions (for testing)
@@ -155,7 +173,7 @@ async function main() {
   const args = process.argv.slice(2);
   
   if (args.length === 0) {
-    // Default: continuous generation
+    // Default: continuous generation at 1 per minute
     startLiveGeneration();
   } else if (args[0] === 'burst') {
     // Generate burst of transactions
@@ -168,7 +186,7 @@ async function main() {
     process.exit(0);
   } else {
     console.log('Usage:');
-    console.log('  node liveTransactionGenerator.js          # Start continuous generation');
+    console.log('  node liveTransactionGenerator.js          # Start continuous generation (1 per minute)');
     console.log('  node liveTransactionGenerator.js burst    # Generate 5 transactions');
     console.log('  node liveTransactionGenerator.js burst 10 # Generate 10 transactions');
     console.log('  node liveTransactionGenerator.js single   # Generate 1 transaction');

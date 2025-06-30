@@ -107,6 +107,17 @@ export const ruleAPI = {
   delete: (id) => api.delete(`/rules/${id}`),
 };
 
+// Announcement API
+export const announcementAPI = {
+  getAnnouncements: () => api.get('/announcements'),
+  markAsRead: (id) => api.post(`/announcements/${id}/read`),
+  getAllAnnouncements: () => api.get('/announcements/admin/all'),
+  getStats: () => api.get('/announcements/admin/stats'),
+  createAnnouncement: (data) => api.post('/announcements', data),
+  updateAnnouncement: (id, data) => api.put(`/announcements/${id}`, data),
+  deleteAnnouncement: (id) => api.delete(`/announcements/${id}`),
+};
+
 // Health check API
 export const healthAPI = {
   check: () => axios.get('http://localhost:5000/health'),

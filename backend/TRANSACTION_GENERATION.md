@@ -36,7 +36,7 @@ TRANSACTION_INTERVAL_SECONDS=300
 ### Start Live Generation
 
 ```bash
-# Start with default interval (60 seconds)
+# Start with default interval (60 seconds = 1 per minute)
 node scripts/liveTransactionGenerator.js
 
 # Or set custom interval
@@ -66,9 +66,18 @@ Each generated transaction includes:
 
 - **Amount**: Realistic amounts from $10 to $50,000
 - **Country**: Mix of low-risk and high-risk countries
+- **Customer Name**: Separate customer names (different from system users)
 - **Risk Score**: Calculated based on amount, country, and time
-- **User**: Randomly selected from existing users
+- **System User**: Randomly selected from existing system users (for tracking)
 - **Timestamp**: Current time when generated
+
+## Customer Names
+
+Transactions use separate customer names that are different from system users:
+- System users: admin, compliance, investigator, auditor roles
+- Customer names: John Smith, Sarah Johnson, Michael Brown, etc.
+
+This separation ensures that transaction data represents actual customer transactions, not system user activities.
 
 ## Risk Scoring
 
@@ -97,4 +106,5 @@ Press `Ctrl+C` to stop the live transaction generator gracefully.
 - The generator requires existing users in the database
 - Run `npm run seed` first to populate the database
 - High-risk transactions (score > 70) automatically generate alerts
-- All transactions are broadcast to connected WebSocket clients 
+- All transactions are broadcast to connected WebSocket clients
+- Transactions are generated at exactly 1 per minute by default 

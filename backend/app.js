@@ -18,6 +18,8 @@ app.use('/api/alerts', require('./routes/alertRoutes'));
 app.use('/api/cases', require('./routes/caseRoutes'));
 app.use('/api/logs', require('./routes/logRoutes'));
 app.use('/api/rules', require('./routes/ruleRoutes'));
+app.use('/api/announcements', require('./routes/announcementRoutes'));
+app.use('/api/points', require('./routes/pointsRoutes'));
 
 // 404 handler
 app.use('*', (req, res) => {
