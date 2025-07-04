@@ -50,6 +50,7 @@ export const authAPI = {
 // User API (alias for authAPI for consistency)
 export const userAPI = {
   getAll: () => api.get('/users'),
+  getByRole: (role) => api.get(`/users/by-role/${role}`),
   getById: (userId) => api.get(`/users/${userId}`),
   updateRole: (userId, role) => api.put(`/users/${userId}/role`, { role }),
   delete: (userId) => api.delete(`/users/${userId}`),
@@ -57,12 +58,12 @@ export const userAPI = {
 
 // Transaction API
 export const transactionAPI = {
-  getAll: (params) => api.get('/transactions', { params }),
+  getAll: () => api.get('/transactions'),
   getByUser: (userId) => api.get(`/transactions/user/${userId}`),
   create: (transaction) => api.post('/transactions', transaction),
+  delete: (id) => api.delete(`/transactions/${id}`),
+  deleteOld: (keepCount) => api.delete('/transactions/cleanup/old', { data: { keepCount } }),
   getStats: () => api.get('/transactions/stats'),
-  delete: (transactionId) => api.delete(`/transactions/${transactionId}`),
-  deleteOld: (keepCount = 20) => api.delete('/transactions/cleanup/old', { data: { keepCount } }),
 };
 
 // Alert API
@@ -77,17 +78,17 @@ export const alertAPI = {
 // Case API
 export const caseAPI = {
   getAll: () => api.get('/cases'),
+  getByUser: (userId) => api.get(`/cases/user/${userId}`),
+  getAvailable: () => api.get('/cases/available'),
   getById: (id) => api.get(`/cases/${id}`),
   getStats: () => api.get('/cases/stats'),
+  create: (caseData) => api.post('/cases', caseData),
   createFromTransaction: (caseData) => api.post('/cases/from-transaction', caseData),
-  createFromAlert: (caseData) => api.post('/cases/from-alert', caseData),
-  assignInvestigator: (id, investigatorId) => 
-    api.put(`/cases/${id}/assign`, { investigatorId }),
+  update: (id, updates) => api.put(`/cases/${id}`, updates),
+  assign: (id, investigatorId) => api.put(`/cases/${id}/assign`, { investigatorId }),
   assignToSelf: (id) => api.put(`/cases/${id}/assign-self`),
-  getInvestigators: () => api.get('/users/by-role/investigator'),
   updateStatus: (id, status, notes) => api.put(`/cases/${id}/status`, { status, notes }),
   addComment: (id, text) => api.post(`/cases/${id}/comment`, { text }),
-  uploadEvidence: (id, evidence) => api.post(`/cases/${id}/evidence`, evidence),
   closeCase: (id, resolution) => api.put(`/cases/${id}/close`, { resolution }),
   delete: (id) => api.delete(`/cases/${id}`),
 };
@@ -97,14 +98,6 @@ export const logAPI = {
   getAll: (params) => api.get('/logs', { params }),
   filter: (params) => api.get('/logs/filter', { params }),
   export: (params) => api.get('/logs/export', { params }),
-};
-
-// Rule API
-export const ruleAPI = {
-  getAll: () => api.get('/rules'),
-  create: (rule) => api.post('/rules', rule),
-  update: (id, updates) => api.put(`/rules/${id}`, updates),
-  delete: (id) => api.delete(`/rules/${id}`),
 };
 
 // Announcement API

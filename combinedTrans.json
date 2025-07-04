@@ -1,0 +1,2648 @@
+[
+    {
+      "_id": "25530c24-48be-4ab6-97eb-c81249aa350d",
+      "userId": "b08eb085-f015-438a-91ce-226acad35fb7",
+      "amount": 49999,
+      "country": "Iran",
+      "timestamp": "2024-01-01T09:55:54.235Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "e8891e13-b4d2-4f12-a8c5-2199be7ac1b6",
+      "userId": "d30110ec-a92a-4f69-9ca5-97ca60df0e90",
+      "amount": 44210,
+      "country": "Venezuela",
+      "timestamp": "2024-01-02T06:46:00.280Z",
+      "riskScore": 98,
+      "__v": 0
+    },
+    {
+      "_id": "39eb25aa-9fc3-4e12-9c76-6a4ae1d65e6c",
+      "userId": "e721efdf-03cf-4a67-b5d7-91ebd9b0f711",
+      "amount": 75000,
+      "country": "Iran",
+      "timestamp": "2024-01-25T05:41:49.885Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "d5484e43-ebb6-4f67-b20f-187218889793",
+      "userId": "dbeb1db7-e07f-4a3f-b347-8269698169ff",
+      "amount": 75000,
+      "country": "Syria",
+      "timestamp": "2024-01-25T19:27:34.004Z",
+      "riskScore": 98,
+      "__v": 0
+    },
+    {
+      "_id": "1676645e-8e8c-4f6a-8a4d-bd4e6af095ef",
+      "userId": "d9dd0a7a-c0ff-426f-94be-07e7a1582d41",
+      "amount": 19999,
+      "country": "North Korea",
+      "timestamp": "2024-01-27T19:12:23.513Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "4e272912-cd48-47ee-89c9-d1ddbe5ffea4",
+      "userId": "aa7bf0d0-edba-40eb-a076-8659a13e9f58",
+      "amount": 100000,
+      "country": "Cuba",
+      "timestamp": "2024-01-28T09:51:29.953Z",
+      "riskScore": 99,
+      "__v": 0
+    },
+    {
+      "_id": "d02ce365-8b38-4b9e-93ea-802b53ba264c",
+      "userId": "6ad7b01a-1088-4d73-8663-374c0be7140e",
+      "amount": 50000,
+      "country": "Cuba",
+      "timestamp": "2024-01-31T04:39:47.029Z",
+      "riskScore": 99,
+      "__v": 0
+    },
+    {
+      "_id": "6b2d7e74-c512-4824-b592-ef2a1b4a9ce5",
+      "userId": "2a8adf10-6018-4b7e-8fd7-ec776496b231",
+      "amount": 50000,
+      "country": "Myanmar",
+      "timestamp": "2024-01-31T08:12:11.563Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "0652200c-5a49-4baf-96e2-ff2ce0810d62",
+      "userId": "e3975415-12c4-4202-a873-9cde0e32ab79",
+      "amount": 14900,
+      "country": "Russia",
+      "timestamp": "2024-02-03T00:06:03.118Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "478d855c-dc36-484c-a157-7d24ee76e502",
+      "userId": "329f082e-7551-41b6-a17c-73df9ce4d210",
+      "amount": 26054,
+      "country": "Syria",
+      "timestamp": "2024-02-03T05:36:37.963Z",
+      "riskScore": 99,
+      "__v": 0
+    },
+    {
+      "_id": "319fc47b-dcd6-4d77-8db2-be6e138eb0f8",
+      "userId": "7fb96706-4b78-4683-9c06-9bb24564c2f3",
+      "amount": 2,
+      "country": "Myanmar",
+      "timestamp": "2024-02-05T04:22:44.631Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "97c6950b-065e-47d0-aa76-1708e011ff47",
+      "userId": "73516388-421a-41bd-af3b-e4b9b0648900",
+      "amount": 1,
+      "country": "Ukraine",
+      "timestamp": "2024-02-06T01:44:33.620Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "4b67be62-2899-4925-907e-48deea8519b7",
+      "userId": "dc60796e-40b4-4721-9fbf-eb2bbe220ebc",
+      "amount": 23642,
+      "country": "Myanmar",
+      "timestamp": "2024-02-07T03:26:20.734Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "84285a9e-de17-43f7-bcf8-54f3c6819c58",
+      "userId": "c58e3cf3-a736-4455-af38-e53c61879d61",
+      "amount": 37124,
+      "country": "Nigeria",
+      "timestamp": "2024-02-10T22:47:40.614Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "01aa7dc9-44cd-4af9-9dbe-825ba94928a1",
+      "userId": "75a9680b-40b2-48bb-8a35-0a45f95bb15d",
+      "amount": 49999,
+      "country": "Ukraine",
+      "timestamp": "2024-02-12T02:52:55.415Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "2e18077e-f75c-44fb-8c61-7405c2c46735",
+      "userId": "31b5eb35-8f2f-4f73-88a3-2e7c70a93f2e",
+      "amount": 19953,
+      "country": "Cuba",
+      "timestamp": "2024-02-19T07:18:08.833Z",
+      "riskScore": 98,
+      "__v": 0
+    },
+    {
+      "_id": "8d6cf286-dadf-4e33-a786-06cb96446f27",
+      "userId": "c0128106-28c5-4aeb-9fa5-02e184639871",
+      "amount": 5,
+      "country": "Iran",
+      "timestamp": "2024-02-19T11:28:51.141Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "6cb348d6-6e16-452e-84c5-e33ce121b14b",
+      "userId": "a895423e-3413-4fe4-a7e6-dd3ab83693e7",
+      "amount": 9999,
+      "country": "North Korea",
+      "timestamp": "2024-02-20T10:10:31.380Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "170ade4a-5ea7-4f5f-be16-53b8082cf0f3",
+      "userId": "f9351966-3600-4b66-92df-a42af3de4359",
+      "amount": 5,
+      "country": "Russia",
+      "timestamp": "2024-02-23T11:42:36.346Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "53766f16-a13b-4b3a-9eaf-b3e610c6d267",
+      "userId": "6ec417f4-c5d2-4692-a6e4-7fe1b54441d7",
+      "amount": 1,
+      "country": "Myanmar",
+      "timestamp": "2024-02-25T09:05:44.804Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "82e9bc66-ffe6-4c81-ba42-96ef118d3ee7",
+      "userId": "4e0922f1-cd2d-40f1-ba3c-9165094111f8",
+      "amount": 50000,
+      "country": "Syria",
+      "timestamp": "2024-02-25T18:17:34.711Z",
+      "riskScore": 99,
+      "__v": 0
+    },
+    {
+      "_id": "dd0e52d2-e8c9-452e-9a02-2179d5b6c743",
+      "userId": "0698955e-25c6-438d-bc4f-a4d065aa5629",
+      "amount": 13394,
+      "country": "Myanmar",
+      "timestamp": "2024-02-27T07:42:36.534Z",
+      "riskScore": 99,
+      "__v": 0
+    },
+    {
+      "_id": "2e1011dd-233e-4433-9c82-f61a39733278",
+      "userId": "bce60799-aafc-430e-921b-42a19a3847e1",
+      "amount": 10,
+      "country": "Venezuela",
+      "timestamp": "2024-03-01T04:10:37.352Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "8d89bb72-9061-479a-90bc-9ed328bcefd4",
+      "userId": "e33842ab-5f32-4fb2-8e4c-9a5add7aa493",
+      "amount": 22648,
+      "country": "Russia",
+      "timestamp": "2024-03-05T14:33:05.824Z",
+      "riskScore": 97,
+      "__v": 0
+    },
+    {
+      "_id": "5291fbfb-3a7d-4bfc-8657-1053bcfc79f7",
+      "userId": "e937ab03-9d14-4aaf-840b-15fdb11f3b0c",
+      "amount": 20,
+      "country": "North Korea",
+      "timestamp": "2024-03-10T12:20:08.245Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "a1f799f0-1a67-40b0-9c4e-b9974b660e95",
+      "userId": "f6ecef8b-8347-47c4-8303-dab7f5519986",
+      "amount": 26727,
+      "country": "Venezuela",
+      "timestamp": "2024-03-15T02:26:38.857Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "14df4baf-08f3-49a7-bddc-00d31333f54d",
+      "userId": "8a6afd50-677e-415f-8d83-82fc095a4c27",
+      "amount": 75000,
+      "country": "Cuba",
+      "timestamp": "2024-03-24T03:14:24.514Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "bc26b45f-a337-44ef-a321-322510050859",
+      "userId": "f07c3bdb-66e6-47a3-91ef-3d2a8dc610b4",
+      "amount": 49999,
+      "country": "North Korea",
+      "timestamp": "2024-03-27T11:43:30.469Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "7c34d685-773d-4c1f-bb41-4383daa9b80f",
+      "userId": "80408b91-1aa0-4b93-b38f-99c10f0e1aea",
+      "amount": 150000,
+      "country": "Cuba",
+      "timestamp": "2024-03-28T20:51:43.474Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "8842cbf7-5fc7-4319-853b-2bf48b7c8f5c",
+      "userId": "35e43ecb-b3cb-45eb-8bd9-384de8e25db2",
+      "amount": 19815,
+      "country": "North Korea",
+      "timestamp": "2024-04-01T17:25:29.182Z",
+      "riskScore": 97,
+      "__v": 0
+    },
+    {
+      "_id": "ef2cfeae-6a4b-413c-b487-e1e89d0ca006",
+      "userId": "56178600-66ea-44a5-a59d-033589527195",
+      "amount": 11667,
+      "country": "Ukraine",
+      "timestamp": "2024-04-02T15:34:24.816Z",
+      "riskScore": 96,
+      "__v": 0
+    },
+    {
+      "_id": "5331a96f-b7ea-4a08-b722-b15e6f0b8025",
+      "userId": "c9d99389-de85-4b08-b8de-2db2076a2cbe",
+      "amount": 10,
+      "country": "Nigeria",
+      "timestamp": "2024-04-04T00:20:33.957Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "0143bc4a-73eb-48c2-8bb5-9770723f67e6",
+      "userId": "a2198731-080a-4dd5-949b-6da52f33c6c0",
+      "amount": 500000,
+      "country": "Myanmar",
+      "timestamp": "2024-04-11T09:28:47.505Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "9419d275-3b88-4e55-80eb-5b04d0642971",
+      "userId": "ab88a31f-b81e-49d6-8d7e-a330011f0a6d",
+      "amount": 20,
+      "country": "Cuba",
+      "timestamp": "2024-04-12T04:19:09.560Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "b11e9316-e366-497a-9b8b-56cea1c62e79",
+      "userId": "b7adfd6b-c5e1-42b5-9c53-b037d631ab59",
+      "amount": 34237,
+      "country": "Nigeria",
+      "timestamp": "2024-04-25T00:50:02.442Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "cf209270-00f7-48b0-a135-86ff68068de2",
+      "userId": "b6bca1ed-1011-4925-be96-7374f6e833a2",
+      "amount": 1,
+      "country": "Nigeria",
+      "timestamp": "2024-04-30T21:32:59.530Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "3792b463-84ff-4390-8770-2ed088962c83",
+      "userId": "b752f6ae-2358-4a73-a20a-7435efa1c47e",
+      "amount": 200000,
+      "country": "Syria",
+      "timestamp": "2024-05-03T19:07:43.691Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "68d64b27-e1ab-444c-8357-00d50c77b951",
+      "userId": "a4d04cd0-6d35-4861-b832-a5dfd13bfcf6",
+      "amount": 200000,
+      "country": "Syria",
+      "timestamp": "2024-05-04T14:38:28.653Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "ba328c44-fb9b-41f7-b563-1d6d1f0bc49b",
+      "userId": "ac937f32-9e08-4661-b218-d1874dbc7751",
+      "amount": 75000,
+      "country": "Nigeria",
+      "timestamp": "2024-05-10T21:42:21.027Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "1e703613-6192-4129-bc96-2a5e5c6a431c",
+      "userId": "ab5bbd0c-e43e-46fc-840b-54868f573b60",
+      "amount": 50000,
+      "country": "Ukraine",
+      "timestamp": "2024-05-13T14:06:37.866Z",
+      "riskScore": 99,
+      "__v": 0
+    },
+    {
+      "_id": "75ae549f-83dc-4f0c-ac1a-a5fac64e39c6",
+      "userId": "521f9348-86a4-473a-8c54-1019e12585fe",
+      "amount": 16326,
+      "country": "Ukraine",
+      "timestamp": "2024-05-18T16:29:12.139Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "0390b793-3611-4d18-b1ad-e28beda2ba16",
+      "userId": "19559f42-42ec-49cd-a2f6-66a6f9168ae4",
+      "amount": 15,
+      "country": "Syria",
+      "timestamp": "2024-05-24T15:28:32.956Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "95e759d7-eef5-438e-afa8-ed1bae17f46a",
+      "userId": "54016e2f-06a1-4b27-b63e-a49b96bf9078",
+      "amount": 500000,
+      "country": "Iran",
+      "timestamp": "2024-05-26T13:06:09.638Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "bfce77d4-fb55-4d09-b16b-ec3d56d646d5",
+      "userId": "8c3742a2-a3d2-4482-b635-bc2f626b8859",
+      "amount": 50000,
+      "country": "Cuba",
+      "timestamp": "2024-06-05T10:52:21.813Z",
+      "riskScore": 95,
+      "__v": 0
+    },
+    {
+      "_id": "9929ad0b-e75f-4139-a2b6-d97d6b41926b",
+      "userId": "779555ce-494f-478d-a67b-7545b4426d6f",
+      "amount": 9999,
+      "country": "Nigeria",
+      "timestamp": "2024-06-08T16:32:20.629Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "5aa4a0e2-c088-43f9-b702-3b5aa7a93457",
+      "userId": "c0336e2f-708a-483f-a605-5d01c26834f4",
+      "amount": 500000,
+      "country": "Belarus",
+      "timestamp": "2024-06-10T20:52:08.638Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "f2388a51-af19-44ff-98f8-e0c6e84c7d49",
+      "userId": "9f281481-e1fc-4a9e-b078-bd44fddb97db",
+      "amount": 1,
+      "country": "Cuba",
+      "timestamp": "2024-06-14T21:44:16.349Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "b96ba90f-4060-486e-a08f-b62646db0d90",
+      "userId": "2f93171a-32b8-414f-9463-8f9bdd990e56",
+      "amount": 45334,
+      "country": "Iran",
+      "timestamp": "2024-06-24T16:37:25.639Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "d215b175-2867-4129-8262-076c4a3603a2",
+      "userId": "ea36edca-c23f-49eb-b68d-72fb8143916c",
+      "amount": 200000,
+      "country": "North Korea",
+      "timestamp": "2024-06-25T11:42:06.148Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "c5f93fce-7f52-43b8-bc21-703b49561d12",
+      "userId": "fd2adf3c-aca7-45e6-9595-04e28139f03c",
+      "amount": 200000,
+      "country": "Venezuela",
+      "timestamp": "2024-06-27T00:13:15.494Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "7249309a-e22d-4939-9761-701eea2bc614",
+      "userId": "d52c8afb-178c-4a8f-aa1a-5bf868ba24e7",
+      "amount": 49999,
+      "country": "Ukraine",
+      "timestamp": "2024-07-05T13:22:11.109Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "d961f2cb-1ff0-4073-8ee1-5bbe7efa778e",
+      "userId": "b8631ed9-a3e6-4fe6-80dd-5f5ddb538306",
+      "amount": 10162,
+      "country": "Cuba",
+      "timestamp": "2024-07-09T20:20:23.254Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "ceb7062d-d646-446c-bdcc-470454d79701",
+      "userId": "8247751b-252f-42a7-b104-b2ccba71bb3b",
+      "amount": 10,
+      "country": "Ukraine",
+      "timestamp": "2024-07-13T14:19:13.342Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "e95ac13a-50e4-4ef5-8536-abe792775241",
+      "userId": "e43e8a02-a5fa-4f1c-9b36-6c375457d2bd",
+      "amount": 40743,
+      "country": "Iran",
+      "timestamp": "2024-07-20T18:32:59.693Z",
+      "riskScore": 99,
+      "__v": 0
+    },
+    {
+      "_id": "c52dd4a6-4854-493f-8a93-f40396d93de0",
+      "userId": "fd011f3f-a452-43a0-80f7-efd5e80673b8",
+      "amount": 500000,
+      "country": "Syria",
+      "timestamp": "2024-07-24T21:40:52.473Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "b645bd5f-95df-4265-8f3f-e85ff85d002b",
+      "userId": "2f6059a9-f76d-4cf4-89b3-5bf7801bb28c",
+      "amount": 26374,
+      "country": "Cuba",
+      "timestamp": "2024-07-25T01:12:02.426Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "90ee179d-5ec5-4b26-9da1-ae1778501102",
+      "userId": "e145fe87-602c-481c-9a71-6e2e8633759b",
+      "amount": 2,
+      "country": "Venezuela",
+      "timestamp": "2024-07-25T18:01:29.270Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "ab494f89-000b-4cdc-ba3f-5a6be2bac6c5",
+      "userId": "7233a19c-3c1f-49fe-8a1a-6a4e6a807b3d",
+      "amount": 300000,
+      "country": "Venezuela",
+      "timestamp": "2024-08-06T16:32:40.389Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "a35bf159-13f9-4c4d-963c-3a9f44d5b99d",
+      "userId": "f00999ac-e538-4047-95e5-521da7f37bff",
+      "amount": 100000,
+      "country": "Belarus",
+      "timestamp": "2024-08-07T16:45:45.199Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "d853ae07-1ae4-4beb-a2c5-5a2d2aba7f99",
+      "userId": "7f1224c6-9b01-48ba-b5e9-f011675829d8",
+      "amount": 100000,
+      "country": "North Korea",
+      "timestamp": "2024-08-11T17:32:37.321Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "5797fa4d-56ec-4a1c-925e-943545e18846",
+      "userId": "528496c7-f95e-4ed1-bf16-18fd29a39a3f",
+      "amount": 46924,
+      "country": "Syria",
+      "timestamp": "2024-08-17T14:09:00.246Z",
+      "riskScore": 96,
+      "__v": 0
+    },
+    {
+      "_id": "10501aa1-e438-4221-811a-80ef93c6304d",
+      "userId": "89b3f615-20ac-467e-9f44-9493ea485fd0",
+      "amount": 27642,
+      "country": "Cuba",
+      "timestamp": "2024-08-19T22:56:39.365Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "239a93cd-af78-44f3-8332-3d9c7cc53543",
+      "userId": "945bae77-40b4-45a0-b922-ed9aeca3f83d",
+      "amount": 10243,
+      "country": "Belarus",
+      "timestamp": "2024-08-22T02:41:13.977Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "dc775745-2ab4-460b-8811-8663bc3ce8c8",
+      "userId": "a0933d25-0513-464b-9304-ce3b0d6a49e9",
+      "amount": 20,
+      "country": "Syria",
+      "timestamp": "2024-08-27T08:36:34.435Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "5603e6ae-2a41-4022-b2ca-a4eca067bdd7",
+      "userId": "93945628-50af-4047-aab0-010302f14321",
+      "amount": 21359,
+      "country": "Venezuela",
+      "timestamp": "2024-08-28T10:22:13.108Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "d274c043-820c-4e1c-b20b-ac6b31dfc6bf",
+      "userId": "4c4ba07d-548e-40fb-9945-eaeea848251c",
+      "amount": 50000,
+      "country": "Ukraine",
+      "timestamp": "2024-08-29T16:08:29.093Z",
+      "riskScore": 95,
+      "__v": 0
+    },
+    {
+      "_id": "1b78da9c-2bd8-487a-89ed-49de780f4e7a",
+      "userId": "00ff094c-5fb1-4458-b6da-4c385ffac5e4",
+      "amount": 49999,
+      "country": "North Korea",
+      "timestamp": "2024-09-05T15:09:34.044Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "b9237a6c-1eed-40c4-8db7-104d2ee8d584",
+      "userId": "c969d9a5-5afd-466b-b571-01f9124c824c",
+      "amount": 150000,
+      "country": "Syria",
+      "timestamp": "2024-09-05T20:34:03.401Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "23b037e5-1a93-4a8d-9219-ec2416c09829",
+      "userId": "0495f987-0668-488d-8164-11a61950553f",
+      "amount": 300000,
+      "country": "Syria",
+      "timestamp": "2024-09-06T19:18:52.079Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "43dd5412-c5bd-42f6-8ded-915470273f8a",
+      "userId": "48faae39-253d-4d47-9200-1a25afadac1d",
+      "amount": 9999,
+      "country": "North Korea",
+      "timestamp": "2024-09-10T05:52:33.795Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "c875d071-2ddb-4a67-9b95-73b3a41623e7",
+      "userId": "fa9cf73c-324d-4ac1-94c1-a7c8f63f1cdb",
+      "amount": 26074,
+      "country": "Ukraine",
+      "timestamp": "2024-09-22T19:12:50.857Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "e3934c34-4c3a-43b4-9c49-99351ade52a6",
+      "userId": "0b9ee4ec-cda4-452d-9f7f-162fbb8e679e",
+      "amount": 50000,
+      "country": "Ukraine",
+      "timestamp": "2024-10-01T18:32:09.286Z",
+      "riskScore": 97,
+      "__v": 0
+    },
+    {
+      "_id": "7e1d05df-008c-45b5-b6ef-dec4150a108d",
+      "userId": "0c2b8956-3a55-4536-8fa0-b3eb35665c34",
+      "amount": 9999,
+      "country": "Belarus",
+      "timestamp": "2024-10-02T04:25:15.305Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "7a784fc4-a29a-44d3-b64a-3e73895ed091",
+      "userId": "afe5b43c-aefa-4592-bee2-393047280079",
+      "amount": 46422,
+      "country": "Myanmar",
+      "timestamp": "2024-10-02T12:54:00.852Z",
+      "riskScore": 97,
+      "__v": 0
+    },
+    {
+      "_id": "c26266bb-1b35-48ee-a10d-b344ecce8a12",
+      "userId": "88c62346-b650-499a-8efc-46483daa26a0",
+      "amount": 500000,
+      "country": "Nigeria",
+      "timestamp": "2024-10-04T14:56:10.279Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "d2372531-f412-41b6-a0bd-69af56322bf7",
+      "userId": "1e441334-2d5e-4520-b2e0-f0b812b7322e",
+      "amount": 20280,
+      "country": "Nigeria",
+      "timestamp": "2024-10-04T18:02:31.407Z",
+      "riskScore": 96,
+      "__v": 0
+    },
+    {
+      "_id": "bc0227ff-5b99-44f3-963c-1c5e96bbe6e1",
+      "userId": "a36f8af5-e74d-40aa-b3d1-a9cff8990536",
+      "amount": 9999,
+      "country": "Venezuela",
+      "timestamp": "2024-10-05T00:23:26.411Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "f97d84b0-f350-48c4-bdf5-e6b13cbb492f",
+      "userId": "3b090342-1ee4-4316-8d87-485e8b208e05",
+      "amount": 15,
+      "country": "Belarus",
+      "timestamp": "2024-10-12T12:30:13.711Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "3122507a-7b57-499c-9eb0-1d856b15ec43",
+      "userId": "6711c94c-fcf4-4997-9ae0-23c3015172d2",
+      "amount": 49999,
+      "country": "Russia",
+      "timestamp": "2024-10-13T05:00:31.991Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "39f467e9-8015-41c1-bd8d-68f2c0cb7aff",
+      "userId": "1f9c7bc7-42b9-4a57-b186-5b1f73f5e357",
+      "amount": 200000,
+      "country": "Myanmar",
+      "timestamp": "2024-10-25T09:12:09.609Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "cfc3160c-a055-4f2b-975b-5f99de5e0e64",
+      "userId": "233d9d53-f1d3-46f7-af3b-0124e9f34d5f",
+      "amount": 300000,
+      "country": "Nigeria",
+      "timestamp": "2024-10-26T22:09:32.574Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "7e92184b-9346-4972-853d-cc8b3152b5bf",
+      "userId": "50046129-2e6a-4b9f-9294-4ce48502404f",
+      "amount": 10,
+      "country": "Cuba",
+      "timestamp": "2024-10-30T05:53:14.649Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "90f4a291-4979-4cfd-ac3e-a47fb71e8187",
+      "userId": "91a9a3fb-a7c9-4d6c-93c1-ac7e7ae70aa0",
+      "amount": 50000,
+      "country": "Myanmar",
+      "timestamp": "2024-10-30T06:53:36.746Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "505e2e5b-9d01-4cf8-b2fc-3ca41a75c0d6",
+      "userId": "fb46226f-a7ec-481d-ad84-9b390e1f1ae7",
+      "amount": 11918,
+      "country": "Nigeria",
+      "timestamp": "2024-11-06T14:22:44.115Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "67ba9491-16aa-4a91-bc16-81db3d3444fd",
+      "userId": "85db3281-e935-4506-937e-a0da096ecd7b",
+      "amount": 9999,
+      "country": "Ukraine",
+      "timestamp": "2024-11-10T22:07:40.917Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "de0fb6bb-74e0-49db-9abe-47448f5e4cee",
+      "userId": "536659c0-7eba-4a29-b1bd-860d40798c04",
+      "amount": 49999,
+      "country": "Ukraine",
+      "timestamp": "2024-11-12T20:45:19.406Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "41b75960-15a8-4207-83b8-21c554854d01",
+      "userId": "a334638e-300f-47c5-bb75-6db1225c7471",
+      "amount": 300000,
+      "country": "Iran",
+      "timestamp": "2024-11-13T04:26:00.466Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "4bdea083-687b-4e61-a6e1-8cefdf7fe8c5",
+      "userId": "173e85c7-7029-4605-b730-d6bc496642a7",
+      "amount": 41247,
+      "country": "North Korea",
+      "timestamp": "2024-11-14T02:14:31.077Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "8b90676b-cb6b-4581-a971-2d62df5465d2",
+      "userId": "40d288ec-3670-4f48-a1c4-517957b12ffb",
+      "amount": 19999,
+      "country": "Myanmar",
+      "timestamp": "2024-11-24T11:59:20.833Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "266b6771-6220-439b-b96e-2d0f29dd08e0",
+      "userId": "11d9dc74-275a-4fc0-9fcb-9d82fcb92f6e",
+      "amount": 50000,
+      "country": "Russia",
+      "timestamp": "2024-11-28T13:52:04.762Z",
+      "riskScore": 99,
+      "__v": 0
+    },
+    {
+      "_id": "4a88ed3a-431b-4e75-80a0-2d2626d874ea",
+      "userId": "967cf727-8412-4323-bc4b-b41710dc80eb",
+      "amount": 150000,
+      "country": "Myanmar",
+      "timestamp": "2024-12-04T15:35:25.359Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "61109f8a-c4ba-4761-b0d2-609159b1444f",
+      "userId": "af5a946b-fb02-4925-988b-65cf18d1db83",
+      "amount": 9999,
+      "country": "Nigeria",
+      "timestamp": "2024-12-05T11:02:53.400Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "ec3d326c-35a8-4497-a828-8ed4cca44e5f",
+      "userId": "f5a138a8-4387-4e34-9214-417caf6db985",
+      "amount": 150000,
+      "country": "Iran",
+      "timestamp": "2024-12-08T11:04:52.207Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "e217d486-1e0b-4a2d-9494-59780a1a49a7",
+      "userId": "db99a070-c5eb-4343-9d17-3c9638db1fa2",
+      "amount": 19999,
+      "country": "Nigeria",
+      "timestamp": "2024-12-13T14:23:23.966Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "e24cd17c-e398-4f0a-ae9c-64c29008fcfd",
+      "userId": "d7e0aed1-031f-4db3-b473-40a8cf29f551",
+      "amount": 300000,
+      "country": "Nigeria",
+      "timestamp": "2024-12-15T11:30:41.600Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "d3256b65-5e78-4af3-8cdb-683eec6690ea",
+      "userId": "2368d49d-bf80-4a12-a80d-2a98b9bb43f3",
+      "amount": 41037,
+      "country": "Russia",
+      "timestamp": "2024-12-17T00:49:57.314Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "b6b451f4-bdd7-484e-a7ff-ace8066b4a19",
+      "userId": "e81e636e-d9a8-4f73-af74-d6500c32abbd",
+      "amount": 45803,
+      "country": "Ukraine",
+      "timestamp": "2024-12-22T05:24:31.276Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "eec06ccb-2070-4f8d-87c2-a983fcbe0bf1",
+      "userId": "cd911fdd-e1ad-4eba-9fac-6a2bd7829662",
+      "amount": 45731,
+      "country": "Belarus",
+      "timestamp": "2024-12-22T07:38:35.284Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    {
+      "_id": "85db1f5b-612b-4d83-be0d-c35561756ef5",
+      "userId": "23d0837f-76c8-4a12-bb37-44fe6ae9639c",
+      "amount": 18434,
+      "country": "Myanmar",
+      "timestamp": "2024-12-27T11:02:24.928Z",
+      "riskScore": 97,
+      "__v": 0
+    },
+    {
+      "_id": "03171c60-eee4-4ced-9890-d581787d03c9",
+      "userId": "6dab68cc-bc8c-41dc-96d3-481b2e3543a2",
+      "amount": 5,
+      "country": "Russia",
+      "timestamp": "2024-12-30T20:19:13.014Z",
+      "riskScore": 100,
+      "__v": 0
+    },
+    
+        {
+          "_id": "68608315357658a7eaebcff2",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "amount": 38,
+          "country": "Netherlands",
+          "timestamp": "2025-06-29T00:04:37.303Z",
+          "riskScore": 21,
+          "__v": 0
+        },
+        {
+          "_id": "6860831d357658a7eaebcff6",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "amount": 71,
+          "country": "United States",
+          "timestamp": "2025-06-29T00:04:45.972Z",
+          "riskScore": 7,
+          "__v": 0
+        },
+        {
+          "_id": "6860831f357658a7eaebcffa",
+          "userId": "686071f70587e52ce3b90244",
+          "amount": 77,
+          "country": "China",
+          "timestamp": "2025-06-29T00:04:47.132Z",
+          "riskScore": 15,
+          "__v": 0
+        },
+        {
+          "_id": "68608321357658a7eaebcffe",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "amount": 76,
+          "country": "Japan",
+          "timestamp": "2025-06-29T00:04:49.904Z",
+          "riskScore": 17,
+          "__v": 0
+        },
+        {
+          "_id": "68608323357658a7eaebd002",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "amount": 4933,
+          "country": "Russia",
+          "timestamp": "2025-06-29T00:04:51.920Z",
+          "riskScore": 64,
+          "__v": 0
+        },
+        {
+          "_id": "68608325357658a7eaebd006",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "amount": 87,
+          "country": "Australia",
+          "timestamp": "2025-06-29T00:04:53.742Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "68608329357658a7eaebd00a",
+          "userId": "686071f70587e52ce3b90244",
+          "amount": 14759,
+          "country": "United States",
+          "timestamp": "2025-06-29T00:04:57.006Z",
+          "riskScore": 37,
+          "__v": 0
+        },
+        {
+          "_id": "6860832e357658a7eaebd00e",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "amount": 643,
+          "country": "Canada",
+          "timestamp": "2025-06-29T00:05:02.326Z",
+          "riskScore": 6,
+          "__v": 0
+        },
+        {
+          "_id": "68608333357658a7eaebd012",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "amount": 69,
+          "country": "Belarus",
+          "timestamp": "2025-06-29T00:05:07.192Z",
+          "riskScore": 61,
+          "__v": 0
+        },
+        {
+          "_id": "6860833b357658a7eaebd016",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "amount": 523,
+          "country": "China",
+          "timestamp": "2025-06-29T00:05:15.153Z",
+          "riskScore": 21,
+          "__v": 0
+        },
+        {
+          "_id": "6860833e357658a7eaebd01a",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "amount": 11697,
+          "country": "Singapore",
+          "timestamp": "2025-06-29T00:05:18.889Z",
+          "riskScore": 41,
+          "__v": 0
+        },
+        {
+          "_id": "68608340357658a7eaebd01e",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "amount": 7075,
+          "country": "Argentina",
+          "timestamp": "2025-06-29T00:05:20.044Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "68608343357658a7eaebd022",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "amount": 249,
+          "country": "Belarus",
+          "timestamp": "2025-06-29T00:05:23.682Z",
+          "riskScore": 53,
+          "__v": 0
+        },
+        {
+          "_id": "68608349357658a7eaebd026",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "amount": 74,
+          "country": "France",
+          "timestamp": "2025-06-29T00:05:29.118Z",
+          "riskScore": 7,
+          "__v": 0
+        },
+        {
+          "_id": "6860834a357658a7eaebd02a",
+          "userId": "686069a610b58d2421348ae8",
+          "amount": 290,
+          "country": "Switzerland",
+          "timestamp": "2025-06-29T00:05:30.753Z",
+          "riskScore": 13,
+          "__v": 0
+        },
+        {
+          "_id": "6860834f357658a7eaebd02e",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "amount": 81,
+          "country": "Netherlands",
+          "timestamp": "2025-06-29T00:05:35.943Z",
+          "riskScore": 21,
+          "__v": 0
+        },
+        {
+          "_id": "68608357357658a7eaebd032",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "amount": 4340,
+          "country": "Germany",
+          "timestamp": "2025-06-29T00:05:43.506Z",
+          "riskScore": 20,
+          "__v": 0
+        },
+        {
+          "_id": "6860835a357658a7eaebd036",
+          "userId": "686069a610b58d2421348ae8",
+          "amount": 141,
+          "country": "Japan",
+          "timestamp": "2025-06-29T00:05:46.079Z",
+          "riskScore": 13,
+          "__v": 0
+        },
+        {
+          "_id": "6861ed8f179e42a2e5a50152",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Amber Phillips",
+          "amount": 716,
+          "country": "Nigeria",
+          "timestamp": "2025-06-30T01:51:11.913Z",
+          "riskScore": 49,
+          "__v": 0
+        },
+        {
+          "_id": "6861edcb179e42a2e5a50156",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Lawrence Howard",
+          "amount": 13972,
+          "country": "United Kingdom",
+          "timestamp": "2025-06-30T01:52:11.740Z",
+          "riskScore": 46,
+          "__v": 0
+        },
+        {
+          "_id": "6861ee07179e42a2e5a50194",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "James Lopez",
+          "amount": 46368,
+          "country": "South Africa",
+          "timestamp": "2025-06-30T01:53:11.737Z",
+          "riskScore": 51,
+          "__v": 0
+        },
+        {
+          "_id": "6861ee43179e42a2e5a50208",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Nicole Wright",
+          "amount": 667,
+          "country": "Australia",
+          "timestamp": "2025-06-30T01:54:11.743Z",
+          "riskScore": 19,
+          "__v": 0
+        },
+        {
+          "_id": "6861ee7f179e42a2e5a50236",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "John Smith",
+          "amount": 53,
+          "country": "South Africa",
+          "timestamp": "2025-06-30T01:55:11.745Z",
+          "riskScore": 22,
+          "__v": 0
+        },
+        {
+          "_id": "6861eebb179e42a2e5a5027b",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Vanessa Cooper",
+          "amount": 2848,
+          "country": "United Kingdom",
+          "timestamp": "2025-06-30T01:56:11.751Z",
+          "riskScore": 11,
+          "__v": 0
+        },
+        {
+          "_id": "6861eef7179e42a2e5a5027f",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Timothy Campbell",
+          "amount": 5770,
+          "country": "Nigeria",
+          "timestamp": "2025-06-30T01:57:11.752Z",
+          "riskScore": 61,
+          "__v": 0
+        },
+        {
+          "_id": "6861ef33179e42a2e5a50283",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Ryan Collins",
+          "amount": 1374,
+          "country": "Switzerland",
+          "timestamp": "2025-06-30T01:58:11.754Z",
+          "riskScore": 15,
+          "__v": 0
+        },
+        {
+          "_id": "6861ef6f179e42a2e5a50287",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Joshua Green",
+          "amount": 13,
+          "country": "Russia",
+          "timestamp": "2025-06-30T01:59:11.759Z",
+          "riskScore": 80,
+          "__v": 0
+        },
+        {
+          "_id": "6861efab179e42a2e5a5028b",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Raymond Richardson",
+          "amount": 235,
+          "country": "Netherlands",
+          "timestamp": "2025-06-30T02:00:11.765Z",
+          "riskScore": 6,
+          "__v": 0
+        },
+        {
+          "_id": "6861efe7179e42a2e5a5028f",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Lisa Anderson",
+          "amount": 14707,
+          "country": "India",
+          "timestamp": "2025-06-30T02:01:11.776Z",
+          "riskScore": 46,
+          "__v": 0
+        },
+        {
+          "_id": "6861f023179e42a2e5a50293",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "Jacob Morris",
+          "amount": 1005,
+          "country": "Japan",
+          "timestamp": "2025-06-30T02:02:11.784Z",
+          "riskScore": 14,
+          "__v": 0
+        },
+        {
+          "_id": "6861f05f179e42a2e5a502bb",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "customerName": "Gregory Murphy",
+          "amount": 65,
+          "country": "Belarus",
+          "timestamp": "2025-06-30T02:03:11.786Z",
+          "riskScore": 60,
+          "__v": 0
+        },
+        {
+          "_id": "6861f09b179e42a2e5a5031d",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Raymond Richardson",
+          "amount": 29,
+          "country": "Argentina",
+          "timestamp": "2025-06-30T02:04:11.840Z",
+          "riskScore": 24,
+          "__v": 0
+        },
+        {
+          "_id": "6861f0d7179e42a2e5a50321",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Stacy Peterson",
+          "amount": 4633,
+          "country": "Ukraine",
+          "timestamp": "2025-06-30T02:05:11.875Z",
+          "riskScore": 63,
+          "__v": 0
+        },
+        {
+          "_id": "6861f113179e42a2e5a50336",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Lawrence Howard",
+          "amount": 974,
+          "country": "Australia",
+          "timestamp": "2025-06-30T02:06:11.864Z",
+          "riskScore": 15,
+          "__v": 0
+        },
+        {
+          "_id": "6861f14f179e42a2e5a5033a",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Rachel Roberts",
+          "amount": 7437,
+          "country": "Canada",
+          "timestamp": "2025-06-30T02:07:11.884Z",
+          "riskScore": 20,
+          "__v": 0
+        },
+        {
+          "_id": "6861f18b179e42a2e5a5033e",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Jacob Morris",
+          "amount": 11760,
+          "country": "United Kingdom",
+          "timestamp": "2025-06-30T02:08:11.927Z",
+          "riskScore": 49,
+          "__v": 0
+        },
+        {
+          "_id": "6861f1c7179e42a2e5a5034e",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Amber Phillips",
+          "amount": 43,
+          "country": "Argentina",
+          "timestamp": "2025-06-30T02:09:11.889Z",
+          "riskScore": 13,
+          "__v": 0
+        },
+        
+        {
+          "_id": "6863887c8a70e7fe7dda080e",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "Ryan Collins",
+          "amount": 2877,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:04:28.311Z",
+          "riskScore": 39,
+          "__v": 0
+        },
+        {
+          "_id": "6863887c8a70e7fe7dda0812",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "customerName": "Lisa Anderson",
+          "amount": 2366,
+          "country": "South Africa",
+          "timestamp": "2025-07-01T07:04:28.913Z",
+          "riskScore": 9,
+          "__v": 0
+        },
+        {
+          "_id": "6863887d8a70e7fe7dda0816",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "Michael Brown",
+          "amount": 42,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:04:29.517Z",
+          "riskScore": 34,
+          "__v": 0
+        },
+        {
+          "_id": "6863887e8a70e7fe7dda081a",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Laura Mitchell",
+          "amount": 44,
+          "country": "Singapore",
+          "timestamp": "2025-07-01T07:04:30.117Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863887e8a70e7fe7dda081e",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "customerName": "Emily Davis",
+          "amount": 89,
+          "country": "Australia",
+          "timestamp": "2025-07-01T07:04:30.726Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863887f8a70e7fe7dda0822",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Stacy Peterson",
+          "amount": 118,
+          "country": "Canada",
+          "timestamp": "2025-07-01T07:04:31.326Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+
+        
+        {
+          "_id": "6863887f8a70e7fe7dda0826",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Tracy Cox",
+          "amount": 123,
+          "country": "Canada",
+          "timestamp": "2025-07-01T07:04:31.928Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388808a70e7fe7dda082a",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Stacy Peterson",
+          "amount": 1644,
+          "country": "United Kingdom",
+          "timestamp": "2025-07-01T07:04:32.530Z",
+          "riskScore": 4,
+          "__v": 0
+        },
+        {
+          "_id": "686388818a70e7fe7dda082e",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Amanda Rodriguez",
+          "amount": 77,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:04:33.130Z",
+          "riskScore": 33,
+          "__v": 0
+        },
+        {
+          "_id": "686388818a70e7fe7dda0832",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Rachel Roberts",
+          "amount": 65,
+          "country": "Switzerland",
+          "timestamp": "2025-07-01T07:04:33.737Z",
+          "riskScore": 2,
+          "__v": 0
+        },
+        {
+          "_id": "686388828a70e7fe7dda0836",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Lisa Anderson",
+          "amount": 925,
+          "country": "Ukraine",
+          "timestamp": "2025-07-01T07:04:34.334Z",
+          "riskScore": 48,
+          "__v": 0
+        },
+        {
+          "_id": "686388828a70e7fe7dda083a",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Kevin Carter",
+          "amount": 2845,
+          "country": "Canada",
+          "timestamp": "2025-07-01T07:04:34.939Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388838a70e7fe7dda083e",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Melissa Stewart",
+          "amount": 236,
+          "country": "Germany",
+          "timestamp": "2025-07-01T07:04:35.544Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388848a70e7fe7dda0842",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Daniel Allen",
+          "amount": 45,
+          "country": "Canada",
+          "timestamp": "2025-07-01T07:04:36.149Z",
+          "riskScore": 6,
+          "__v": 0
+        },
+        {
+          "_id": "686388848a70e7fe7dda0846",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "customerName": "Daniel Allen",
+          "amount": 12430,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:04:36.755Z",
+          "riskScore": 22,
+          "__v": 0
+        },
+        {
+          "_id": "686388858a70e7fe7dda084a",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Frank Rivera",
+          "amount": 4834,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:04:37.355Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "686388858a70e7fe7dda084e",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Tracy Cox",
+          "amount": 27,
+          "country": "Australia",
+          "timestamp": "2025-07-01T07:04:37.955Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388868a70e7fe7dda0852",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Michelle White",
+          "amount": 873,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:04:38.555Z",
+          "riskScore": 35,
+          "__v": 0
+        },
+        {
+          "_id": "686388878a70e7fe7dda0856",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "Brandy Bell",
+          "amount": 857,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:04:39.161Z",
+          "riskScore": 6,
+          "__v": 0
+        },
+        {
+          "_id": "686388878a70e7fe7dda085a",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Matthew King",
+          "amount": 4801,
+          "country": "Nigeria",
+          "timestamp": "2025-07-01T07:04:39.766Z",
+          "riskScore": 48,
+          "__v": 0
+        },
+        {
+          "_id": "686388888a70e7fe7dda085e",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Gregory Murphy",
+          "amount": 93,
+          "country": "South Africa",
+          "timestamp": "2025-07-01T07:04:40.371Z",
+          "riskScore": 2,
+          "__v": 0
+        },
+        {
+          "_id": "686388888a70e7fe7dda0862",
+          "userId": "685f61141f9b3aa73722f1c5",
+          "customerName": "David Wilson",
+          "amount": 154,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:04:40.976Z",
+          "riskScore": 7,
+          "__v": 0
+        },
+        {
+          "_id": "686388898a70e7fe7dda0866",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Tracy Cox",
+          "amount": 31789,
+          "country": "China",
+          "timestamp": "2025-07-01T07:04:41.581Z",
+          "riskScore": 27,
+          "__v": 0
+        },
+        {
+          "_id": "6863888a8a70e7fe7dda086a",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "customerName": "Tracy Cox",
+          "amount": 1306,
+          "country": "Russia",
+          "timestamp": "2025-07-01T07:04:42.182Z",
+          "riskScore": 48,
+          "__v": 0
+        },
+        {
+          "_id": "6863888a8a70e7fe7dda086e",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Tiffany Cook",
+          "amount": 24,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:04:42.788Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863888b8a70e7fe7dda0872",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Tracy Cox",
+          "amount": 608,
+          "country": "Argentina",
+          "timestamp": "2025-07-01T07:04:43.393Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863888b8a70e7fe7dda0876",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Frank Rivera",
+          "amount": 24,
+          "country": "India",
+          "timestamp": "2025-07-01T07:04:43.998Z",
+          "riskScore": 1,
+          "__v": 0
+        },
+        {
+          "_id": "6863888c8a70e7fe7dda087a",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Vanessa Cooper",
+          "amount": 2232,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:04:44.601Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863888d8a70e7fe7dda087e",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Amber Phillips",
+          "amount": 8637,
+          "country": "Ukraine",
+          "timestamp": "2025-07-01T07:04:45.205Z",
+          "riskScore": 33,
+          "__v": 0
+        },
+        {
+          "_id": "6863888d8a70e7fe7dda0882",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Heather Edwards",
+          "amount": 531,
+          "country": "Canada",
+          "timestamp": "2025-07-01T07:04:45.806Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863888e8a70e7fe7dda0886",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Christopher Lee",
+          "amount": 89,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:04:46.411Z",
+          "riskScore": 1,
+          "__v": 0
+        },
+        {
+          "_id": "6863888f8a70e7fe7dda088a",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Jason Evans",
+          "amount": 5893,
+          "country": "United Kingdom",
+          "timestamp": "2025-07-01T07:04:47.012Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863888f8a70e7fe7dda088e",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "William Garcia",
+          "amount": 46823,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:04:47.617Z",
+          "riskScore": 35,
+          "__v": 0
+        },
+        {
+          "_id": "686388908a70e7fe7dda0892",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "customerName": "Emily Davis",
+          "amount": 777,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:04:48.218Z",
+          "riskScore": 1,
+          "__v": 0
+        },
+        {
+          "_id": "686388908a70e7fe7dda0896",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Daniel Allen",
+          "amount": 72,
+          "country": "Switzerland",
+          "timestamp": "2025-07-01T07:04:48.819Z",
+          "riskScore": 7,
+          "__v": 0
+        },
+        {
+          "_id": "686388918a70e7fe7dda089a",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Frank Rivera",
+          "amount": 927,
+          "country": "Japan",
+          "timestamp": "2025-07-01T07:04:49.421Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388928a70e7fe7dda089e",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Brandy Bell",
+          "amount": 36,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:04:50.029Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388928a70e7fe7dda08a2",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Eric Reed",
+          "amount": 62,
+          "country": "China",
+          "timestamp": "2025-07-01T07:04:50.633Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388938a70e7fe7dda08a6",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Timothy Campbell",
+          "amount": 30,
+          "country": "South Africa",
+          "timestamp": "2025-07-01T07:04:51.234Z",
+          "riskScore": 2,
+          "__v": 0
+        },
+        {
+          "_id": "686388938a70e7fe7dda08aa",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Christopher Lee",
+          "amount": 12207,
+          "country": "Switzerland",
+          "timestamp": "2025-07-01T07:04:51.838Z",
+          "riskScore": 30,
+          "__v": 0
+        },
+        {
+          "_id": "686388948a70e7fe7dda08ae",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Sarah Johnson",
+          "amount": 100,
+          "country": "Russia",
+          "timestamp": "2025-07-01T07:04:52.443Z",
+          "riskScore": 30,
+          "__v": 0
+        },
+        {
+          "_id": "686388958a70e7fe7dda08b2",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "Nicole Wright",
+          "amount": 25,
+          "country": "Switzerland",
+          "timestamp": "2025-07-01T07:04:53.047Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388958a70e7fe7dda08b6",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "Lisa Anderson",
+          "amount": 2767,
+          "country": "Brazil",
+          "timestamp": "2025-07-01T07:04:53.650Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388968a70e7fe7dda08ba",
+          "userId": "685f61141f9b3aa73722f1c5",
+          "customerName": "David Wilson",
+          "amount": 463,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:04:54.255Z",
+          "riskScore": 9,
+          "__v": 0
+        },
+        {
+          "_id": "686388968a70e7fe7dda08be",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Melissa Stewart",
+          "amount": 362,
+          "country": "Singapore",
+          "timestamp": "2025-07-01T07:04:54.864Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388978a70e7fe7dda08c2",
+          "userId": "685f61141f9b3aa73722f1c5",
+          "customerName": "Jennifer Martinez",
+          "amount": 4265,
+          "country": "China",
+          "timestamp": "2025-07-01T07:04:55.461Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388988a70e7fe7dda08c6",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Timothy Campbell",
+          "amount": 1221,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:04:56.063Z",
+          "riskScore": 1,
+          "__v": 0
+        },
+        {
+          "_id": "686388988a70e7fe7dda08ca",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Timothy Campbell",
+          "amount": 30,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:04:56.669Z",
+          "riskScore": 36,
+          "__v": 0
+        },
+        {
+          "_id": "686388998a70e7fe7dda08ce",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Nicole Wright",
+          "amount": 191,
+          "country": "France",
+          "timestamp": "2025-07-01T07:04:57.273Z",
+          "riskScore": 3,
+          "__v": 0
+        },
+        {
+          "_id": "686388998a70e7fe7dda08d2",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Timothy Campbell",
+          "amount": 64,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:04:57.877Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863889a8a70e7fe7dda08d6",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Samantha Bailey",
+          "amount": 13,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:04:58.478Z",
+          "riskScore": 18,
+          "__v": 0
+        },
+        {
+          "_id": "6863889b8a70e7fe7dda08da",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Melissa Stewart",
+          "amount": 184,
+          "country": "Singapore",
+          "timestamp": "2025-07-01T07:04:59.081Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863889b8a70e7fe7dda08de",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "customerName": "Jessica Hall",
+          "amount": 11905,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:04:59.684Z",
+          "riskScore": 24,
+          "__v": 0
+        },
+        {
+          "_id": "6863889c8a70e7fe7dda08e2",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "David Wilson",
+          "amount": 62,
+          "country": "Switzerland",
+          "timestamp": "2025-07-01T07:05:00.290Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "6863889c8a70e7fe7dda08e6",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Michelle White",
+          "amount": 16,
+          "country": "Argentina",
+          "timestamp": "2025-07-01T07:05:00.893Z",
+          "riskScore": 18,
+          "__v": 0
+        },
+        {
+          "_id": "6863889d8a70e7fe7dda08ea",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Christopher Lee",
+          "amount": 681,
+          "country": "Nigeria",
+          "timestamp": "2025-07-01T07:05:01.497Z",
+          "riskScore": 39,
+          "__v": 0
+        },
+        {
+          "_id": "6863889e8a70e7fe7dda08ee",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Stephanie Baker",
+          "amount": 2533,
+          "country": "China",
+          "timestamp": "2025-07-01T07:05:02.101Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863889e8a70e7fe7dda08f2",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "Rachel Roberts",
+          "amount": 29,
+          "country": "India",
+          "timestamp": "2025-07-01T07:05:02.705Z",
+          "riskScore": 1,
+          "__v": 0
+        },
+        {
+          "_id": "6863889f8a70e7fe7dda08f6",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Sarah Johnson",
+          "amount": 2870,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:05:03.306Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863889f8a70e7fe7dda08fa",
+          "userId": "685f61141f9b3aa73722f1c5",
+          "customerName": "Stephen Morgan",
+          "amount": 16,
+          "country": "Canada",
+          "timestamp": "2025-07-01T07:05:03.906Z",
+          "riskScore": 17,
+          "__v": 0
+        },
+        {
+          "_id": "686388a08a70e7fe7dda08fe",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "customerName": "Rebecca Nelson",
+          "amount": 2136,
+          "country": "India",
+          "timestamp": "2025-07-01T07:05:04.508Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388a18a70e7fe7dda0902",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "Timothy Campbell",
+          "amount": 9922,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:05:05.110Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388a18a70e7fe7dda0906",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Andrew Adams",
+          "amount": 1611,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:05:05.710Z",
+          "riskScore": 3,
+          "__v": 0
+        },
+        {
+          "_id": "686388a28a70e7fe7dda090a",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "James Lopez",
+          "amount": 27,
+          "country": "Australia",
+          "timestamp": "2025-07-01T07:05:06.314Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388a28a70e7fe7dda090e",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Robert Taylor",
+          "amount": 393,
+          "country": "Brazil",
+          "timestamp": "2025-07-01T07:05:06.920Z",
+          "riskScore": 3,
+          "__v": 0
+        },
+        {
+          "_id": "686388a38a70e7fe7dda0912",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Crystal Rogers",
+          "amount": 804,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:05:07.522Z",
+          "riskScore": 8,
+          "__v": 0
+        },
+        {
+          "_id": "686388a48a70e7fe7dda0916",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Tiffany Cook",
+          "amount": 118,
+          "country": "Russia",
+          "timestamp": "2025-07-01T07:05:08.130Z",
+          "riskScore": 48,
+          "__v": 0
+        },
+        {
+          "_id": "686388a48a70e7fe7dda091a",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "Jennifer Martinez",
+          "amount": 1509,
+          "country": "United Kingdom",
+          "timestamp": "2025-07-01T07:05:08.728Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388a58a70e7fe7dda091e",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Michael Brown",
+          "amount": 36,
+          "country": "Switzerland",
+          "timestamp": "2025-07-01T07:05:09.332Z",
+          "riskScore": 3,
+          "__v": 0
+        },
+        {
+          "_id": "686388a58a70e7fe7dda0922",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Michael Brown",
+          "amount": 17812,
+          "country": "Nigeria",
+          "timestamp": "2025-07-01T07:05:09.934Z",
+          "riskScore": 76,
+          "__v": 0
+        },
+        {
+          "_id": "686388a68a70e7fe7dda0926",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Frank Rivera",
+          "amount": 83,
+          "country": "Japan",
+          "timestamp": "2025-07-01T07:05:10.538Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "686388a78a70e7fe7dda092a",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "Gregory Murphy",
+          "amount": 2797,
+          "country": "Australia",
+          "timestamp": "2025-07-01T07:05:11.164Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388a78a70e7fe7dda092e",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Jessica Hall",
+          "amount": 2488,
+          "country": "Germany",
+          "timestamp": "2025-07-01T07:05:11.755Z",
+          "riskScore": 1,
+          "__v": 0
+        },
+        {
+          "_id": "686388a88a70e7fe7dda0932",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "Tracy Cox",
+          "amount": 5136,
+          "country": "South Africa",
+          "timestamp": "2025-07-01T07:05:12.356Z",
+          "riskScore": 1,
+          "__v": 0
+        },
+        {
+          "_id": "686388a88a70e7fe7dda0936",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Vanessa Cooper",
+          "amount": 139,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:05:12.961Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388a98a70e7fe7dda093a",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Jennifer Martinez",
+          "amount": 10576,
+          "country": "Russia",
+          "timestamp": "2025-07-01T07:05:13.566Z",
+          "riskScore": 70,
+          "__v": 0
+        },
+        {
+          "_id": "686388aa8a70e7fe7dda093e",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Rebecca Nelson",
+          "amount": 981,
+          "country": "Japan",
+          "timestamp": "2025-07-01T07:05:14.170Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388aa8a70e7fe7dda0942",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Christopher Lee",
+          "amount": 12506,
+          "country": "Japan",
+          "timestamp": "2025-07-01T07:05:14.776Z",
+          "riskScore": 35,
+          "__v": 0
+        },
+        {
+          "_id": "686388ab8a70e7fe7dda0946",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Laura Mitchell",
+          "amount": 14769,
+          "country": "South Africa",
+          "timestamp": "2025-07-01T07:05:15.378Z",
+          "riskScore": 27,
+          "__v": 0
+        },
+        {
+          "_id": "686388ab8a70e7fe7dda094a",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Michelle White",
+          "amount": 78,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:05:15.982Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388ac8a70e7fe7dda094e",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Timothy Campbell",
+          "amount": 56,
+          "country": "Brazil",
+          "timestamp": "2025-07-01T07:05:16.584Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388ad8a70e7fe7dda0952",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Melissa Stewart",
+          "amount": 71,
+          "country": "Russia",
+          "timestamp": "2025-07-01T07:05:17.189Z",
+          "riskScore": 36,
+          "__v": 0
+        },
+        {
+          "_id": "686388ad8a70e7fe7dda0956",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "Lisa Anderson",
+          "amount": 1801,
+          "country": "South Africa",
+          "timestamp": "2025-07-01T07:05:17.794Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388ae8a70e7fe7dda095a",
+          "userId": "686069a610b58d2421348ae8",
+          "customerName": "Robert Taylor",
+          "amount": 99,
+          "country": "South Africa",
+          "timestamp": "2025-07-01T07:05:18.396Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388ae8a70e7fe7dda095e",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Crystal Rogers",
+          "amount": 776,
+          "country": "Singapore",
+          "timestamp": "2025-07-01T07:05:18.996Z",
+          "riskScore": 6,
+          "__v": 0
+        },
+        {
+          "_id": "686388af8a70e7fe7dda0962",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Michael Brown",
+          "amount": 512,
+          "country": "Nigeria",
+          "timestamp": "2025-07-01T07:05:19.598Z",
+          "riskScore": 48,
+          "__v": 0
+        },
+        {
+          "_id": "686388b08a70e7fe7dda0966",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Laura Mitchell",
+          "amount": 479,
+          "country": "Canada",
+          "timestamp": "2025-07-01T07:05:20.200Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388b08a70e7fe7dda096a",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Nicole Wright",
+          "amount": 550,
+          "country": "Japan",
+          "timestamp": "2025-07-01T07:05:20.800Z",
+          "riskScore": 7,
+          "__v": 0
+        },
+        {
+          "_id": "686388b18a70e7fe7dda096e",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Dawn Ward",
+          "amount": 3053,
+          "country": "Singapore",
+          "timestamp": "2025-07-01T07:05:21.406Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388b28a70e7fe7dda0972",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Rachel Roberts",
+          "amount": 364,
+          "country": "Australia",
+          "timestamp": "2025-07-01T07:05:22.010Z",
+          "riskScore": 7,
+          "__v": 0
+        },
+        {
+          "_id": "686388b28a70e7fe7dda0976",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "David Wilson",
+          "amount": 25,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:05:22.613Z",
+          "riskScore": 1,
+          "__v": 0
+        },
+        {
+          "_id": "686388b38a70e7fe7dda097a",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "William Garcia",
+          "amount": 275,
+          "country": "Singapore",
+          "timestamp": "2025-07-01T07:05:23.214Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388b38a70e7fe7dda097e",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Tiffany Cook",
+          "amount": 813,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:05:23.816Z",
+          "riskScore": 42,
+          "__v": 0
+        },
+        {
+          "_id": "686388b48a70e7fe7dda0982",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Heather Edwards",
+          "amount": 1899,
+          "country": "United Kingdom",
+          "timestamp": "2025-07-01T07:05:24.422Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "686388b58a70e7fe7dda0986",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Andrew Adams",
+          "amount": 354,
+          "country": "Canada",
+          "timestamp": "2025-07-01T07:05:25.027Z",
+          "riskScore": 2,
+          "__v": 0
+        },
+        {
+          "_id": "686388b58a70e7fe7dda098a",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "Jason Evans",
+          "amount": 13914,
+          "country": "France",
+          "timestamp": "2025-07-01T07:05:25.630Z",
+          "riskScore": 35,
+          "__v": 0
+        },
+        {
+          "_id": "686388b68a70e7fe7dda098e",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Carlos Torres",
+          "amount": 71,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:05:26.233Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388b68a70e7fe7dda0992",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Jason Evans",
+          "amount": 4204,
+          "country": "India",
+          "timestamp": "2025-07-01T07:05:26.836Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388b78a70e7fe7dda0996",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Melissa Stewart",
+          "amount": 356,
+          "country": "Switzerland",
+          "timestamp": "2025-07-01T07:05:27.438Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388b88a70e7fe7dda099a",
+          "userId": "685f61141f9b3aa73722f1c5",
+          "customerName": "Jason Evans",
+          "amount": 56,
+          "country": "United Kingdom",
+          "timestamp": "2025-07-01T07:05:28.044Z",
+          "riskScore": 6,
+          "__v": 0
+        },
+        {
+          "_id": "686388b88a70e7fe7dda099e",
+          "userId": "685f61131f9b3aa73722f1c1",
+          "customerName": "Brandy Bell",
+          "amount": 24,
+          "country": "Japan",
+          "timestamp": "2025-07-01T07:05:28.648Z",
+          "riskScore": 8,
+          "__v": 0
+        },
+        {
+          "_id": "686388b98a70e7fe7dda09a2",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Jacob Morris",
+          "amount": 47,
+          "country": "United Kingdom",
+          "timestamp": "2025-07-01T07:05:29.252Z",
+          "riskScore": 6,
+          "__v": 0
+        },
+        {
+          "_id": "686388b98a70e7fe7dda09a6",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Gregory Murphy",
+          "amount": 125,
+          "country": "Japan",
+          "timestamp": "2025-07-01T07:05:29.890Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388ba8a70e7fe7dda09aa",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Lisa Anderson",
+          "amount": 44,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:05:30.490Z",
+          "riskScore": 38,
+          "__v": 0
+        },
+        {
+          "_id": "686388bb8a70e7fe7dda09ae",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Stephen Morgan",
+          "amount": 1406,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:05:31.183Z",
+          "riskScore": 7,
+          "__v": 0
+        },
+        {
+          "_id": "686388bb8a70e7fe7dda09b2",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Rebecca Nelson",
+          "amount": 2459,
+          "country": "Germany",
+          "timestamp": "2025-07-01T07:05:31.759Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388bc8a70e7fe7dda09b6",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Amber Phillips",
+          "amount": 2331,
+          "country": "Switzerland",
+          "timestamp": "2025-07-01T07:05:32.363Z",
+          "riskScore": 9,
+          "__v": 0
+        },
+        {
+          "_id": "686388bc8a70e7fe7dda09ba",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Christopher Lee",
+          "amount": 3735,
+          "country": "Argentina",
+          "timestamp": "2025-07-01T07:05:32.967Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388bd8a70e7fe7dda09be",
+          "userId": "685f61141f9b3aa73722f1c5",
+          "customerName": "Brandy Bell",
+          "amount": 328,
+          "country": "France",
+          "timestamp": "2025-07-01T07:05:33.589Z",
+          "riskScore": 3,
+          "__v": 0
+        },
+        {
+          "_id": "686388be8a70e7fe7dda09c2",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Matthew King",
+          "amount": 2285,
+          "country": "Japan",
+          "timestamp": "2025-07-01T07:05:34.178Z",
+          "riskScore": 1,
+          "__v": 0
+        },
+        {
+          "_id": "686388be8a70e7fe7dda09c6",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Lisa Anderson",
+          "amount": 1944,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:05:34.784Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "686388bf8a70e7fe7dda09ca",
+          "userId": "685f61171f9b3aa73722f1d8",
+          "customerName": "Crystal Rogers",
+          "amount": 47,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:05:35.379Z",
+          "riskScore": 45,
+          "__v": 0
+        },
+        {
+          "_id": "686388bf8a70e7fe7dda09ce",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Brian Perez",
+          "amount": 2762,
+          "country": "India",
+          "timestamp": "2025-07-01T07:05:35.983Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "686388c08a70e7fe7dda09d2",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Heather Edwards",
+          "amount": 100,
+          "country": "Brazil",
+          "timestamp": "2025-07-01T07:05:36.589Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388c18a70e7fe7dda09d6",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Jennifer Martinez",
+          "amount": 576,
+          "country": "South Africa",
+          "timestamp": "2025-07-01T07:05:37.183Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388c18a70e7fe7dda09da",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Jessica Hall",
+          "amount": 52,
+          "country": "Singapore",
+          "timestamp": "2025-07-01T07:05:37.786Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "686388c28a70e7fe7dda09de",
+          "userId": "685f61141f9b3aa73722f1c5",
+          "customerName": "Tiffany Cook",
+          "amount": 261,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:05:38.391Z",
+          "riskScore": 48,
+          "__v": 0
+        },
+        {
+          "_id": "686388c28a70e7fe7dda09e2",
+          "userId": "685f61141f9b3aa73722f1c7",
+          "customerName": "Megan Parker",
+          "amount": 1272,
+          "country": "Argentina",
+          "timestamp": "2025-07-01T07:05:38.994Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "68638bf173ed4d2ba4aa5357",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "Sarah Johnson",
+          "amount": 74,
+          "country": "Belarus",
+          "timestamp": "2025-07-01T07:19:13.370Z",
+          "riskScore": 42,
+          "__v": 0
+        },
+        {
+          "_id": "68638c2d73ed4d2ba4aa53eb",
+          "userId": "685f61131f9b3aa73722f1bc",
+          "customerName": "Gregory Murphy",
+          "amount": 825,
+          "country": "Russia",
+          "timestamp": "2025-07-01T07:20:13.241Z",
+          "riskScore": 30,
+          "__v": 0
+        },
+        {
+          "_id": "68638c6973ed4d2ba4aa53ef",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Matthew King",
+          "amount": 88,
+          "country": "Japan",
+          "timestamp": "2025-07-01T07:21:13.247Z",
+          "riskScore": 6,
+          "__v": 0
+        },
+        {
+          "_id": "68638ca573ed4d2ba4aa53f3",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "James Lopez",
+          "amount": 7177,
+          "country": "Argentina",
+          "timestamp": "2025-07-01T07:22:13.246Z",
+          "riskScore": 5,
+          "__v": 0
+        },
+        {
+          "_id": "68638ce173ed4d2ba4aa544c",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Stephen Morgan",
+          "amount": 49,
+          "country": "Nigeria",
+          "timestamp": "2025-07-01T07:23:13.247Z",
+          "riskScore": 31,
+          "__v": 0
+        },
+        {
+          "_id": "68638d1d73ed4d2ba4aa56da",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Carlos Torres",
+          "amount": 2713,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:24:13.254Z",
+          "riskScore": 9,
+          "__v": 0
+        },
+        {
+          "_id": "68638d5973ed4d2ba4aa5728",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Matthew King",
+          "amount": 86,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:25:13.254Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "68638d9573ed4d2ba4aa572f",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Brian Perez",
+          "amount": 3091,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:26:13.256Z",
+          "riskScore": 3,
+          "__v": 0
+        },
+        {
+          "_id": "68638dd173ed4d2ba4aa577f",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "David Wilson",
+          "amount": 41543,
+          "country": "France",
+          "timestamp": "2025-07-01T07:27:13.258Z",
+          "riskScore": 25,
+          "__v": 0
+        },
+        {
+          "_id": "68638e0d73ed4d2ba4aa57a4",
+          "userId": "685f61131f9b3aa73722f1bb",
+          "customerName": "Samantha Bailey",
+          "amount": 38,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:28:13.260Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "68638e4973ed4d2ba4aa57a8",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Christopher Lee",
+          "amount": 413,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:29:13.263Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "68638e8573ed4d2ba4aa57ac",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Jennifer Martinez",
+          "amount": 549,
+          "country": "Canada",
+          "timestamp": "2025-07-01T07:30:13.264Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "68638ec173ed4d2ba4aa57b0",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Michelle White",
+          "amount": 30,
+          "country": "Germany",
+          "timestamp": "2025-07-01T07:31:13.272Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "68638efd73ed4d2ba4aa57b4",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "Raymond Richardson",
+          "amount": 3235,
+          "country": "Netherlands",
+          "timestamp": "2025-07-01T07:32:13.279Z",
+          "riskScore": 8,
+          "__v": 0
+        },
+        {
+          "_id": "68638f3973ed4d2ba4aa57b8",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Kevin Carter",
+          "amount": 14212,
+          "country": "United Kingdom",
+          "timestamp": "2025-07-01T07:33:13.301Z",
+          "riskScore": 29,
+          "__v": 0
+        },
+        {
+          "_id": "68638f7573ed4d2ba4aa57bc",
+          "userId": "6860797a7621ae67ccb19d9b",
+          "customerName": "Rebecca Nelson",
+          "amount": 3912,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:34:13.308Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "68638fb173ed4d2ba4aa57c0",
+          "userId": "685f61131f9b3aa73722f1bd",
+          "customerName": "Ryan Collins",
+          "amount": 649,
+          "country": "Nigeria",
+          "timestamp": "2025-07-01T07:35:13.313Z",
+          "riskScore": 48,
+          "__v": 0
+        },
+        {
+          "_id": "68638fed73ed4d2ba4aa57c4",
+          "userId": "685f61121f9b3aa73722f1ba",
+          "customerName": "Andrew Adams",
+          "amount": 120,
+          "country": "Russia",
+          "timestamp": "2025-07-01T07:36:13.316Z",
+          "riskScore": 47,
+          "__v": 0
+        },
+        {
+          "_id": "6863902973ed4d2ba4aa57c8",
+          "userId": "685f61181f9b3aa73722f1dc",
+          "customerName": "Rebecca Nelson",
+          "amount": 819,
+          "country": "Mexico",
+          "timestamp": "2025-07-01T07:37:13.318Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863906573ed4d2ba4aa57cc",
+          "userId": "685f61191f9b3aa73722f1e5",
+          "customerName": "David Wilson",
+          "amount": 73,
+          "country": "Switzerland",
+          "timestamp": "2025-07-01T07:38:13.321Z",
+          "riskScore": 0,
+          "__v": 0
+        },
+        {
+          "_id": "6863909f73ed4d2ba4aa57d0",
+          "userId": "686071f70587e52ce3b90244",
+          "customerName": "Lisa Anderson",
+          "amount": 18,
+          "country": "United States",
+          "timestamp": "2025-07-01T07:39:11.467Z",
+          "riskScore": 18,
+          "__v": 0
+        }
+      ]

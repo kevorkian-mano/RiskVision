@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   Typography, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, CircularProgress, IconButton, FormControl, InputLabel, Select, MenuItem, Slider, Chip, Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField, Tabs, Tab, Alert, Snackbar, Tooltip, TableSortLabel, Grid
 } from '@mui/material';
-import { transactionAPI, caseAPI } from '../services/api.jsx';
+import { transactionAPI, caseAPI, userAPI } from '../services/api.jsx';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import AddIcon from '@mui/icons-material/Add';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -16,20 +16,16 @@ import PointsDisplay from '../components/PointsDisplay.jsx';
 const sortOptions = [
   { value: 'timestamp', label: 'Timestamp (Newest First)' },
   { value: 'amount', label: 'Amount' },
-  { value: 'riskScore', label: 'Risk Score' },
+  { value: 'isFraud', label: 'Fraud Status' },
 ];
 
-// Risk score color coding
-const getRiskScoreColor = (score) => {
-  if (score >= 70) return 'error';
-  if (score >= 40) return 'warning';
-  return 'success';
+// ML-based fraud status color coding (replaces risk score logic)
+const getFraudStatusColor = (isFraud) => {
+  return isFraud ? 'error' : 'success';
 };
 
-const getRiskScoreLabel = (score) => {
-  if (score >= 70) return 'High';
-  if (score >= 40) return 'Medium';
-  return 'Low';
+const getFraudStatusLabel = (isFraud) => {
+  return isFraud ? 'Fraud' : 'Legitimate';
 };
 
 // Case status color coding
@@ -169,22 +165,32 @@ const ComplianceDashboard = () => {
 
   const fetchInvestigators = async () => {
     try {
-      const res = await caseAPI.getInvestigators();
+      console.log('🔍 Fetching investigators...');
+      const res = await userAPI.getByRole('investigator');
+      console.log('📊 Investigators response:', res.data);
       setInvestigators(res.data);
     } catch (err) {
-      console.error('Error fetching investigators:', err);
+      console.error('❌ Error fetching investigators:', err);
     }
   };
 
   const handleCreateCase = (transaction) => {
+    console.log('🔍 Creating case for transaction:', transaction);
+    console.log('👮 Current investigators state:', investigators);
     setSelectedTransaction(transaction);
     setCaseForm({
-      title: `High Risk Transaction - $${transaction.amount} from ${transaction.country}`,
-      description: `Transaction ID: ${transaction._id}\nAmount: $${transaction.amount}\nCountry: ${transaction.country}\nRisk Score: ${transaction.riskScore}\nUser: ${transaction.customerName || transaction.userId?.name || 'N/A'}`,
-      priority: transaction.riskScore >= 70 ? 'High' : 'Medium',
+      title: `ML-Flagged Fraud - $${transaction.amount} from ${transaction.country}`,
+      description: `Transaction ID: ${transaction._id}\nAmount: $${transaction.amount}\nCountry: ${transaction.country}\nML Fraud Detection: ${transaction.isFraud ? 'Flagged as Fraud' : 'Legitimate'}\nUser: ${transaction.customerName || transaction.userId?.name || 'N/A'}`,
+      priority: transaction.isFraud ? 'High' : 'Medium',
       assignedInvestigator: ''
     });
     setCreateCaseDialog(true);
+    
+    // Refresh investigators if none are loaded
+    if (investigators.length === 0) {
+      console.log('🔄 No investigators loaded, refreshing...');
+      fetchInvestigators();
+    }
   };
 
   const handleSubmitCase = async () => {
@@ -213,7 +219,7 @@ const ComplianceDashboard = () => {
         // If an investigator was selected, assign them immediately
         if (caseForm.assignedInvestigator) {
           try {
-            await caseAPI.assignInvestigator(response.data._id, caseForm.assignedInvestigator);
+            await caseAPI.assign(response.data._id, caseForm.assignedInvestigator);
             const assignedInvestigator = investigators.find(inv => inv._id === caseForm.assignedInvestigator);
             console.log('Investigator assigned immediately:', assignedInvestigator?.name);
           } catch (assignmentError) {
@@ -278,7 +284,7 @@ const ComplianceDashboard = () => {
     
     setAssignmentLoading(true);
     try {
-      await caseAPI.assignInvestigator(assigningCase._id, selectedInvestigator);
+      await caseAPI.assign(assigningCase._id, selectedInvestigator);
       setSnackbar({
         open: true,
         message: 'Investigator assigned successfully!',
@@ -346,7 +352,7 @@ const ComplianceDashboard = () => {
 
   // Debug logging
   console.log('Current transactionsWithCases:', Array.from(transactionsWithCases));
-  console.log('Current transactions:', transactions.map(tx => ({ id: tx._id, riskScore: tx.riskScore })));
+  console.log('Current transactions:', transactions.map(tx => ({ id: tx._id, isFraud: tx.isFraud })));
 
   const handleManualCleanup = async () => {
     setCleanupDialog(true);
@@ -402,7 +408,7 @@ const ComplianceDashboard = () => {
           <Typography sx={{ mb: 0 }}>Monitor transactions and manage fraud cases. Use the cleanup button to delete old transactions.</Typography>
           <Typography variant="body2" color="textSecondary" sx={{ mt: 1 }}>
             Current user: {auth.user?.name} ({auth.user?.role}) | 
-            Cases created: {transactionsWithCases.size} of {transactions.filter(tx => tx.riskScore >= 40).length} eligible transactions
+            Cases created: {transactionsWithCases.size} of {transactions.filter(tx => tx.isFraud).length} eligible transactions
           </Typography>
         </Box>
         <Box display="flex" gap={1}>
@@ -490,7 +496,7 @@ const ComplianceDashboard = () => {
                   <TableCell>User</TableCell>
                   <TableCell>Country</TableCell>
                   <TableCell>Timestamp</TableCell>
-                  <TableCell>Risk Score</TableCell>
+                  <TableCell>Fraud Status</TableCell>
                   <TableCell>Actions</TableCell>
                 </TableRow>
               </TableHead>
@@ -513,14 +519,14 @@ const ComplianceDashboard = () => {
                       <TableCell>{new Date(tx.timestamp).toLocaleString()}</TableCell>
                       <TableCell>
                         <Chip
-                          label={`${tx.riskScore || 0} - ${getRiskScoreLabel(tx.riskScore || 0)}`}
-                          color={getRiskScoreColor(tx.riskScore || 0)}
+                          label={getFraudStatusLabel(tx.isFraud)}
+                          color={getFraudStatusColor(tx.isFraud)}
                           size="small"
                           variant="outlined"
                         />
                       </TableCell>
                       <TableCell>
-                        {tx.riskScore >= 40 && !hasCase(tx._id) && (
+                        {tx.isFraud && !hasCase(tx._id) && (
                           <Tooltip title="Create a new fraud case for this transaction">
                             <span>
                               <Button
@@ -528,14 +534,14 @@ const ComplianceDashboard = () => {
                                 startIcon={<AddIcon />}
                                 onClick={() => handleCreateCase(tx)}
                                 variant="outlined"
-                                color="warning"
+                                color="error"
                               >
                                 Create Case
                               </Button>
                             </span>
                           </Tooltip>
                         )}
-                        {tx.riskScore >= 40 && hasCase(tx._id) && (
+                        {tx.isFraud && hasCase(tx._id) && (
                           <Tooltip title="A fraud case has been created for this transaction. Check the Open Cases tab to view details.">
                             <Chip
                               label="Case Created"
@@ -562,7 +568,7 @@ const ComplianceDashboard = () => {
             <TableHead>
               <TableRow>
                 <TableCell>Title</TableCell>
-                <TableCell>Risk Score</TableCell>
+                <TableCell>Priority</TableCell>
                 <TableCell>Status</TableCell>
                 <TableCell>Assigned To</TableCell>
                 <TableCell>Created</TableCell>
@@ -591,8 +597,8 @@ const ComplianceDashboard = () => {
                     <TableCell>{c.title}</TableCell>
                     <TableCell>
                       <Chip
-                        label={`${c.riskScore} - ${getRiskScoreLabel(c.riskScore)}`}
-                        color={getRiskScoreColor(c.riskScore)}
+                        label={c.priority}
+                        color={getPriorityColor(c.priority)}
                         size="small"
                         variant="outlined"
                       />
@@ -645,7 +651,7 @@ const ComplianceDashboard = () => {
             <TableHead>
               <TableRow>
                 <TableCell>Title</TableCell>
-                <TableCell>Risk Score</TableCell>
+                <TableCell>Priority</TableCell>
                 <TableCell>Closed By</TableCell>
                 <TableCell>Closed Date</TableCell>
                 <TableCell>Actions</TableCell>
@@ -670,8 +676,8 @@ const ComplianceDashboard = () => {
                     <TableCell>{c.title}</TableCell>
                     <TableCell>
                       <Chip
-                        label={`${c.riskScore} - ${getRiskScoreLabel(c.riskScore)}`}
-                        color={getRiskScoreColor(c.riskScore)}
+                        label={c.priority}
+                        color={getPriorityColor(c.priority)}
                         size="small"
                         variant="outlined"
                       />
@@ -737,6 +743,9 @@ const ComplianceDashboard = () => {
                   </MenuItem>
                 ))}
               </Select>
+              <Typography variant="caption" color="textSecondary" sx={{ mt: 1 }}>
+                Debug: {investigators.length} investigators loaded
+              </Typography>
             </FormControl>
             <TextField
               fullWidth
@@ -751,7 +760,7 @@ const ComplianceDashboard = () => {
                 <Typography variant="subtitle2" gutterBottom>Transaction Details:</Typography>
                 <Typography variant="body2">Amount: ${selectedTransaction.amount.toLocaleString()}</Typography>
                 <Typography variant="body2">Country: {selectedTransaction.country}</Typography>
-                <Typography variant="body2">Risk Score: {selectedTransaction.riskScore}</Typography>
+                <Typography variant="body2">ML Fraud Detection: {selectedTransaction.isFraud ? 'Flagged as Fraud' : 'Legitimate'}</Typography>
                 <Typography variant="body2">User: {selectedTransaction.customerName || selectedTransaction.userId?.name || 'N/A'}</Typography>
               </Box>
             )}

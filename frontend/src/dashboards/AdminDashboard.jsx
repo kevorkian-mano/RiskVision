@@ -5,7 +5,7 @@ import {
   Tabs, Tab, Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField,
   Alert, Snackbar, Chip, Tooltip
 } from '@mui/material';
-import { authAPI, ruleAPI } from '../services/api.jsx';
+import { authAPI } from '../services/api.jsx';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
@@ -16,20 +16,9 @@ import AdminPointsManager from '../components/AdminPointsManager.jsx';
 
 const roleOptions = ['admin', 'compliance', 'investigator', 'auditor'];
 
-// Rule condition templates for easier rule creation
-const ruleTemplates = [
-  { name: 'High Amount Transaction', condition: 'amount > threshold', description: 'Detect transactions above a certain amount' },
-  { name: 'Suspicious Country', condition: 'country in suspicious_countries', description: 'Detect transactions from high-risk countries' },
-  { name: 'Late Night Transaction', condition: 'hour >= 23 || hour <= 5', description: 'Detect transactions during late night hours' },
-  { name: 'Micro Transaction', condition: 'amount < threshold', description: 'Detect very small transactions (potential money laundering)' },
-  { name: 'Rapid Succession', condition: 'transactions_in_last_hour > threshold', description: 'Detect multiple transactions in short time' }
-];
-
 const AdminDashboard = () => {
   const [users, setUsers] = useState([]);
-  const [rules, setRules] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [rulesLoading, setRulesLoading] = useState(true);
   const [sortBy, setSortBy] = useState('name');
   const [sortOrder, setSortOrder] = useState('asc');
   const [roleFilter, setRoleFilter] = useState('all');
@@ -38,17 +27,7 @@ const AdminDashboard = () => {
   const [activeTab, setActiveTab] = useState(0);
   const { user: currentUser } = useAuth();
 
-  // Rule management state
-  const [ruleDialog, setRuleDialog] = useState(false);
-  const [editingRule, setEditingRule] = useState(null);
-  const [ruleForm, setRuleForm] = useState({
-    name: '',
-    condition: '',
-    threshold: '',
-    description: ''
-  });
-  const [deleteDialog, setDeleteDialog] = useState(false);
-  const [ruleToDelete, setRuleToDelete] = useState(null);
+  // Snackbar state
   const [snackbar, setSnackbar] = useState({ open: false, message: '', severity: 'success' });
 
   // User deletion state
@@ -76,7 +55,6 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     fetchUsers();
-    fetchRules();
   }, []);
 
   const fetchUsers = async () => {
@@ -93,23 +71,6 @@ const AdminDashboard = () => {
       });
     } finally {
       setLoading(false);
-    }
-  };
-
-  const fetchRules = async () => {
-    setRulesLoading(true);
-    try {
-      const res = await ruleAPI.getAll();
-      setRules(res.data);
-    } catch (err) {
-      console.error('Error fetching rules:', err);
-      setSnackbar({
-        open: true,
-        message: 'Error fetching rules',
-        severity: 'error'
-      });
-    } finally {
-      setRulesLoading(false);
     }
   };
 
@@ -154,106 +115,6 @@ const AdminDashboard = () => {
         });
       }
       setEditingRoleId(null);
-    }
-  };
-
-  // Rule management functions
-  const handleCreateRule = () => {
-    setEditingRule(null);
-    setRuleForm({
-      name: '',
-      condition: '',
-      threshold: '',
-      description: ''
-    });
-    setRuleDialog(true);
-  };
-
-  const handleEditRule = (rule) => {
-    setEditingRule(rule);
-    setRuleForm({
-      name: rule.name,
-      condition: rule.condition,
-      threshold: rule.threshold.toString(),
-      description: rule.description || ''
-    });
-    setRuleDialog(true);
-  };
-
-  const handleDeleteRule = (rule) => {
-    setRuleToDelete(rule);
-    setDeleteDialog(true);
-  };
-
-  const handleRuleFormChange = (field, value) => {
-    setRuleForm(prev => ({
-      ...prev,
-      [field]: value
-    }));
-  };
-
-  const handleRuleTemplateSelect = (template) => {
-    setRuleForm(prev => ({
-      ...prev,
-      name: template.name,
-      condition: template.condition,
-      description: template.description
-    }));
-  };
-
-  const handleRuleSubmit = async () => {
-    try {
-      const ruleData = {
-        ...ruleForm,
-        threshold: parseFloat(ruleForm.threshold)
-      };
-
-      if (editingRule) {
-        await ruleAPI.update(editingRule._id, ruleData);
-        setSnackbar({
-          open: true,
-          message: 'Rule updated successfully',
-          severity: 'success'
-        });
-      } else {
-        await ruleAPI.create(ruleData);
-        setSnackbar({
-          open: true,
-          message: 'Rule created successfully',
-          severity: 'success'
-        });
-      }
-
-      setRuleDialog(false);
-      fetchRules();
-    } catch (err) {
-      const errorMessage = err.response?.data?.error || 'Error saving rule';
-      setSnackbar({
-        open: true,
-        message: errorMessage,
-        severity: 'error'
-      });
-    }
-  };
-
-  const handleConfirmDelete = async () => {
-    try {
-      await ruleAPI.delete(ruleToDelete._id);
-      setSnackbar({
-        open: true,
-        message: 'Rule deleted successfully',
-        severity: 'success'
-      });
-      setDeleteDialog(false);
-      setRuleToDelete(null);
-      fetchRules();
-    } catch (err) {
-      const errorMessage = err.response?.data?.error || 'Error deleting rule';
-      setSnackbar({
-        open: true,
-        message: errorMessage,
-        severity: 'error'
-      });
     }
   };
 
@@ -417,15 +278,6 @@ const AdminDashboard = () => {
     return 0;
   });
 
-  // Sorting logic for rules
-  const sortedRules = [...rules].sort((a, b) => {
-    const aValue = a.name.toLowerCase();
-    const bValue = b.name.toLowerCase();
-    if (aValue < bValue) return -1;
-    if (aValue > bValue) return 1;
-    return 0;
-  });
-
   return (
     <Box p={4}>
       <Typography variant="h4" gutterBottom>Admin Dashboard</Typography>
@@ -433,10 +285,8 @@ const AdminDashboard = () => {
 
       <Tabs value={activeTab} onChange={(e, newValue) => setActiveTab(newValue)} sx={{ mb: 3 }}>
         <Tab label="User Management" />
-        <Tab label="Risk Rules" />
         <Tab label="Points Management" />
         <Tab label="Email Communication" />
-        <Tab label="Announcements" />
       </Tabs>
 
       {/* User Management Tab */}
@@ -594,105 +444,15 @@ const AdminDashboard = () => {
         </Box>
       )}
 
-      {/* Risk Rules Tab */}
-      {activeTab === 1 && (
-        <Box>
-          <Box mb={2} display="flex" justifyContent="space-between" alignItems="center">
-            <Typography variant="h6">Risk Detection Rules</Typography>
-            <Button
-              variant="contained"
-              startIcon={<AddIcon />}
-              onClick={handleCreateRule}
-            >
-              Create New Rule
-            </Button>
-          </Box>
-
-          <TableContainer component={Paper}>
-            <Table>
-              <TableHead>
-                <TableRow>
-                  <TableCell>Rule Name</TableCell>
-                  <TableCell>Condition</TableCell>
-                  <TableCell>Threshold</TableCell>
-                  <TableCell>Description</TableCell>
-                  <TableCell>Created</TableCell>
-                  <TableCell>Actions</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {rulesLoading ? (
-                  <TableRow>
-                    <TableCell colSpan={6} align="center">
-                      <CircularProgress size={32} />
-                    </TableCell>
-                  </TableRow>
-                ) : sortedRules.length === 0 ? (
-                  <TableRow>
-                    <TableCell colSpan={6} align="center">
-                      <Typography color="textSecondary">No rules found. Create your first rule to get started.</Typography>
-                    </TableCell>
-                  </TableRow>
-                ) : (
-                  sortedRules.map(rule => (
-                    <TableRow key={rule._id}>
-                      <TableCell>
-                        <Typography fontWeight="medium">{rule.name}</Typography>
-                      </TableCell>
-                      <TableCell>
-                        <code style={{ backgroundColor: '#f5f5f5', padding: '2px 6px', borderRadius: '4px' }}>
-                          {rule.condition}
-                        </code>
-                      </TableCell>
-                      <TableCell>
-                        <Chip label={rule.threshold} size="small" />
-                      </TableCell>
-                      <TableCell>
-                        <Typography variant="body2" color="textSecondary">
-                          {rule.description || 'No description'}
-                        </Typography>
-                      </TableCell>
-                      <TableCell>
-                        {new Date(rule.createdAt).toLocaleDateString()}
-                      </TableCell>
-                      <TableCell>
-                        <Tooltip title="Edit Rule">
-                          <IconButton
-                            onClick={() => handleEditRule(rule)}
-                            color="primary"
-                            size="small"
-                          >
-                            <EditIcon />
-                          </IconButton>
-                        </Tooltip>
-                        <Tooltip title="Delete Rule">
-                          <IconButton
-                            onClick={() => handleDeleteRule(rule)}
-                            color="error"
-                            size="small"
-                          >
-                            <DeleteIcon />
-                          </IconButton>
-                        </Tooltip>
-                      </TableCell>
-                    </TableRow>
-                  ))
-                )}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </Box>
-      )}
-
       {/* Points Management Tab */}
-      {activeTab === 2 && (
+      {activeTab === 1 && (
         <Box>
           <AdminPointsManager />
         </Box>
       )}
 
       {/* Email Communication Tab */}
-      {activeTab === 3 && (
+      {activeTab === 2 && (
         <Box>
           <Box mb={2} display="flex" justifyContent="space-between" alignItems="center">
             <Typography variant="h6">User Communication</Typography>
@@ -785,101 +545,11 @@ const AdminDashboard = () => {
       )}
 
       {/* Announcements Tab */}
-      {activeTab === 4 && (
+      {activeTab === 3 && (
         <Box>
           <AnnouncementManager />
         </Box>
       )}
-
-      {/* Rule Creation/Edit Dialog */}
-      <Dialog open={ruleDialog} onClose={() => setRuleDialog(false)} maxWidth="md" fullWidth>
-        <DialogTitle>
-          {editingRule ? 'Edit Risk Rule' : 'Create New Risk Rule'}
-        </DialogTitle>
-        <DialogContent>
-          <Box sx={{ mt: 2 }}>
-            <Typography variant="subtitle2" gutterBottom>Rule Templates</Typography>
-            <Box sx={{ mb: 3, display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-              {ruleTemplates.map((template, index) => (
-                <Chip
-                  key={index}
-                  label={template.name}
-                  onClick={() => handleRuleTemplateSelect(template)}
-                  variant="outlined"
-                  clickable
-                />
-              ))}
-            </Box>
-
-            <TextField
-              fullWidth
-              label="Rule Name"
-              value={ruleForm.name}
-              onChange={(e) => handleRuleFormChange('name', e.target.value)}
-              margin="normal"
-              required
-            />
-            
-            <TextField
-              fullWidth
-              label="Condition"
-              value={ruleForm.condition}
-              onChange={(e) => handleRuleFormChange('condition', e.target.value)}
-              margin="normal"
-              required
-              helperText="JavaScript-like condition (e.g., amount > 10000, country === 'Nigeria')"
-            />
-            
-            <TextField
-              fullWidth
-              label="Threshold"
-              type="number"
-              value={ruleForm.threshold}
-              onChange={(e) => handleRuleFormChange('threshold', e.target.value)}
-              margin="normal"
-              required
-              helperText="Numeric threshold value for the condition"
-            />
-            
-            <TextField
-              fullWidth
-              label="Description"
-              value={ruleForm.description}
-              onChange={(e) => handleRuleFormChange('description', e.target.value)}
-              margin="normal"
-              multiline
-              rows={3}
-              helperText="Optional description of what this rule detects"
-            />
-          </Box>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={() => setRuleDialog(false)}>Cancel</Button>
-          <Button 
-            onClick={handleRuleSubmit} 
-            variant="contained"
-            disabled={!ruleForm.name || !ruleForm.condition || !ruleForm.threshold}
-          >
-            {editingRule ? 'Update Rule' : 'Create Rule'}
-          </Button>
-        </DialogActions>
-      </Dialog>
-
-      {/* Delete Confirmation Dialog */}
-      <Dialog open={deleteDialog} onClose={() => setDeleteDialog(false)}>
-        <DialogTitle>Confirm Delete</DialogTitle>
-        <DialogContent>
-          <Typography>
-            Are you sure you want to delete the rule "{ruleToDelete?.name}"? This action cannot be undone.
-          </Typography>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={() => setDeleteDialog(false)}>Cancel</Button>
-          <Button onClick={handleConfirmDelete} color="error" variant="contained">
-            Delete
-          </Button>
-        </DialogActions>
-      </Dialog>
 
       {/* User Delete Confirmation Dialog */}
       <Dialog open={deleteUserDialog} onClose={() => setDeleteUserDialog(false)}>

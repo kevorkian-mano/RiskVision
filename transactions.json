@@ -1,0 +1,5124 @@
+[
+  {
+    "_id": "68608315357658a7eaebcff2",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "amount": 38,
+    "country": "Netherlands",
+    "timestamp": "2025-06-29T00:04:37.303Z",
+    "riskScore": 21,
+    "__v": 0
+  },
+  {
+    "_id": "6860831d357658a7eaebcff6",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "amount": 71,
+    "country": "United States",
+    "timestamp": "2025-06-29T00:04:45.972Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "6860831f357658a7eaebcffa",
+    "userId": "686071f70587e52ce3b90244",
+    "amount": 77,
+    "country": "China",
+    "timestamp": "2025-06-29T00:04:47.132Z",
+    "riskScore": 15,
+    "__v": 0
+  },
+  {
+    "_id": "68608321357658a7eaebcffe",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "amount": 76,
+    "country": "Japan",
+    "timestamp": "2025-06-29T00:04:49.904Z",
+    "riskScore": 17,
+    "__v": 0
+  },
+  {
+    "_id": "68608323357658a7eaebd002",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "amount": 4933,
+    "country": "Russia",
+    "timestamp": "2025-06-29T00:04:51.920Z",
+    "riskScore": 64,
+    "__v": 0
+  },
+  {
+    "_id": "68608325357658a7eaebd006",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "amount": 87,
+    "country": "Australia",
+    "timestamp": "2025-06-29T00:04:53.742Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "68608329357658a7eaebd00a",
+    "userId": "686071f70587e52ce3b90244",
+    "amount": 14759,
+    "country": "United States",
+    "timestamp": "2025-06-29T00:04:57.006Z",
+    "riskScore": 37,
+    "__v": 0
+  },
+  {
+    "_id": "6860832e357658a7eaebd00e",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "amount": 643,
+    "country": "Canada",
+    "timestamp": "2025-06-29T00:05:02.326Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "68608333357658a7eaebd012",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "amount": 69,
+    "country": "Belarus",
+    "timestamp": "2025-06-29T00:05:07.192Z",
+    "riskScore": 61,
+    "__v": 0
+  },
+  {
+    "_id": "6860833b357658a7eaebd016",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "amount": 523,
+    "country": "China",
+    "timestamp": "2025-06-29T00:05:15.153Z",
+    "riskScore": 21,
+    "__v": 0
+  },
+  {
+    "_id": "6860833e357658a7eaebd01a",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "amount": 11697,
+    "country": "Singapore",
+    "timestamp": "2025-06-29T00:05:18.889Z",
+    "riskScore": 41,
+    "__v": 0
+  },
+  {
+    "_id": "68608340357658a7eaebd01e",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "amount": 7075,
+    "country": "Argentina",
+    "timestamp": "2025-06-29T00:05:20.044Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "68608343357658a7eaebd022",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "amount": 249,
+    "country": "Belarus",
+    "timestamp": "2025-06-29T00:05:23.682Z",
+    "riskScore": 53,
+    "__v": 0
+  },
+  {
+    "_id": "68608349357658a7eaebd026",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "amount": 74,
+    "country": "France",
+    "timestamp": "2025-06-29T00:05:29.118Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "6860834a357658a7eaebd02a",
+    "userId": "686069a610b58d2421348ae8",
+    "amount": 290,
+    "country": "Switzerland",
+    "timestamp": "2025-06-29T00:05:30.753Z",
+    "riskScore": 13,
+    "__v": 0
+  },
+  {
+    "_id": "6860834f357658a7eaebd02e",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "amount": 81,
+    "country": "Netherlands",
+    "timestamp": "2025-06-29T00:05:35.943Z",
+    "riskScore": 21,
+    "__v": 0
+  },
+  {
+    "_id": "68608357357658a7eaebd032",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "amount": 4340,
+    "country": "Germany",
+    "timestamp": "2025-06-29T00:05:43.506Z",
+    "riskScore": 20,
+    "__v": 0
+  },
+  {
+    "_id": "6860835a357658a7eaebd036",
+    "userId": "686069a610b58d2421348ae8",
+    "amount": 141,
+    "country": "Japan",
+    "timestamp": "2025-06-29T00:05:46.079Z",
+    "riskScore": 13,
+    "__v": 0
+  },
+  {
+    "_id": "6861ed8f179e42a2e5a50152",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Amber Phillips",
+    "amount": 716,
+    "country": "Nigeria",
+    "timestamp": "2025-06-30T01:51:11.913Z",
+    "riskScore": 49,
+    "__v": 0
+  },
+  {
+    "_id": "6861edcb179e42a2e5a50156",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Lawrence Howard",
+    "amount": 13972,
+    "country": "United Kingdom",
+    "timestamp": "2025-06-30T01:52:11.740Z",
+    "riskScore": 46,
+    "__v": 0
+  },
+  {
+    "_id": "6861ee07179e42a2e5a50194",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "James Lopez",
+    "amount": 46368,
+    "country": "South Africa",
+    "timestamp": "2025-06-30T01:53:11.737Z",
+    "riskScore": 51,
+    "__v": 0
+  },
+  {
+    "_id": "6861ee43179e42a2e5a50208",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Nicole Wright",
+    "amount": 667,
+    "country": "Australia",
+    "timestamp": "2025-06-30T01:54:11.743Z",
+    "riskScore": 19,
+    "__v": 0
+  },
+  {
+    "_id": "6861ee7f179e42a2e5a50236",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "John Smith",
+    "amount": 53,
+    "country": "South Africa",
+    "timestamp": "2025-06-30T01:55:11.745Z",
+    "riskScore": 22,
+    "__v": 0
+  },
+  {
+    "_id": "6861eebb179e42a2e5a5027b",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Vanessa Cooper",
+    "amount": 2848,
+    "country": "United Kingdom",
+    "timestamp": "2025-06-30T01:56:11.751Z",
+    "riskScore": 11,
+    "__v": 0
+  },
+  {
+    "_id": "6861eef7179e42a2e5a5027f",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Timothy Campbell",
+    "amount": 5770,
+    "country": "Nigeria",
+    "timestamp": "2025-06-30T01:57:11.752Z",
+    "riskScore": 61,
+    "__v": 0
+  },
+  {
+    "_id": "6861ef33179e42a2e5a50283",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Ryan Collins",
+    "amount": 1374,
+    "country": "Switzerland",
+    "timestamp": "2025-06-30T01:58:11.754Z",
+    "riskScore": 15,
+    "__v": 0
+  },
+  {
+    "_id": "6861ef6f179e42a2e5a50287",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Joshua Green",
+    "amount": 13,
+    "country": "Russia",
+    "timestamp": "2025-06-30T01:59:11.759Z",
+    "riskScore": 80,
+    "__v": 0
+  },
+  {
+    "_id": "6861efab179e42a2e5a5028b",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Raymond Richardson",
+    "amount": 235,
+    "country": "Netherlands",
+    "timestamp": "2025-06-30T02:00:11.765Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "6861efe7179e42a2e5a5028f",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Lisa Anderson",
+    "amount": 14707,
+    "country": "India",
+    "timestamp": "2025-06-30T02:01:11.776Z",
+    "riskScore": 46,
+    "__v": 0
+  },
+  {
+    "_id": "6861f023179e42a2e5a50293",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Jacob Morris",
+    "amount": 1005,
+    "country": "Japan",
+    "timestamp": "2025-06-30T02:02:11.784Z",
+    "riskScore": 14,
+    "__v": 0
+  },
+  {
+    "_id": "6861f05f179e42a2e5a502bb",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Gregory Murphy",
+    "amount": 65,
+    "country": "Belarus",
+    "timestamp": "2025-06-30T02:03:11.786Z",
+    "riskScore": 60,
+    "__v": 0
+  },
+  {
+    "_id": "6861f09b179e42a2e5a5031d",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Raymond Richardson",
+    "amount": 29,
+    "country": "Argentina",
+    "timestamp": "2025-06-30T02:04:11.840Z",
+    "riskScore": 24,
+    "__v": 0
+  },
+  {
+    "_id": "6861f0d7179e42a2e5a50321",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Stacy Peterson",
+    "amount": 4633,
+    "country": "Ukraine",
+    "timestamp": "2025-06-30T02:05:11.875Z",
+    "riskScore": 63,
+    "__v": 0
+  },
+  {
+    "_id": "6861f113179e42a2e5a50336",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Lawrence Howard",
+    "amount": 974,
+    "country": "Australia",
+    "timestamp": "2025-06-30T02:06:11.864Z",
+    "riskScore": 15,
+    "__v": 0
+  },
+  {
+    "_id": "6861f14f179e42a2e5a5033a",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Rachel Roberts",
+    "amount": 7437,
+    "country": "Canada",
+    "timestamp": "2025-06-30T02:07:11.884Z",
+    "riskScore": 20,
+    "__v": 0
+  },
+  {
+    "_id": "6861f18b179e42a2e5a5033e",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Jacob Morris",
+    "amount": 11760,
+    "country": "United Kingdom",
+    "timestamp": "2025-06-30T02:08:11.927Z",
+    "riskScore": 49,
+    "__v": 0
+  },
+  {
+    "_id": "6861f1c7179e42a2e5a5034e",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Amber Phillips",
+    "amount": 43,
+    "country": "Argentina",
+    "timestamp": "2025-06-30T02:09:11.889Z",
+    "riskScore": 13,
+    "__v": 0
+  },
+  {
+    "_id": "6861f203179e42a2e5a5035a",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Joshua Green",
+    "amount": 2704,
+    "country": "South Africa",
+    "timestamp": "2025-06-30T02:10:11.898Z",
+    "riskScore": 24,
+    "__v": 0
+  },
+  {
+    "_id": "6861f23f179e42a2e5a5035e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Steven Turner",
+    "amount": 48,
+    "country": "Canada",
+    "timestamp": "2025-06-30T02:11:11.898Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "6861f27b179e42a2e5a50362",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Crystal Rogers",
+    "amount": 352,
+    "country": "Germany",
+    "timestamp": "2025-06-30T02:12:11.986Z",
+    "riskScore": 12,
+    "__v": 0
+  },
+  {
+    "_id": "6861f2b7179e42a2e5a50366",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Frank Rivera",
+    "amount": 68,
+    "country": "China",
+    "timestamp": "2025-06-30T02:13:11.987Z",
+    "riskScore": 11,
+    "__v": 0
+  },
+  {
+    "_id": "6861f6e27997a9f3ac33fed5",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Frank Rivera",
+    "amount": 4476,
+    "country": "Belarus",
+    "timestamp": "2025-06-30T02:30:58.660Z",
+    "riskScore": 45,
+    "__v": 0
+  },
+  {
+    "_id": "6861f71e7997a9f3ac33fef0",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Steven Turner",
+    "amount": 19,
+    "country": "Canada",
+    "timestamp": "2025-06-30T02:31:58.320Z",
+    "riskScore": 40,
+    "__v": 0
+  },
+  {
+    "_id": "6861f75a7997a9f3ac33ff70",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Kevin Carter",
+    "amount": 4620,
+    "country": "China",
+    "timestamp": "2025-06-30T02:32:58.321Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "6861f7967997a9f3ac33ff74",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Emily Davis",
+    "amount": 3087,
+    "country": "France",
+    "timestamp": "2025-06-30T02:33:58.331Z",
+    "riskScore": 17,
+    "__v": 0
+  },
+  {
+    "_id": "6861f7d27997a9f3ac33ff78",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Laura Mitchell",
+    "amount": 472,
+    "country": "Singapore",
+    "timestamp": "2025-06-30T02:34:58.347Z",
+    "riskScore": 20,
+    "__v": 0
+  },
+  {
+    "_id": "6861f80e7997a9f3ac33ff7c",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Joshua Green",
+    "amount": 880,
+    "country": "Nigeria",
+    "timestamp": "2025-06-30T02:35:58.358Z",
+    "riskScore": 55,
+    "__v": 0
+  },
+  {
+    "_id": "6861f84a7997a9f3ac33ff80",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Ryan Collins",
+    "amount": 4794,
+    "country": "United States",
+    "timestamp": "2025-06-30T02:36:58.354Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "6861f8867997a9f3ac33ff84",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Michael Brown",
+    "amount": 960,
+    "country": "Germany",
+    "timestamp": "2025-06-30T02:37:58.359Z",
+    "riskScore": 14,
+    "__v": 0
+  },
+  {
+    "_id": "6861f8c27997a9f3ac33ff88",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Matthew King",
+    "amount": 8857,
+    "country": "United States",
+    "timestamp": "2025-06-30T02:38:58.364Z",
+    "riskScore": 17,
+    "__v": 0
+  },
+  {
+    "_id": "6861f8fe7997a9f3ac33ff8c",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Kevin Carter",
+    "amount": 61,
+    "country": "Canada",
+    "timestamp": "2025-06-30T02:39:58.372Z",
+    "riskScore": 24,
+    "__v": 0
+  },
+  {
+    "_id": "6861f93a7997a9f3ac33ff90",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Frank Rivera",
+    "amount": 82,
+    "country": "Nigeria",
+    "timestamp": "2025-06-30T02:40:58.376Z",
+    "riskScore": 57,
+    "__v": 0
+  },
+  {
+    "_id": "6861f9767997a9f3ac33ff94",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Jennifer Martinez",
+    "amount": 3428,
+    "country": "United States",
+    "timestamp": "2025-06-30T02:41:58.381Z",
+    "riskScore": 23,
+    "__v": 0
+  },
+  {
+    "_id": "6861f9b27997a9f3ac33ff98",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Timothy Campbell",
+    "amount": 98,
+    "country": "Netherlands",
+    "timestamp": "2025-06-30T02:42:58.388Z",
+    "riskScore": 13,
+    "__v": 0
+  },
+  {
+    "_id": "6861f9ee7997a9f3ac340042",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Nicole Wright",
+    "amount": 934,
+    "country": "Singapore",
+    "timestamp": "2025-06-30T02:43:58.391Z",
+    "riskScore": 11,
+    "__v": 0
+  },
+  {
+    "_id": "6861fa2a7997a9f3ac340046",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Melissa Stewart",
+    "amount": 30,
+    "country": "Netherlands",
+    "timestamp": "2025-06-30T02:44:58.396Z",
+    "riskScore": 21,
+    "__v": 0
+  },
+  {
+    "_id": "6861fa667997a9f3ac34004a",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Laura Mitchell",
+    "amount": 36407,
+    "country": "Japan",
+    "timestamp": "2025-06-30T02:45:58.404Z",
+    "riskScore": 37,
+    "__v": 0
+  },
+  {
+    "_id": "6861faa27997a9f3ac34004e",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "David Wilson",
+    "amount": 81,
+    "country": "Belarus",
+    "timestamp": "2025-06-30T02:46:58.413Z",
+    "riskScore": 59,
+    "__v": 0
+  },
+  {
+    "_id": "6861fade7997a9f3ac340052",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Daniel Allen",
+    "amount": 3174,
+    "country": "Nigeria",
+    "timestamp": "2025-06-30T02:47:58.414Z",
+    "riskScore": 52,
+    "__v": 0
+  },
+  {
+    "_id": "6861fb1a7997a9f3ac340056",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Lawrence Howard",
+    "amount": 391,
+    "country": "Nigeria",
+    "timestamp": "2025-06-30T02:48:58.412Z",
+    "riskScore": 61,
+    "__v": 0
+  },
+  {
+    "_id": "6861fb621d9f2a0976f7a881",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Robert Taylor",
+    "amount": 39602,
+    "country": "Canada",
+    "timestamp": "2025-06-30T02:50:10.939Z",
+    "riskScore": 35,
+    "__v": 0
+  },
+  {
+    "_id": "6861fb9e1d9f2a0976f7a95e",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "John Smith",
+    "amount": 703,
+    "country": "Canada",
+    "timestamp": "2025-06-30T02:51:10.781Z",
+    "riskScore": 22,
+    "__v": 0
+  },
+  {
+    "_id": "6861fbda1d9f2a0976f7aa03",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Stephanie Baker",
+    "amount": 3529,
+    "country": "France",
+    "timestamp": "2025-06-30T02:52:10.784Z",
+    "riskScore": 11,
+    "__v": 0
+  },
+  {
+    "_id": "6861fc161d9f2a0976f7aa6b",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Tiffany Cook",
+    "amount": 484,
+    "country": "Nigeria",
+    "timestamp": "2025-06-30T02:53:10.784Z",
+    "riskScore": 62,
+    "__v": 0
+  },
+  {
+    "_id": "6861fc521d9f2a0976f7aa6f",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "David Wilson",
+    "amount": 51,
+    "country": "United Kingdom",
+    "timestamp": "2025-06-30T02:54:10.805Z",
+    "riskScore": 21,
+    "__v": 0
+  },
+  {
+    "_id": "6861fc8e1d9f2a0976f7ab29",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Daniel Allen",
+    "amount": 3338,
+    "country": "China",
+    "timestamp": "2025-06-30T02:55:10.804Z",
+    "riskScore": 21,
+    "__v": 0
+  },
+  {
+    "_id": "6861fcca1d9f2a0976f7ac7f",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Laura Mitchell",
+    "amount": 98,
+    "country": "Singapore",
+    "timestamp": "2025-06-30T02:56:10.807Z",
+    "riskScore": 13,
+    "__v": 0
+  },
+  {
+    "_id": "6861fd061d9f2a0976f7b111",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Gregory Murphy",
+    "amount": 77,
+    "country": "Mexico",
+    "timestamp": "2025-06-30T02:57:10.808Z",
+    "riskScore": 20,
+    "__v": 0
+  },
+  {
+    "_id": "6861fd421d9f2a0976f7b58f",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Timothy Campbell",
+    "amount": 2837,
+    "country": "Australia",
+    "timestamp": "2025-06-30T02:58:10.810Z",
+    "riskScore": 14,
+    "__v": 0
+  },
+  {
+    "_id": "6861fd7e1d9f2a0976f7b6dc",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Eric Reed",
+    "amount": 70,
+    "country": "France",
+    "timestamp": "2025-06-30T02:59:10.820Z",
+    "riskScore": 10,
+    "__v": 0
+  },
+  {
+    "_id": "6861fdba1d9f2a0976f7b6e0",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Jessica Hall",
+    "amount": 103,
+    "country": "Canada",
+    "timestamp": "2025-06-30T03:00:10.821Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6861fdf61d9f2a0976f7b6e4",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Raymond Richardson",
+    "amount": 1688,
+    "country": "South Africa",
+    "timestamp": "2025-06-30T03:01:10.822Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6861fe321d9f2a0976f7b6e8",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Gregory Murphy",
+    "amount": 767,
+    "country": "United Kingdom",
+    "timestamp": "2025-06-30T03:02:10.829Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "6861fe6e1d9f2a0976f7b6ec",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Matthew King",
+    "amount": 286,
+    "country": "India",
+    "timestamp": "2025-06-30T03:03:10.830Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6861feaa1d9f2a0976f7b6f0",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Megan Parker",
+    "amount": 97,
+    "country": "India",
+    "timestamp": "2025-06-30T03:04:10.832Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "6861fee61d9f2a0976f7b6f4",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Michael Brown",
+    "amount": 777,
+    "country": "Singapore",
+    "timestamp": "2025-06-30T03:05:10.879Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6861ff221d9f2a0976f7b736",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Robert Taylor",
+    "amount": 522,
+    "country": "Argentina",
+    "timestamp": "2025-06-30T03:06:10.868Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "6861ff4fc249255fe51d4022",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Vanessa Cooper",
+    "amount": 4823,
+    "country": "Japan",
+    "timestamp": "2025-06-30T03:06:55.332Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6861ff8bc249255fe51d4026",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "James Lopez",
+    "amount": 4778,
+    "country": "Germany",
+    "timestamp": "2025-06-30T03:07:55.268Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "6861ffc7c249255fe51d4115",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Megan Parker",
+    "amount": 39,
+    "country": "Nigeria",
+    "timestamp": "2025-06-30T03:08:55.268Z",
+    "riskScore": 36,
+    "__v": 0
+  },
+  {
+    "_id": "68620003c249255fe51d4164",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Michael Brown",
+    "amount": 80,
+    "country": "Brazil",
+    "timestamp": "2025-06-30T03:09:55.267Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "6862003fc249255fe51d4168",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Jacob Morris",
+    "amount": 10267,
+    "country": "Belarus",
+    "timestamp": "2025-06-30T03:10:55.273Z",
+    "riskScore": 79,
+    "__v": 0
+  },
+  {
+    "_id": "6862007bc249255fe51d416c",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Samantha Bailey",
+    "amount": 39865,
+    "country": "China",
+    "timestamp": "2025-06-30T03:11:55.275Z",
+    "riskScore": 38,
+    "__v": 0
+  },
+  {
+    "_id": "686200b7c249255fe51d4170",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Amber Phillips",
+    "amount": 985,
+    "country": "Ukraine",
+    "timestamp": "2025-06-30T03:12:55.280Z",
+    "riskScore": 45,
+    "__v": 0
+  },
+  {
+    "_id": "686200f3c249255fe51d4174",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Ryan Collins",
+    "amount": 8448,
+    "country": "India",
+    "timestamp": "2025-06-30T03:13:55.299Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6862012fc249255fe51d4178",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Ryan Collins",
+    "amount": 38,
+    "country": "China",
+    "timestamp": "2025-06-30T03:14:55.297Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6862016bc249255fe51d417c",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Jacob Morris",
+    "amount": 8974,
+    "country": "Brazil",
+    "timestamp": "2025-06-30T03:15:55.301Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686385a32d1f44e5d599e2e0",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Matthew King",
+    "amount": 929,
+    "country": "China",
+    "timestamp": "2025-07-01T06:52:19.857Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686385df2d1f44e5d599e2e4",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Kevin Carter",
+    "amount": 54,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T06:53:19.803Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863861b2d1f44e5d599e32a",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Vanessa Cooper",
+    "amount": 2119,
+    "country": "United States",
+    "timestamp": "2025-07-01T06:54:19.802Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686386572d1f44e5d599e32e",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Vanessa Cooper",
+    "amount": 60,
+    "country": "Russia",
+    "timestamp": "2025-07-01T06:55:19.810Z",
+    "riskScore": 44,
+    "__v": 0
+  },
+  {
+    "_id": "686386932d1f44e5d599e332",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Ryan Collins",
+    "amount": 4654,
+    "country": "Russia",
+    "timestamp": "2025-07-01T06:56:19.813Z",
+    "riskScore": 30,
+    "__v": 0
+  },
+  {
+    "_id": "686386cf2d1f44e5d599e336",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Dawn Ward",
+    "amount": 64,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T06:57:19.819Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863870b2d1f44e5d599e33a",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Rebecca Nelson",
+    "amount": 42,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T06:58:19.822Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "686387472d1f44e5d599e33e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Jason Evans",
+    "amount": 61,
+    "country": "Australia",
+    "timestamp": "2025-07-01T06:59:19.826Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "68638781a17620787f223b8a",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Tiffany Cook",
+    "amount": 3154,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:00:17.500Z",
+    "riskScore": 32,
+    "__v": 0
+  },
+  {
+    "_id": "686387bda17620787f223b8e",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Steven Turner",
+    "amount": 2786,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:01:17.426Z",
+    "riskScore": 46,
+    "__v": 0
+  },
+  {
+    "_id": "686387d48a70e7fe7dda03b6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Nicole Wright",
+    "amount": 5832,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:01:40.215Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686387d48a70e7fe7dda03ba",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Carlos Torres",
+    "amount": 95,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:01:40.746Z",
+    "riskScore": 42,
+    "__v": 0
+  },
+  {
+    "_id": "686387d58a70e7fe7dda03be",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Amanda Rodriguez",
+    "amount": 368,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:01:41.351Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686387d58a70e7fe7dda03c2",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Robert Taylor",
+    "amount": 5696,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:01:41.954Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387d68a70e7fe7dda03c6",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Raymond Richardson",
+    "amount": 14,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:01:42.558Z",
+    "riskScore": 23,
+    "__v": 0
+  },
+  {
+    "_id": "686387d78a70e7fe7dda03ca",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Nicole Wright",
+    "amount": 1027,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:01:43.161Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387d78a70e7fe7dda03ce",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Stacy Peterson",
+    "amount": 24,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:01:43.765Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686387d88a70e7fe7dda03d2",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Frank Rivera",
+    "amount": 485,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:01:44.369Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387d88a70e7fe7dda03d6",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Ryan Collins",
+    "amount": 1944,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:01:44.978Z",
+    "riskScore": 45,
+    "__v": 0
+  },
+  {
+    "_id": "686387d98a70e7fe7dda03da",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Rachel Roberts",
+    "amount": 82,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:01:45.578Z",
+    "riskScore": 40,
+    "__v": 0
+  },
+  {
+    "_id": "686387da8a70e7fe7dda03de",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Ashley Young",
+    "amount": 46,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:01:46.185Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387da8a70e7fe7dda03e2",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Timothy Campbell",
+    "amount": 20,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:01:46.789Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686387db8a70e7fe7dda03e6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Emily Davis",
+    "amount": 89,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:01:47.393Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387db8a70e7fe7dda03ea",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Timothy Campbell",
+    "amount": 3036,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:01:47.994Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "686387dc8a70e7fe7dda03ee",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Stacy Peterson",
+    "amount": 239,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:01:48.596Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686387dd8a70e7fe7dda03f2",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "William Garcia",
+    "amount": 2823,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:01:49.202Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686387dd8a70e7fe7dda03f6",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Daniel Allen",
+    "amount": 57,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:01:49.803Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387de8a70e7fe7dda03fa",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Dawn Ward",
+    "amount": 367,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:01:50.407Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387df8a70e7fe7dda03fe",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Michael Brown",
+    "amount": 93,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:01:51.010Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387df8a70e7fe7dda0402",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Melissa Stewart",
+    "amount": 67,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:01:51.656Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686387e08a70e7fe7dda0406",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Ashley Young",
+    "amount": 516,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:01:52.297Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387e08a70e7fe7dda040a",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Amanda Rodriguez",
+    "amount": 2180,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:01:52.922Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387e18a70e7fe7dda040e",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Stacy Peterson",
+    "amount": 235,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:01:53.527Z",
+    "riskScore": 49,
+    "__v": 0
+  },
+  {
+    "_id": "686387e28a70e7fe7dda0412",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Tracy Cox",
+    "amount": 34,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:01:54.126Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387e28a70e7fe7dda0416",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Joshua Green",
+    "amount": 869,
+    "country": "China",
+    "timestamp": "2025-07-01T07:01:54.736Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387e38a70e7fe7dda041a",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Ashley Young",
+    "amount": 1716,
+    "country": "China",
+    "timestamp": "2025-07-01T07:01:55.337Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686387e38a70e7fe7dda041e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Stacy Peterson",
+    "amount": 575,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:01:55.939Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387e48a70e7fe7dda0422",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Andrew Adams",
+    "amount": 634,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:01:56.540Z",
+    "riskScore": 33,
+    "__v": 0
+  },
+  {
+    "_id": "686387e58a70e7fe7dda0426",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Sarah Johnson",
+    "amount": 65,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:01:57.143Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387e58a70e7fe7dda042a",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Kevin Carter",
+    "amount": 56,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:01:57.744Z",
+    "riskScore": 42,
+    "__v": 0
+  },
+  {
+    "_id": "686387e68a70e7fe7dda042e",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Andrew Adams",
+    "amount": 458,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:01:58.344Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686387e68a70e7fe7dda0432",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Jacob Morris",
+    "amount": 4204,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:01:58.946Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387e78a70e7fe7dda0436",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Stacy Peterson",
+    "amount": 82,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:01:59.555Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686387e88a70e7fe7dda043a",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Christopher Lee",
+    "amount": 13008,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:02:00.163Z",
+    "riskScore": 22,
+    "__v": 0
+  },
+  {
+    "_id": "686387e88a70e7fe7dda043e",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Joshua Green",
+    "amount": 4167,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:02:00.763Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686387e98a70e7fe7dda0442",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Crystal Rogers",
+    "amount": 3383,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:02:01.367Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387e98a70e7fe7dda0446",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Robert Taylor",
+    "amount": 272,
+    "country": "India",
+    "timestamp": "2025-07-01T07:02:01.972Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387ea8a70e7fe7dda044a",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Lawrence Howard",
+    "amount": 3522,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:02:02.573Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387eb8a70e7fe7dda044e",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Jessica Hall",
+    "amount": 1685,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:03.178Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387eb8a70e7fe7dda0452",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Stephanie Baker",
+    "amount": 18,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:03.781Z",
+    "riskScore": 25,
+    "__v": 0
+  },
+  {
+    "_id": "686387ec8a70e7fe7dda0456",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Andrew Adams",
+    "amount": 686,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:02:04.387Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387ec8a70e7fe7dda045a",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Raymond Richardson",
+    "amount": 29,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:02:04.991Z",
+    "riskScore": 36,
+    "__v": 0
+  },
+  {
+    "_id": "686387ed8a70e7fe7dda045e",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "James Lopez",
+    "amount": 162,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:02:05.594Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686387ee8a70e7fe7dda0462",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Robert Taylor",
+    "amount": 98,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:02:06.194Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686387ee8a70e7fe7dda0466",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "William Garcia",
+    "amount": 1727,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:02:06.795Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387ef8a70e7fe7dda046a",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Lisa Anderson",
+    "amount": 2168,
+    "country": "France",
+    "timestamp": "2025-07-01T07:02:07.396Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686387ef8a70e7fe7dda046e",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Samantha Bailey",
+    "amount": 875,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:02:07.997Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387f08a70e7fe7dda0472",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "James Lopez",
+    "amount": 42,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:02:08.601Z",
+    "riskScore": 30,
+    "__v": 0
+  },
+  {
+    "_id": "686387f18a70e7fe7dda0476",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Raymond Richardson",
+    "amount": 74,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:02:09.203Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686387f18a70e7fe7dda047a",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Ashley Young",
+    "amount": 645,
+    "country": "India",
+    "timestamp": "2025-07-01T07:02:09.802Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387f28a70e7fe7dda047e",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Lawrence Howard",
+    "amount": 3383,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:02:10.408Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387f38a70e7fe7dda0482",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Stacy Peterson",
+    "amount": 14101,
+    "country": "France",
+    "timestamp": "2025-07-01T07:02:11.008Z",
+    "riskScore": 24,
+    "__v": 0
+  },
+  {
+    "_id": "686387f38a70e7fe7dda0486",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Carlos Torres",
+    "amount": 470,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:11.608Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686387f48a70e7fe7dda048a",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Christopher Lee",
+    "amount": 56,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:02:12.213Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387f48a70e7fe7dda048e",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Lisa Anderson",
+    "amount": 108,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:02:12.817Z",
+    "riskScore": 31,
+    "__v": 0
+  },
+  {
+    "_id": "686387f58a70e7fe7dda0492",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Brandy Bell",
+    "amount": 1657,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:02:13.422Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686387f68a70e7fe7dda0496",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Robert Taylor",
+    "amount": 4407,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:14.021Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387f68a70e7fe7dda049a",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Carlos Torres",
+    "amount": 41,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:02:14.621Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686387f78a70e7fe7dda049e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Andrew Adams",
+    "amount": 84,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:02:15.221Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686387f78a70e7fe7dda04a2",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "David Wilson",
+    "amount": 37034,
+    "country": "France",
+    "timestamp": "2025-07-01T07:02:15.826Z",
+    "riskScore": 23,
+    "__v": 0
+  },
+  {
+    "_id": "686387f88a70e7fe7dda04a6",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Jennifer Martinez",
+    "amount": 12187,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:02:16.429Z",
+    "riskScore": 33,
+    "__v": 0
+  },
+  {
+    "_id": "686387f98a70e7fe7dda04aa",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "William Garcia",
+    "amount": 71,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:02:17.029Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387f98a70e7fe7dda04ae",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "David Wilson",
+    "amount": 79,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:02:17.629Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387fa8a70e7fe7dda04b2",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Eric Reed",
+    "amount": 66,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:02:18.229Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387fa8a70e7fe7dda04b6",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Brian Perez",
+    "amount": 427,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:02:18.829Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686387fb8a70e7fe7dda04ba",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Tracy Cox",
+    "amount": 928,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:02:19.431Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "686387fc8a70e7fe7dda04be",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Tiffany Cook",
+    "amount": 33,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:02:20.085Z",
+    "riskScore": 35,
+    "__v": 0
+  },
+  {
+    "_id": "686387fc8a70e7fe7dda04c2",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Rebecca Nelson",
+    "amount": 23,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:02:20.681Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686387fd8a70e7fe7dda04c6",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Lawrence Howard",
+    "amount": 37,
+    "country": "France",
+    "timestamp": "2025-07-01T07:02:21.283Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387fd8a70e7fe7dda04ca",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Stacy Peterson",
+    "amount": 71,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:02:21.886Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387fe8a70e7fe7dda04ce",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Melissa Stewart",
+    "amount": 66,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:02:22.486Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686387ff8a70e7fe7dda04d2",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Emily Davis",
+    "amount": 235,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:02:23.091Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686387ff8a70e7fe7dda04d6",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Andrew Adams",
+    "amount": 35,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:02:23.696Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388008a70e7fe7dda04da",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Timothy Campbell",
+    "amount": 67,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:02:24.301Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388008a70e7fe7dda04de",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Rachel Roberts",
+    "amount": 25095,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:02:24.904Z",
+    "riskScore": 67,
+    "__v": 0
+  },
+  {
+    "_id": "686388018a70e7fe7dda04e2",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Brandy Bell",
+    "amount": 781,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:02:25.504Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686388028a70e7fe7dda04e6",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Robert Taylor",
+    "amount": 10566,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:02:26.107Z",
+    "riskScore": 67,
+    "__v": 0
+  },
+  {
+    "_id": "686388028a70e7fe7dda04ea",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Jason Evans",
+    "amount": 223,
+    "country": "France",
+    "timestamp": "2025-07-01T07:02:26.707Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388038a70e7fe7dda04ee",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Eric Reed",
+    "amount": 473,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:02:27.308Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388038a70e7fe7dda04f2",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Carlos Torres",
+    "amount": 212,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:02:27.910Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388048a70e7fe7dda04f6",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "William Garcia",
+    "amount": 71,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:02:28.513Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388058a70e7fe7dda04fa",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Eric Reed",
+    "amount": 40845,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:02:29.119Z",
+    "riskScore": 39,
+    "__v": 0
+  },
+  {
+    "_id": "686388058a70e7fe7dda04fe",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Jacob Morris",
+    "amount": 487,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:02:29.724Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388068a70e7fe7dda0502",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Ashley Young",
+    "amount": 12471,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:30.329Z",
+    "riskScore": 30,
+    "__v": 0
+  },
+  {
+    "_id": "686388068a70e7fe7dda0506",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Tracy Cox",
+    "amount": 585,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:02:30.929Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388078a70e7fe7dda050a",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Joshua Green",
+    "amount": 955,
+    "country": "China",
+    "timestamp": "2025-07-01T07:02:31.528Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388088a70e7fe7dda050e",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Eric Reed",
+    "amount": 30,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:02:32.134Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388088a70e7fe7dda0512",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Andrew Adams",
+    "amount": 12700,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:02:32.734Z",
+    "riskScore": 35,
+    "__v": 0
+  },
+  {
+    "_id": "686388098a70e7fe7dda0516",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Heather Edwards",
+    "amount": 54,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:02:33.336Z",
+    "riskScore": 45,
+    "__v": 0
+  },
+  {
+    "_id": "6863880a8a70e7fe7dda051a",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "James Lopez",
+    "amount": 9666,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:02:34.006Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "6863880a8a70e7fe7dda051e",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Michelle White",
+    "amount": 3507,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:02:34.603Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "6863880b8a70e7fe7dda0522",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "David Wilson",
+    "amount": 964,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:02:35.209Z",
+    "riskScore": 30,
+    "__v": 0
+  },
+  {
+    "_id": "6863880b8a70e7fe7dda0526",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Emily Davis",
+    "amount": 75,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:02:35.815Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863880c8a70e7fe7dda052a",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Kevin Carter",
+    "amount": 704,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:02:36.419Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "6863880d8a70e7fe7dda052e",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Stephen Morgan",
+    "amount": 59,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:02:37.020Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863880d8a70e7fe7dda0532",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Raymond Richardson",
+    "amount": 53,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:37.622Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863880e8a70e7fe7dda0536",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Ryan Collins",
+    "amount": 83,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:02:38.221Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863880e8a70e7fe7dda053a",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Jason Evans",
+    "amount": 876,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:02:38.824Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863880f8a70e7fe7dda053e",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Tiffany Cook",
+    "amount": 4390,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:02:39.428Z",
+    "riskScore": 32,
+    "__v": 0
+  },
+  {
+    "_id": "686388108a70e7fe7dda0542",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Melissa Stewart",
+    "amount": 503,
+    "country": "China",
+    "timestamp": "2025-07-01T07:02:40.035Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "686388108a70e7fe7dda0546",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Jason Evans",
+    "amount": 3138,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:02:40.640Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686388118a70e7fe7dda054a",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Laura Mitchell",
+    "amount": 1640,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:02:41.244Z",
+    "riskScore": 33,
+    "__v": 0
+  },
+  {
+    "_id": "686388118a70e7fe7dda054e",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Stephen Morgan",
+    "amount": 619,
+    "country": "India",
+    "timestamp": "2025-07-01T07:02:41.846Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388128a70e7fe7dda0552",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Frank Rivera",
+    "amount": 632,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:02:42.448Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686388138a70e7fe7dda0556",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Robert Taylor",
+    "amount": 11779,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:02:43.048Z",
+    "riskScore": 39,
+    "__v": 0
+  },
+  {
+    "_id": "686388138a70e7fe7dda055a",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Stacy Peterson",
+    "amount": 820,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:02:43.672Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388148a70e7fe7dda055e",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Stacy Peterson",
+    "amount": 18,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:02:44.262Z",
+    "riskScore": 33,
+    "__v": 0
+  },
+  {
+    "_id": "686388148a70e7fe7dda0562",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Heather Edwards",
+    "amount": 1059,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:02:44.866Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686388158a70e7fe7dda0566",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Ashley Young",
+    "amount": 3226,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:02:45.467Z",
+    "riskScore": 45,
+    "__v": 0
+  },
+  {
+    "_id": "686388168a70e7fe7dda056a",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Daniel Allen",
+    "amount": 882,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:02:46.068Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686388168a70e7fe7dda056e",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Ashley Young",
+    "amount": 27003,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:02:46.668Z",
+    "riskScore": 25,
+    "__v": 0
+  },
+  {
+    "_id": "686388178a70e7fe7dda0572",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Megan Parker",
+    "amount": 2174,
+    "country": "China",
+    "timestamp": "2025-07-01T07:02:47.272Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686388178a70e7fe7dda0576",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Jennifer Martinez",
+    "amount": 3857,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:02:47.872Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388188a70e7fe7dda057a",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Gregory Murphy",
+    "amount": 83,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:48.475Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "686388198a70e7fe7dda057e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Steven Turner",
+    "amount": 45838,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:02:49.078Z",
+    "riskScore": 24,
+    "__v": 0
+  },
+  {
+    "_id": "686388198a70e7fe7dda0582",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Jacob Morris",
+    "amount": 898,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:02:49.685Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863881a8a70e7fe7dda0586",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Melissa Stewart",
+    "amount": 344,
+    "country": "India",
+    "timestamp": "2025-07-01T07:02:50.289Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863881a8a70e7fe7dda058a",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Christopher Lee",
+    "amount": 39,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:02:50.892Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863881b8a70e7fe7dda058e",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Andrew Adams",
+    "amount": 79,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:02:51.492Z",
+    "riskScore": 31,
+    "__v": 0
+  },
+  {
+    "_id": "6863881c8a70e7fe7dda0592",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Steven Turner",
+    "amount": 25,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:02:52.093Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863881c8a70e7fe7dda0596",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Steven Turner",
+    "amount": 3178,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:52.697Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "6863881d8a70e7fe7dda059a",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Kevin Carter",
+    "amount": 4376,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:02:53.297Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "6863881d8a70e7fe7dda059e",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Melissa Stewart",
+    "amount": 72,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:02:53.898Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "6863881e8a70e7fe7dda05a2",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Michael Brown",
+    "amount": 28,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:02:54.500Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "6863881f8a70e7fe7dda05a6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "David Wilson",
+    "amount": 162,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:02:55.103Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "6863881f8a70e7fe7dda05aa",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Megan Parker",
+    "amount": 3181,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:02:55.703Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388208a70e7fe7dda05ae",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Brian Perez",
+    "amount": 787,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:02:56.305Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388208a70e7fe7dda05b2",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Lawrence Howard",
+    "amount": 12,
+    "country": "India",
+    "timestamp": "2025-07-01T07:02:56.943Z",
+    "riskScore": 20,
+    "__v": 0
+  },
+  {
+    "_id": "686388218a70e7fe7dda05b6",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Sarah Johnson",
+    "amount": 114,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:02:57.518Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388228a70e7fe7dda05ba",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Samantha Bailey",
+    "amount": 235,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:58.121Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686388228a70e7fe7dda05be",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Ryan Collins",
+    "amount": 8487,
+    "country": "India",
+    "timestamp": "2025-07-01T07:02:58.721Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "686388238a70e7fe7dda05c2",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Rebecca Nelson",
+    "amount": 17,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:02:59.321Z",
+    "riskScore": 24,
+    "__v": 0
+  },
+  {
+    "_id": "686388238a70e7fe7dda05c6",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "David Wilson",
+    "amount": 3581,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:02:59.922Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388248a70e7fe7dda05ca",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Jacob Morris",
+    "amount": 517,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:03:00.524Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "686388258a70e7fe7dda05ce",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Stephen Morgan",
+    "amount": 24,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:03:01.128Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388258a70e7fe7dda05d2",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "John Smith",
+    "amount": 864,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:03:01.758Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388268a70e7fe7dda05d6",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Robert Taylor",
+    "amount": 85,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:03:02.359Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388268a70e7fe7dda05da",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Stacy Peterson",
+    "amount": 69,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:03:02.961Z",
+    "riskScore": 44,
+    "__v": 0
+  },
+  {
+    "_id": "686388278a70e7fe7dda05de",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Amber Phillips",
+    "amount": 239,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:03:03.562Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388288a70e7fe7dda05e2",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Amber Phillips",
+    "amount": 7915,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:04.162Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388288a70e7fe7dda05e6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Crystal Rogers",
+    "amount": 5901,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:03:04.765Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388298a70e7fe7dda05ea",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Crystal Rogers",
+    "amount": 21,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:03:05.369Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388298a70e7fe7dda05ee",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "David Wilson",
+    "amount": 94,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:03:05.970Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863882a8a70e7fe7dda05f2",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Ryan Collins",
+    "amount": 359,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:03:06.576Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863882b8a70e7fe7dda05f6",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Michelle White",
+    "amount": 3709,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:07.181Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863882b8a70e7fe7dda05fa",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Lisa Anderson",
+    "amount": 52,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:03:07.781Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "6863882c8a70e7fe7dda05fe",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "William Garcia",
+    "amount": 550,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:03:08.381Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "6863882c8a70e7fe7dda0602",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Heather Edwards",
+    "amount": 563,
+    "country": "France",
+    "timestamp": "2025-07-01T07:03:08.984Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "6863882d8a70e7fe7dda0606",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Vanessa Cooper",
+    "amount": 761,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:03:09.593Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "6863882e8a70e7fe7dda060a",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Ryan Collins",
+    "amount": 49,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:03:10.227Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863882e8a70e7fe7dda060e",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Jennifer Martinez",
+    "amount": 35,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:03:10.838Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "6863882f8a70e7fe7dda0612",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Sarah Johnson",
+    "amount": 509,
+    "country": "China",
+    "timestamp": "2025-07-01T07:03:11.441Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388308a70e7fe7dda0616",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Joshua Green",
+    "amount": 140,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:03:12.046Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686388308a70e7fe7dda061a",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Stephanie Baker",
+    "amount": 3912,
+    "country": "China",
+    "timestamp": "2025-07-01T07:03:12.651Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388318a70e7fe7dda061e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Stephen Morgan",
+    "amount": 3141,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:03:13.254Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "686388318a70e7fe7dda0622",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Robert Taylor",
+    "amount": 4007,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:03:13.876Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686388328a70e7fe7dda0626",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Stephanie Baker",
+    "amount": 721,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:03:14.480Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388338a70e7fe7dda062a",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Laura Mitchell",
+    "amount": 72,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:03:15.081Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686388338a70e7fe7dda062e",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Stephanie Baker",
+    "amount": 961,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:03:15.683Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388348a70e7fe7dda0632",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Carlos Torres",
+    "amount": 978,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:03:16.288Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388348a70e7fe7dda0636",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Raymond Richardson",
+    "amount": 664,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:03:16.912Z",
+    "riskScore": 38,
+    "__v": 0
+  },
+  {
+    "_id": "686388358a70e7fe7dda063a",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Heather Edwards",
+    "amount": 4170,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:03:17.509Z",
+    "riskScore": 38,
+    "__v": 0
+  },
+  {
+    "_id": "686388368a70e7fe7dda063e",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Nicole Wright",
+    "amount": 33,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:03:18.112Z",
+    "riskScore": 35,
+    "__v": 0
+  },
+  {
+    "_id": "686388368a70e7fe7dda0642",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Ashley Young",
+    "amount": 3035,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:03:18.716Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686388378a70e7fe7dda0646",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Stephen Morgan",
+    "amount": 44,
+    "country": "France",
+    "timestamp": "2025-07-01T07:03:19.320Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388378a70e7fe7dda064a",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Andrew Adams",
+    "amount": 13211,
+    "country": "China",
+    "timestamp": "2025-07-01T07:03:19.926Z",
+    "riskScore": 20,
+    "__v": 0
+  },
+  {
+    "_id": "686388388a70e7fe7dda064e",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Tracy Cox",
+    "amount": 977,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:03:20.529Z",
+    "riskScore": 44,
+    "__v": 0
+  },
+  {
+    "_id": "686388398a70e7fe7dda0652",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Brandy Bell",
+    "amount": 10032,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:03:21.132Z",
+    "riskScore": 29,
+    "__v": 0
+  },
+  {
+    "_id": "686388398a70e7fe7dda0656",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Eric Reed",
+    "amount": 13,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:03:21.737Z",
+    "riskScore": 31,
+    "__v": 0
+  },
+  {
+    "_id": "6863883a8a70e7fe7dda065a",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "William Garcia",
+    "amount": 927,
+    "country": "China",
+    "timestamp": "2025-07-01T07:03:22.342Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "6863883a8a70e7fe7dda065e",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Laura Mitchell",
+    "amount": 43,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:03:22.943Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863883b8a70e7fe7dda0662",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Raymond Richardson",
+    "amount": 87,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:03:23.542Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "6863883c8a70e7fe7dda0666",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Jennifer Martinez",
+    "amount": 42,
+    "country": "China",
+    "timestamp": "2025-07-01T07:03:24.143Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863883c8a70e7fe7dda066a",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Rebecca Nelson",
+    "amount": 34,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:03:24.748Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863883d8a70e7fe7dda066e",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Brian Perez",
+    "amount": 27,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:03:25.348Z",
+    "riskScore": 40,
+    "__v": 0
+  },
+  {
+    "_id": "6863883d8a70e7fe7dda0672",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Sarah Johnson",
+    "amount": 1871,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:03:25.950Z",
+    "riskScore": 38,
+    "__v": 0
+  },
+  {
+    "_id": "6863883e8a70e7fe7dda0676",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Amber Phillips",
+    "amount": 562,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:03:26.556Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863883f8a70e7fe7dda067a",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Jessica Hall",
+    "amount": 73,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:03:27.214Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863883f8a70e7fe7dda067e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Melissa Stewart",
+    "amount": 65,
+    "country": "France",
+    "timestamp": "2025-07-01T07:03:27.815Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388408a70e7fe7dda0682",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Lisa Anderson",
+    "amount": 91,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:03:28.416Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388418a70e7fe7dda0686",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Robert Taylor",
+    "amount": 1793,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:03:29.018Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388418a70e7fe7dda068a",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Amanda Rodriguez",
+    "amount": 3245,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:29.618Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "686388428a70e7fe7dda068e",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Brian Perez",
+    "amount": 190,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:03:30.219Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686388428a70e7fe7dda0692",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Kevin Carter",
+    "amount": 408,
+    "country": "France",
+    "timestamp": "2025-07-01T07:03:30.820Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388438a70e7fe7dda0696",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Raymond Richardson",
+    "amount": 2635,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:31.420Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388448a70e7fe7dda069a",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Michael Brown",
+    "amount": 93,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:03:32.024Z",
+    "riskScore": 32,
+    "__v": 0
+  },
+  {
+    "_id": "686388448a70e7fe7dda069e",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Matthew King",
+    "amount": 42,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:03:32.629Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388458a70e7fe7dda06a2",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Andrew Adams",
+    "amount": 387,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:03:33.229Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388458a70e7fe7dda06a6",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Heather Edwards",
+    "amount": 482,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:03:33.831Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388468a70e7fe7dda06aa",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Gregory Murphy",
+    "amount": 187,
+    "country": "China",
+    "timestamp": "2025-07-01T07:03:34.432Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388478a70e7fe7dda06ae",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Stephanie Baker",
+    "amount": 4517,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:03:35.036Z",
+    "riskScore": 34,
+    "__v": 0
+  },
+  {
+    "_id": "686388478a70e7fe7dda06b2",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Ryan Collins",
+    "amount": 10,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:03:35.642Z",
+    "riskScore": 28,
+    "__v": 0
+  },
+  {
+    "_id": "686388488a70e7fe7dda06b6",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Stephanie Baker",
+    "amount": 320,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:03:36.242Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388488a70e7fe7dda06ba",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Jennifer Martinez",
+    "amount": 54,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:03:36.844Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388498a70e7fe7dda06be",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Sarah Johnson",
+    "amount": 40,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:03:37.448Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6863884a8a70e7fe7dda06c2",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Heather Edwards",
+    "amount": 64,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:03:38.052Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863884a8a70e7fe7dda06c6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Dawn Ward",
+    "amount": 9424,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:03:38.654Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863884b8a70e7fe7dda06ca",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Robert Taylor",
+    "amount": 1000,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:03:39.254Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "6863884b8a70e7fe7dda06ce",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Gregory Murphy",
+    "amount": 235,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:03:39.856Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863884c8a70e7fe7dda06d2",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "John Smith",
+    "amount": 13897,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:03:40.455Z",
+    "riskScore": 68,
+    "__v": 0
+  },
+  {
+    "_id": "6863884d8a70e7fe7dda06d6",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Amber Phillips",
+    "amount": 45498,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:03:41.055Z",
+    "riskScore": 67,
+    "__v": 0
+  },
+  {
+    "_id": "6863884d8a70e7fe7dda06da",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Tracy Cox",
+    "amount": 88,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:03:41.655Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863884e8a70e7fe7dda06de",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Melissa Stewart",
+    "amount": 453,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:03:42.256Z",
+    "riskScore": 37,
+    "__v": 0
+  },
+  {
+    "_id": "6863884e8a70e7fe7dda06e2",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Dawn Ward",
+    "amount": 1286,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:03:42.984Z",
+    "riskScore": 39,
+    "__v": 0
+  },
+  {
+    "_id": "6863884f8a70e7fe7dda06e6",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Nicole Wright",
+    "amount": 11426,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:03:43.608Z",
+    "riskScore": 34,
+    "__v": 0
+  },
+  {
+    "_id": "686388508a70e7fe7dda06ea",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Frank Rivera",
+    "amount": 363,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:44.202Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388508a70e7fe7dda06ee",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Jason Evans",
+    "amount": 65,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:03:44.805Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388518a70e7fe7dda06f2",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Carlos Torres",
+    "amount": 92,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:03:45.408Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "686388528a70e7fe7dda06f6",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Jacob Morris",
+    "amount": 13616,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:46.009Z",
+    "riskScore": 31,
+    "__v": 0
+  },
+  {
+    "_id": "686388528a70e7fe7dda06fa",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Timothy Campbell",
+    "amount": 911,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:03:46.614Z",
+    "riskScore": 40,
+    "__v": 0
+  },
+  {
+    "_id": "686388538a70e7fe7dda06fe",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Brandy Bell",
+    "amount": 4097,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:03:47.219Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388538a70e7fe7dda0702",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Amanda Rodriguez",
+    "amount": 18,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:03:47.821Z",
+    "riskScore": 32,
+    "__v": 0
+  },
+  {
+    "_id": "686388548a70e7fe7dda0706",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Andrew Adams",
+    "amount": 47061,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:03:48.421Z",
+    "riskScore": 20,
+    "__v": 0
+  },
+  {
+    "_id": "686388558a70e7fe7dda070a",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Amanda Rodriguez",
+    "amount": 19,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:03:49.023Z",
+    "riskScore": 28,
+    "__v": 0
+  },
+  {
+    "_id": "686388558a70e7fe7dda070e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Tiffany Cook",
+    "amount": 1515,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:49.625Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "686388568a70e7fe7dda0712",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Lawrence Howard",
+    "amount": 162,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:03:50.225Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686388568a70e7fe7dda0716",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Sarah Johnson",
+    "amount": 53,
+    "country": "India",
+    "timestamp": "2025-07-01T07:03:50.829Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "686388578a70e7fe7dda071a",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Brian Perez",
+    "amount": 71,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:51.432Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388588a70e7fe7dda071e",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Michael Brown",
+    "amount": 1940,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:03:52.031Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "686388588a70e7fe7dda0722",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Stephen Morgan",
+    "amount": 45,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:03:52.633Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388598a70e7fe7dda0726",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Heather Edwards",
+    "amount": 735,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:03:53.237Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686388598a70e7fe7dda072a",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Matthew King",
+    "amount": 3710,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:03:53.842Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863885a8a70e7fe7dda072e",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Robert Taylor",
+    "amount": 529,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:03:54.442Z",
+    "riskScore": 30,
+    "__v": 0
+  },
+  {
+    "_id": "6863885b8a70e7fe7dda0732",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Jacob Morris",
+    "amount": 52,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:03:55.046Z",
+    "riskScore": 38,
+    "__v": 0
+  },
+  {
+    "_id": "6863885b8a70e7fe7dda0736",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Nicole Wright",
+    "amount": 52,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:03:55.671Z",
+    "riskScore": 46,
+    "__v": 0
+  },
+  {
+    "_id": "6863885c8a70e7fe7dda073a",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Brian Perez",
+    "amount": 456,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:03:56.257Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863885c8a70e7fe7dda073e",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Nicole Wright",
+    "amount": 10262,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:03:56.882Z",
+    "riskScore": 37,
+    "__v": 0
+  },
+  {
+    "_id": "6863885d8a70e7fe7dda0742",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Stephen Morgan",
+    "amount": 11173,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:03:57.487Z",
+    "riskScore": 34,
+    "__v": 0
+  },
+  {
+    "_id": "6863885e8a70e7fe7dda0746",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Joshua Green",
+    "amount": 3288,
+    "country": "France",
+    "timestamp": "2025-07-01T07:03:58.087Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863885e8a70e7fe7dda074a",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Vanessa Cooper",
+    "amount": 4416,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:03:58.691Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863885f8a70e7fe7dda074e",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Ryan Collins",
+    "amount": 89,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:59.293Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863885f8a70e7fe7dda0752",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Samantha Bailey",
+    "amount": 80,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:03:59.898Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388608a70e7fe7dda0756",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "William Garcia",
+    "amount": 715,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:04:00.502Z",
+    "riskScore": 33,
+    "__v": 0
+  },
+  {
+    "_id": "686388618a70e7fe7dda075a",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Amber Phillips",
+    "amount": 977,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:04:01.105Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388618a70e7fe7dda075e",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "John Smith",
+    "amount": 63,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:04:01.707Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686388628a70e7fe7dda0762",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Steven Turner",
+    "amount": 7480,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:04:02.309Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686388628a70e7fe7dda0766",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Eric Reed",
+    "amount": 896,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:04:02.914Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388638a70e7fe7dda076a",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Megan Parker",
+    "amount": 21,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:03.516Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388648a70e7fe7dda076e",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Daniel Allen",
+    "amount": 66,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:04:04.121Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388648a70e7fe7dda0772",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Brandy Bell",
+    "amount": 2334,
+    "country": "India",
+    "timestamp": "2025-07-01T07:04:04.812Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388658a70e7fe7dda0776",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Jennifer Martinez",
+    "amount": 67,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:04:05.405Z",
+    "riskScore": 32,
+    "__v": 0
+  },
+  {
+    "_id": "686388668a70e7fe7dda077a",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Jason Evans",
+    "amount": 59,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:04:06.007Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388668a70e7fe7dda077e",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "David Wilson",
+    "amount": 62,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:04:06.608Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686388678a70e7fe7dda0782",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Frank Rivera",
+    "amount": 23,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:04:07.208Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "686388678a70e7fe7dda0786",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Amber Phillips",
+    "amount": 2563,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:04:07.809Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388688a70e7fe7dda078a",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Crystal Rogers",
+    "amount": 4865,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:04:08.410Z",
+    "riskScore": 36,
+    "__v": 0
+  },
+  {
+    "_id": "686388698a70e7fe7dda078e",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Raymond Richardson",
+    "amount": 1225,
+    "country": "China",
+    "timestamp": "2025-07-01T07:04:09.015Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388698a70e7fe7dda0792",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Michelle White",
+    "amount": 30,
+    "country": "China",
+    "timestamp": "2025-07-01T07:04:09.619Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863886a8a70e7fe7dda0796",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Ashley Young",
+    "amount": 66,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:04:10.224Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863886a8a70e7fe7dda079a",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Jason Evans",
+    "amount": 97,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:04:10.827Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "6863886b8a70e7fe7dda079e",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "David Wilson",
+    "amount": 91,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:04:11.430Z",
+    "riskScore": 36,
+    "__v": 0
+  },
+  {
+    "_id": "6863886c8a70e7fe7dda07a2",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Dawn Ward",
+    "amount": 2546,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:04:12.036Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863886c8a70e7fe7dda07a6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Joshua Green",
+    "amount": 22,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:12.640Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "6863886d8a70e7fe7dda07aa",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Jacob Morris",
+    "amount": 8242,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:13.242Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863886d8a70e7fe7dda07ae",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Gregory Murphy",
+    "amount": 63,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:04:13.845Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863886e8a70e7fe7dda07b2",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "John Smith",
+    "amount": 45,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:04:14.446Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "6863886f8a70e7fe7dda07b6",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "James Lopez",
+    "amount": 693,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:04:15.051Z",
+    "riskScore": 36,
+    "__v": 0
+  },
+  {
+    "_id": "6863886f8a70e7fe7dda07ba",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Jacob Morris",
+    "amount": 258,
+    "country": "India",
+    "timestamp": "2025-07-01T07:04:15.656Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388708a70e7fe7dda07be",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Tracy Cox",
+    "amount": 12,
+    "country": "India",
+    "timestamp": "2025-07-01T07:04:16.257Z",
+    "riskScore": 15,
+    "__v": 0
+  },
+  {
+    "_id": "686388708a70e7fe7dda07c2",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Sarah Johnson",
+    "amount": 60,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:04:16.857Z",
+    "riskScore": 44,
+    "__v": 0
+  },
+  {
+    "_id": "686388718a70e7fe7dda07c6",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "John Smith",
+    "amount": 7459,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:04:17.461Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388728a70e7fe7dda07ca",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Emily Davis",
+    "amount": 67,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:04:18.066Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388728a70e7fe7dda07ce",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Amber Phillips",
+    "amount": 666,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:18.671Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388738a70e7fe7dda07d2",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Joshua Green",
+    "amount": 85,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:19.276Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686388738a70e7fe7dda07d6",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "James Lopez",
+    "amount": 73,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:19.880Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686388748a70e7fe7dda07da",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Carlos Torres",
+    "amount": 2177,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:04:20.480Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388758a70e7fe7dda07de",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Sarah Johnson",
+    "amount": 5700,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:04:21.083Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686388758a70e7fe7dda07e2",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "James Lopez",
+    "amount": 67,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:04:21.688Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686388768a70e7fe7dda07e6",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Melissa Stewart",
+    "amount": 4489,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:04:22.293Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388768a70e7fe7dda07ea",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Emily Davis",
+    "amount": 124,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:04:22.893Z",
+    "riskScore": 40,
+    "__v": 0
+  },
+  {
+    "_id": "686388778a70e7fe7dda07ee",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Amanda Rodriguez",
+    "amount": 2355,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:04:23.493Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388788a70e7fe7dda07f2",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Dawn Ward",
+    "amount": 99,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:04:24.093Z",
+    "riskScore": 39,
+    "__v": 0
+  },
+  {
+    "_id": "686388788a70e7fe7dda07f6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Stacy Peterson",
+    "amount": 54,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:04:24.695Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388798a70e7fe7dda07fa",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Steven Turner",
+    "amount": 4871,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:04:25.297Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388798a70e7fe7dda07fe",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Laura Mitchell",
+    "amount": 57,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:04:25.899Z",
+    "riskScore": 32,
+    "__v": 0
+  },
+  {
+    "_id": "6863887a8a70e7fe7dda0802",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Stephen Morgan",
+    "amount": 46,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:04:26.503Z",
+    "riskScore": 43,
+    "__v": 0
+  },
+  {
+    "_id": "6863887b8a70e7fe7dda0806",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Megan Parker",
+    "amount": 196,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:04:27.105Z",
+    "riskScore": 32,
+    "__v": 0
+  },
+  {
+    "_id": "6863887b8a70e7fe7dda080a",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "John Smith",
+    "amount": 642,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:04:27.714Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "6863887c8a70e7fe7dda080e",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Ryan Collins",
+    "amount": 2877,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:04:28.311Z",
+    "riskScore": 39,
+    "__v": 0
+  },
+  {
+    "_id": "6863887c8a70e7fe7dda0812",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Lisa Anderson",
+    "amount": 2366,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:04:28.913Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "6863887d8a70e7fe7dda0816",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Michael Brown",
+    "amount": 42,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:04:29.517Z",
+    "riskScore": 34,
+    "__v": 0
+  },
+  {
+    "_id": "6863887e8a70e7fe7dda081a",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Laura Mitchell",
+    "amount": 44,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:04:30.117Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863887e8a70e7fe7dda081e",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Emily Davis",
+    "amount": 89,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:04:30.726Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863887f8a70e7fe7dda0822",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Stacy Peterson",
+    "amount": 118,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:04:31.326Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863887f8a70e7fe7dda0826",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Tracy Cox",
+    "amount": 123,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:04:31.928Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388808a70e7fe7dda082a",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Stacy Peterson",
+    "amount": 1644,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:04:32.530Z",
+    "riskScore": 4,
+    "__v": 0
+  },
+  {
+    "_id": "686388818a70e7fe7dda082e",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Amanda Rodriguez",
+    "amount": 77,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:04:33.130Z",
+    "riskScore": 33,
+    "__v": 0
+  },
+  {
+    "_id": "686388818a70e7fe7dda0832",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Rachel Roberts",
+    "amount": 65,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:04:33.737Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388828a70e7fe7dda0836",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Lisa Anderson",
+    "amount": 925,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:04:34.334Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "686388828a70e7fe7dda083a",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Kevin Carter",
+    "amount": 2845,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:04:34.939Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388838a70e7fe7dda083e",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Melissa Stewart",
+    "amount": 236,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:04:35.544Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388848a70e7fe7dda0842",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Daniel Allen",
+    "amount": 45,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:04:36.149Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686388848a70e7fe7dda0846",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Daniel Allen",
+    "amount": 12430,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:04:36.755Z",
+    "riskScore": 22,
+    "__v": 0
+  },
+  {
+    "_id": "686388858a70e7fe7dda084a",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Frank Rivera",
+    "amount": 4834,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:04:37.355Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "686388858a70e7fe7dda084e",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Tracy Cox",
+    "amount": 27,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:04:37.955Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388868a70e7fe7dda0852",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Michelle White",
+    "amount": 873,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:04:38.555Z",
+    "riskScore": 35,
+    "__v": 0
+  },
+  {
+    "_id": "686388878a70e7fe7dda0856",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Brandy Bell",
+    "amount": 857,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:04:39.161Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686388878a70e7fe7dda085a",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Matthew King",
+    "amount": 4801,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:04:39.766Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "686388888a70e7fe7dda085e",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Gregory Murphy",
+    "amount": 93,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:04:40.371Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388888a70e7fe7dda0862",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "David Wilson",
+    "amount": 154,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:04:40.976Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686388898a70e7fe7dda0866",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Tracy Cox",
+    "amount": 31789,
+    "country": "China",
+    "timestamp": "2025-07-01T07:04:41.581Z",
+    "riskScore": 27,
+    "__v": 0
+  },
+  {
+    "_id": "6863888a8a70e7fe7dda086a",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Tracy Cox",
+    "amount": 1306,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:04:42.182Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "6863888a8a70e7fe7dda086e",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Tiffany Cook",
+    "amount": 24,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:42.788Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863888b8a70e7fe7dda0872",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Tracy Cox",
+    "amount": 608,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:04:43.393Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863888b8a70e7fe7dda0876",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Frank Rivera",
+    "amount": 24,
+    "country": "India",
+    "timestamp": "2025-07-01T07:04:43.998Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6863888c8a70e7fe7dda087a",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Vanessa Cooper",
+    "amount": 2232,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:04:44.601Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863888d8a70e7fe7dda087e",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Amber Phillips",
+    "amount": 8637,
+    "country": "Ukraine",
+    "timestamp": "2025-07-01T07:04:45.205Z",
+    "riskScore": 33,
+    "__v": 0
+  },
+  {
+    "_id": "6863888d8a70e7fe7dda0882",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Heather Edwards",
+    "amount": 531,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:04:45.806Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863888e8a70e7fe7dda0886",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Christopher Lee",
+    "amount": 89,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:04:46.411Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6863888f8a70e7fe7dda088a",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Jason Evans",
+    "amount": 5893,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:04:47.012Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863888f8a70e7fe7dda088e",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "William Garcia",
+    "amount": 46823,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:04:47.617Z",
+    "riskScore": 35,
+    "__v": 0
+  },
+  {
+    "_id": "686388908a70e7fe7dda0892",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Emily Davis",
+    "amount": 777,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:48.218Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388908a70e7fe7dda0896",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Daniel Allen",
+    "amount": 72,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:04:48.819Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686388918a70e7fe7dda089a",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Frank Rivera",
+    "amount": 927,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:04:49.421Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388928a70e7fe7dda089e",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Brandy Bell",
+    "amount": 36,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:50.029Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388928a70e7fe7dda08a2",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Eric Reed",
+    "amount": 62,
+    "country": "China",
+    "timestamp": "2025-07-01T07:04:50.633Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388938a70e7fe7dda08a6",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Timothy Campbell",
+    "amount": 30,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:04:51.234Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388938a70e7fe7dda08aa",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Christopher Lee",
+    "amount": 12207,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:04:51.838Z",
+    "riskScore": 30,
+    "__v": 0
+  },
+  {
+    "_id": "686388948a70e7fe7dda08ae",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Sarah Johnson",
+    "amount": 100,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:04:52.443Z",
+    "riskScore": 30,
+    "__v": 0
+  },
+  {
+    "_id": "686388958a70e7fe7dda08b2",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Nicole Wright",
+    "amount": 25,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:04:53.047Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388958a70e7fe7dda08b6",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Lisa Anderson",
+    "amount": 2767,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:04:53.650Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388968a70e7fe7dda08ba",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "David Wilson",
+    "amount": 463,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:04:54.255Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "686388968a70e7fe7dda08be",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Melissa Stewart",
+    "amount": 362,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:04:54.864Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388978a70e7fe7dda08c2",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Jennifer Martinez",
+    "amount": 4265,
+    "country": "China",
+    "timestamp": "2025-07-01T07:04:55.461Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388988a70e7fe7dda08c6",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Timothy Campbell",
+    "amount": 1221,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:04:56.063Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388988a70e7fe7dda08ca",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Timothy Campbell",
+    "amount": 30,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:04:56.669Z",
+    "riskScore": 36,
+    "__v": 0
+  },
+  {
+    "_id": "686388998a70e7fe7dda08ce",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Nicole Wright",
+    "amount": 191,
+    "country": "France",
+    "timestamp": "2025-07-01T07:04:57.273Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686388998a70e7fe7dda08d2",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Timothy Campbell",
+    "amount": 64,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:04:57.877Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863889a8a70e7fe7dda08d6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Samantha Bailey",
+    "amount": 13,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:04:58.478Z",
+    "riskScore": 18,
+    "__v": 0
+  },
+  {
+    "_id": "6863889b8a70e7fe7dda08da",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Melissa Stewart",
+    "amount": 184,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:04:59.081Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863889b8a70e7fe7dda08de",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Jessica Hall",
+    "amount": 11905,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:04:59.684Z",
+    "riskScore": 24,
+    "__v": 0
+  },
+  {
+    "_id": "6863889c8a70e7fe7dda08e2",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "David Wilson",
+    "amount": 62,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:05:00.290Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "6863889c8a70e7fe7dda08e6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Michelle White",
+    "amount": 16,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:05:00.893Z",
+    "riskScore": 18,
+    "__v": 0
+  },
+  {
+    "_id": "6863889d8a70e7fe7dda08ea",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Christopher Lee",
+    "amount": 681,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:05:01.497Z",
+    "riskScore": 39,
+    "__v": 0
+  },
+  {
+    "_id": "6863889e8a70e7fe7dda08ee",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Stephanie Baker",
+    "amount": 2533,
+    "country": "China",
+    "timestamp": "2025-07-01T07:05:02.101Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863889e8a70e7fe7dda08f2",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Rachel Roberts",
+    "amount": 29,
+    "country": "India",
+    "timestamp": "2025-07-01T07:05:02.705Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6863889f8a70e7fe7dda08f6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Sarah Johnson",
+    "amount": 2870,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:05:03.306Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863889f8a70e7fe7dda08fa",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Stephen Morgan",
+    "amount": 16,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:05:03.906Z",
+    "riskScore": 17,
+    "__v": 0
+  },
+  {
+    "_id": "686388a08a70e7fe7dda08fe",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Rebecca Nelson",
+    "amount": 2136,
+    "country": "India",
+    "timestamp": "2025-07-01T07:05:04.508Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388a18a70e7fe7dda0902",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Timothy Campbell",
+    "amount": 9922,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:05:05.110Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388a18a70e7fe7dda0906",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Andrew Adams",
+    "amount": 1611,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:05:05.710Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686388a28a70e7fe7dda090a",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "James Lopez",
+    "amount": 27,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:05:06.314Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388a28a70e7fe7dda090e",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Robert Taylor",
+    "amount": 393,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:05:06.920Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686388a38a70e7fe7dda0912",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Crystal Rogers",
+    "amount": 804,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:05:07.522Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686388a48a70e7fe7dda0916",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Tiffany Cook",
+    "amount": 118,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:05:08.130Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "686388a48a70e7fe7dda091a",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Jennifer Martinez",
+    "amount": 1509,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:05:08.728Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388a58a70e7fe7dda091e",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Michael Brown",
+    "amount": 36,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:05:09.332Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686388a58a70e7fe7dda0922",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Michael Brown",
+    "amount": 17812,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:05:09.934Z",
+    "riskScore": 76,
+    "__v": 0
+  },
+  {
+    "_id": "686388a68a70e7fe7dda0926",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Frank Rivera",
+    "amount": 83,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:05:10.538Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "686388a78a70e7fe7dda092a",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Gregory Murphy",
+    "amount": 2797,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:05:11.164Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388a78a70e7fe7dda092e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Jessica Hall",
+    "amount": 2488,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:05:11.755Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388a88a70e7fe7dda0932",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Tracy Cox",
+    "amount": 5136,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:05:12.356Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388a88a70e7fe7dda0936",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Vanessa Cooper",
+    "amount": 139,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:05:12.961Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388a98a70e7fe7dda093a",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Jennifer Martinez",
+    "amount": 10576,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:05:13.566Z",
+    "riskScore": 70,
+    "__v": 0
+  },
+  {
+    "_id": "686388aa8a70e7fe7dda093e",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Rebecca Nelson",
+    "amount": 981,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:05:14.170Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388aa8a70e7fe7dda0942",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Christopher Lee",
+    "amount": 12506,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:05:14.776Z",
+    "riskScore": 35,
+    "__v": 0
+  },
+  {
+    "_id": "686388ab8a70e7fe7dda0946",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Laura Mitchell",
+    "amount": 14769,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:05:15.378Z",
+    "riskScore": 27,
+    "__v": 0
+  },
+  {
+    "_id": "686388ab8a70e7fe7dda094a",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Michelle White",
+    "amount": 78,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:05:15.982Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388ac8a70e7fe7dda094e",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Timothy Campbell",
+    "amount": 56,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:05:16.584Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388ad8a70e7fe7dda0952",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Melissa Stewart",
+    "amount": 71,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:05:17.189Z",
+    "riskScore": 36,
+    "__v": 0
+  },
+  {
+    "_id": "686388ad8a70e7fe7dda0956",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Lisa Anderson",
+    "amount": 1801,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:05:17.794Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388ae8a70e7fe7dda095a",
+    "userId": "686069a610b58d2421348ae8",
+    "customerName": "Robert Taylor",
+    "amount": 99,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:05:18.396Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388ae8a70e7fe7dda095e",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Crystal Rogers",
+    "amount": 776,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:05:18.996Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686388af8a70e7fe7dda0962",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Michael Brown",
+    "amount": 512,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:05:19.598Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "686388b08a70e7fe7dda0966",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Laura Mitchell",
+    "amount": 479,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:05:20.200Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388b08a70e7fe7dda096a",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Nicole Wright",
+    "amount": 550,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:05:20.800Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686388b18a70e7fe7dda096e",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Dawn Ward",
+    "amount": 3053,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:05:21.406Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388b28a70e7fe7dda0972",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Rachel Roberts",
+    "amount": 364,
+    "country": "Australia",
+    "timestamp": "2025-07-01T07:05:22.010Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686388b28a70e7fe7dda0976",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "David Wilson",
+    "amount": 25,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:05:22.613Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388b38a70e7fe7dda097a",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "William Garcia",
+    "amount": 275,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:05:23.214Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388b38a70e7fe7dda097e",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Tiffany Cook",
+    "amount": 813,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:05:23.816Z",
+    "riskScore": 42,
+    "__v": 0
+  },
+  {
+    "_id": "686388b48a70e7fe7dda0982",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Heather Edwards",
+    "amount": 1899,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:05:24.422Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "686388b58a70e7fe7dda0986",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Andrew Adams",
+    "amount": 354,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:05:25.027Z",
+    "riskScore": 2,
+    "__v": 0
+  },
+  {
+    "_id": "686388b58a70e7fe7dda098a",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Jason Evans",
+    "amount": 13914,
+    "country": "France",
+    "timestamp": "2025-07-01T07:05:25.630Z",
+    "riskScore": 35,
+    "__v": 0
+  },
+  {
+    "_id": "686388b68a70e7fe7dda098e",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Carlos Torres",
+    "amount": 71,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:05:26.233Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388b68a70e7fe7dda0992",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Jason Evans",
+    "amount": 4204,
+    "country": "India",
+    "timestamp": "2025-07-01T07:05:26.836Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388b78a70e7fe7dda0996",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Melissa Stewart",
+    "amount": 356,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:05:27.438Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388b88a70e7fe7dda099a",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Jason Evans",
+    "amount": 56,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:05:28.044Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686388b88a70e7fe7dda099e",
+    "userId": "685f61131f9b3aa73722f1c1",
+    "customerName": "Brandy Bell",
+    "amount": 24,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:05:28.648Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "686388b98a70e7fe7dda09a2",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Jacob Morris",
+    "amount": 47,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:05:29.252Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "686388b98a70e7fe7dda09a6",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Gregory Murphy",
+    "amount": 125,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:05:29.890Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388ba8a70e7fe7dda09aa",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Lisa Anderson",
+    "amount": 44,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:05:30.490Z",
+    "riskScore": 38,
+    "__v": 0
+  },
+  {
+    "_id": "686388bb8a70e7fe7dda09ae",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Stephen Morgan",
+    "amount": 1406,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:05:31.183Z",
+    "riskScore": 7,
+    "__v": 0
+  },
+  {
+    "_id": "686388bb8a70e7fe7dda09b2",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Rebecca Nelson",
+    "amount": 2459,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:05:31.759Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388bc8a70e7fe7dda09b6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Amber Phillips",
+    "amount": 2331,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:05:32.363Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "686388bc8a70e7fe7dda09ba",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Christopher Lee",
+    "amount": 3735,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:05:32.967Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388bd8a70e7fe7dda09be",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Brandy Bell",
+    "amount": 328,
+    "country": "France",
+    "timestamp": "2025-07-01T07:05:33.589Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "686388be8a70e7fe7dda09c2",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Matthew King",
+    "amount": 2285,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:05:34.178Z",
+    "riskScore": 1,
+    "__v": 0
+  },
+  {
+    "_id": "686388be8a70e7fe7dda09c6",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Lisa Anderson",
+    "amount": 1944,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:05:34.784Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "686388bf8a70e7fe7dda09ca",
+    "userId": "685f61171f9b3aa73722f1d8",
+    "customerName": "Crystal Rogers",
+    "amount": 47,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:05:35.379Z",
+    "riskScore": 45,
+    "__v": 0
+  },
+  {
+    "_id": "686388bf8a70e7fe7dda09ce",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Brian Perez",
+    "amount": 2762,
+    "country": "India",
+    "timestamp": "2025-07-01T07:05:35.983Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "686388c08a70e7fe7dda09d2",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Heather Edwards",
+    "amount": 100,
+    "country": "Brazil",
+    "timestamp": "2025-07-01T07:05:36.589Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388c18a70e7fe7dda09d6",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Jennifer Martinez",
+    "amount": 576,
+    "country": "South Africa",
+    "timestamp": "2025-07-01T07:05:37.183Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388c18a70e7fe7dda09da",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Jessica Hall",
+    "amount": 52,
+    "country": "Singapore",
+    "timestamp": "2025-07-01T07:05:37.786Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "686388c28a70e7fe7dda09de",
+    "userId": "685f61141f9b3aa73722f1c5",
+    "customerName": "Tiffany Cook",
+    "amount": 261,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:05:38.391Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "686388c28a70e7fe7dda09e2",
+    "userId": "685f61141f9b3aa73722f1c7",
+    "customerName": "Megan Parker",
+    "amount": 1272,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:05:38.994Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "68638bf173ed4d2ba4aa5357",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Sarah Johnson",
+    "amount": 74,
+    "country": "Belarus",
+    "timestamp": "2025-07-01T07:19:13.370Z",
+    "riskScore": 42,
+    "__v": 0
+  },
+  {
+    "_id": "68638c2d73ed4d2ba4aa53eb",
+    "userId": "685f61131f9b3aa73722f1bc",
+    "customerName": "Gregory Murphy",
+    "amount": 825,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:20:13.241Z",
+    "riskScore": 30,
+    "__v": 0
+  },
+  {
+    "_id": "68638c6973ed4d2ba4aa53ef",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Matthew King",
+    "amount": 88,
+    "country": "Japan",
+    "timestamp": "2025-07-01T07:21:13.247Z",
+    "riskScore": 6,
+    "__v": 0
+  },
+  {
+    "_id": "68638ca573ed4d2ba4aa53f3",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "James Lopez",
+    "amount": 7177,
+    "country": "Argentina",
+    "timestamp": "2025-07-01T07:22:13.246Z",
+    "riskScore": 5,
+    "__v": 0
+  },
+  {
+    "_id": "68638ce173ed4d2ba4aa544c",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Stephen Morgan",
+    "amount": 49,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:23:13.247Z",
+    "riskScore": 31,
+    "__v": 0
+  },
+  {
+    "_id": "68638d1d73ed4d2ba4aa56da",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Carlos Torres",
+    "amount": 2713,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:24:13.254Z",
+    "riskScore": 9,
+    "__v": 0
+  },
+  {
+    "_id": "68638d5973ed4d2ba4aa5728",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Matthew King",
+    "amount": 86,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:25:13.254Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "68638d9573ed4d2ba4aa572f",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Brian Perez",
+    "amount": 3091,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:26:13.256Z",
+    "riskScore": 3,
+    "__v": 0
+  },
+  {
+    "_id": "68638dd173ed4d2ba4aa577f",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "David Wilson",
+    "amount": 41543,
+    "country": "France",
+    "timestamp": "2025-07-01T07:27:13.258Z",
+    "riskScore": 25,
+    "__v": 0
+  },
+  {
+    "_id": "68638e0d73ed4d2ba4aa57a4",
+    "userId": "685f61131f9b3aa73722f1bb",
+    "customerName": "Samantha Bailey",
+    "amount": 38,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:28:13.260Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "68638e4973ed4d2ba4aa57a8",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Christopher Lee",
+    "amount": 413,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:29:13.263Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "68638e8573ed4d2ba4aa57ac",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Jennifer Martinez",
+    "amount": 549,
+    "country": "Canada",
+    "timestamp": "2025-07-01T07:30:13.264Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "68638ec173ed4d2ba4aa57b0",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Michelle White",
+    "amount": 30,
+    "country": "Germany",
+    "timestamp": "2025-07-01T07:31:13.272Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "68638efd73ed4d2ba4aa57b4",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "Raymond Richardson",
+    "amount": 3235,
+    "country": "Netherlands",
+    "timestamp": "2025-07-01T07:32:13.279Z",
+    "riskScore": 8,
+    "__v": 0
+  },
+  {
+    "_id": "68638f3973ed4d2ba4aa57b8",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Kevin Carter",
+    "amount": 14212,
+    "country": "United Kingdom",
+    "timestamp": "2025-07-01T07:33:13.301Z",
+    "riskScore": 29,
+    "__v": 0
+  },
+  {
+    "_id": "68638f7573ed4d2ba4aa57bc",
+    "userId": "6860797a7621ae67ccb19d9b",
+    "customerName": "Rebecca Nelson",
+    "amount": 3912,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:34:13.308Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "68638fb173ed4d2ba4aa57c0",
+    "userId": "685f61131f9b3aa73722f1bd",
+    "customerName": "Ryan Collins",
+    "amount": 649,
+    "country": "Nigeria",
+    "timestamp": "2025-07-01T07:35:13.313Z",
+    "riskScore": 48,
+    "__v": 0
+  },
+  {
+    "_id": "68638fed73ed4d2ba4aa57c4",
+    "userId": "685f61121f9b3aa73722f1ba",
+    "customerName": "Andrew Adams",
+    "amount": 120,
+    "country": "Russia",
+    "timestamp": "2025-07-01T07:36:13.316Z",
+    "riskScore": 47,
+    "__v": 0
+  },
+  {
+    "_id": "6863902973ed4d2ba4aa57c8",
+    "userId": "685f61181f9b3aa73722f1dc",
+    "customerName": "Rebecca Nelson",
+    "amount": 819,
+    "country": "Mexico",
+    "timestamp": "2025-07-01T07:37:13.318Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863906573ed4d2ba4aa57cc",
+    "userId": "685f61191f9b3aa73722f1e5",
+    "customerName": "David Wilson",
+    "amount": 73,
+    "country": "Switzerland",
+    "timestamp": "2025-07-01T07:38:13.321Z",
+    "riskScore": 0,
+    "__v": 0
+  },
+  {
+    "_id": "6863909f73ed4d2ba4aa57d0",
+    "userId": "686071f70587e52ce3b90244",
+    "customerName": "Lisa Anderson",
+    "amount": 18,
+    "country": "United States",
+    "timestamp": "2025-07-01T07:39:11.467Z",
+    "riskScore": 18,
+    "__v": 0
+  }
+]

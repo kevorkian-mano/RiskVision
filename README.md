@@ -61,6 +61,43 @@ A comprehensive financial fraud detection and case management system built with 
 - System-wide announcements and alerts
 - Points notifications and leaderboard updates
 
+## 🧠 Machine Learning Fraud Detection
+
+RiskVision uses a machine learning model to detect fraudulent transactions in real time. Here’s how the ML logic is implemented:
+
+### Model Training
+- The ML model is trained offline using historical transaction data (features: amount, country, hour, etc.).
+- A country encoder is used to convert country names to numeric codes for the model.
+- The trained model (`fraud_model.pkl`) and encoder (`country_encoder.pkl`) are stored in the `ml/` directory.
+
+### ML API (FastAPI)
+- The ML model is served via a FastAPI app (`ml/ml_api.py`).
+- The API exposes a `/predict` endpoint that accepts transaction details (amount, country, hour) and returns a fraud prediction (`isFraud: 0 or 1`).
+- Example request:
+  ```json
+  {
+    "amount": 5000,
+    "country": "United States",
+    "hour": 14
+  }
+  ```
+- The API encodes the country, constructs the feature vector, and returns the model’s prediction.
+
+### Backend Integration
+- When a new transaction is created, the backend calls the ML API `/predict` endpoint.
+- The backend stores the `isFraud` result with the transaction and uses it for all fraud-related logic.
+- All previous rule-based risk scoring and alerting logic have been removed.
+
+### Frontend Integration
+- Dashboards and case management now display and use the ML-driven fraud status (`isFraud`) instead of risk scores.
+- Compliance and investigators work with ML-flagged transactions and cases.
+
+### Why ML?
+- ML enables more accurate, data-driven fraud detection compared to static rules.
+- The system can be retrained and improved as more data is collected.
+
+---
+
 ## 🛠️ Technology Stack
 
 ### Backend

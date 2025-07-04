@@ -422,10 +422,10 @@ const InvestigatorDashboard = () => {
           <Card>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
-                High Priority Cases
+                ML-Flagged Cases
               </Typography>
               <Typography variant="h4" color="error.main">
-                {assignedCases.filter(c => ['High', 'Critical'].includes(c.priority)).length}
+                {assignedCases.filter(c => c.priority === 'High').length}
               </Typography>
             </CardContent>
           </Card>
@@ -434,13 +434,10 @@ const InvestigatorDashboard = () => {
           <Card>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
-                Avg Risk Score
+                Fraud Cases
               </Typography>
               <Typography variant="h4" color="info.main">
-                {assignedCases.length > 0 
-                  ? Math.round(assignedCases.reduce((sum, c) => sum + (c.riskScore || 0), 0) / assignedCases.length)
-                  : 0
-                }
+                {assignedCases.filter(c => c.title.includes('ML-Flagged Fraud')).length}
               </Typography>
             </CardContent>
           </Card>
@@ -456,7 +453,6 @@ const InvestigatorDashboard = () => {
           <TableHead>
             <TableRow>
               <TableCell>Title</TableCell>
-              <TableCell>Risk Score</TableCell>
               <TableCell>Priority</TableCell>
               <TableCell>Status</TableCell>
               <TableCell>Created By</TableCell>
@@ -467,13 +463,13 @@ const InvestigatorDashboard = () => {
           <TableBody>
             {loading ? (
               <TableRow>
-                <TableCell colSpan={7} align="center">
+                <TableCell colSpan={6} align="center">
                   <CircularProgress size={32} />
                 </TableCell>
               </TableRow>
             ) : assignedCases.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={7} align="center">
+                <TableCell colSpan={6} align="center">
                   No assigned cases
                 </TableCell>
               </TableRow>
@@ -481,14 +477,6 @@ const InvestigatorDashboard = () => {
               assignedCases.map(c => (
                 <TableRow key={c._id}>
                   <TableCell>{c.title}</TableCell>
-                  <TableCell>
-                    <Chip
-                      label={c.riskScore}
-                      color={c.riskScore >= 70 ? 'error' : c.riskScore >= 40 ? 'warning' : 'success'}
-                      size="small"
-                      variant="outlined"
-                    />
-                  </TableCell>
                   <TableCell>
                     <Chip
                       label={c.priority}
@@ -561,7 +549,6 @@ const InvestigatorDashboard = () => {
           <TableHead>
             <TableRow>
               <TableCell>Title</TableCell>
-              <TableCell>Risk Score</TableCell>
               <TableCell>Priority</TableCell>
               <TableCell>Status</TableCell>
               <TableCell>Created By</TableCell>
@@ -572,13 +559,13 @@ const InvestigatorDashboard = () => {
           <TableBody>
             {loading ? (
               <TableRow>
-                <TableCell colSpan={7} align="center">
+                <TableCell colSpan={6} align="center">
                   <CircularProgress size={32} />
                 </TableCell>
               </TableRow>
             ) : availableCases.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={7} align="center">
+                <TableCell colSpan={6} align="center">
                   No available cases
                 </TableCell>
               </TableRow>
@@ -586,14 +573,6 @@ const InvestigatorDashboard = () => {
               availableCases.map(c => (
                 <TableRow key={c._id}>
                   <TableCell>{c.title}</TableCell>
-                  <TableCell>
-                    <Chip
-                      label={c.riskScore}
-                      color={c.riskScore >= 70 ? 'error' : c.riskScore >= 40 ? 'warning' : 'success'}
-                      size="small"
-                      variant="outlined"
-                    />
-                  </TableCell>
                   <TableCell>
                     <Chip
                       label={c.priority}
@@ -652,7 +631,6 @@ const InvestigatorDashboard = () => {
                   <Typography variant="h6" gutterBottom>Case Information</Typography>
                   <Typography><strong>Title:</strong> {selectedCase.title}</Typography>
                   <Typography><strong>Description:</strong> {selectedCase.description}</Typography>
-                  <Typography><strong>Risk Score:</strong> {selectedCase.riskScore}</Typography>
                   <Typography><strong>Priority:</strong> {selectedCase.priority}</Typography>
                   <Typography><strong>Status:</strong> {selectedCase.status}</Typography>
                   <Typography><strong>Created By:</strong> {selectedCase.createdBy?.name} ({selectedCase.createdBy?.email})</Typography>
