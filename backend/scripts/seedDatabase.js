@@ -152,12 +152,15 @@ async function generateTransactions(users) {
     const country = faker.helpers.arrayElement(countries);
     const timestamp = faker.date.between({ from: '2024-01-01', to: '2024-12-31' });
     
+    // Commented out: Rule-based risk scoring (replaced by ML model)
+    /*
     // Calculate risk score
     let riskScore = 0;
     if (amount > 10000) riskScore += 30;
     if (['Nigeria', 'Russia'].includes(country)) riskScore += 40;
     if (timestamp.getHours() < 6 || timestamp.getHours() > 22) riskScore += 15;
     riskScore += faker.number.int({ min: 0, max: 20 });
+    */
     
     const transaction = new Transaction({
       userId: user._id,
@@ -165,11 +168,13 @@ async function generateTransactions(users) {
       amount: amount,
       country: country,
       timestamp: timestamp,
-      riskScore: riskScore
+      riskScore: 0 // Risk scoring is now handled by ML model
     });
     
     transactions.push(transaction);
     
+    // Commented out: Rule-based alert creation (replaced by ML-based alerting)
+    /*
     // Create alert if risk score is high
     if (riskScore > 70) {
       const alert = new Alert({
@@ -179,6 +184,7 @@ async function generateTransactions(users) {
       });
       await alert.save();
     }
+    */
   }
   
   await Transaction.insertMany(transactions);

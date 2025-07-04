@@ -19,6 +19,9 @@ router.get('/stats', auth, (req, res, next) => {
   }
 }, caseController.getStats);
 
+// Get available cases (Investigator only)
+router.get('/available', auth, investigator, caseController.getAvailable);
+
 // Get all cases (Admin, Compliance, Investigator can view)
 router.get('/', auth, (req, res, next) => {
   if (req.user.role === 'admin' || req.user.role === 'compliance' || req.user.role === 'investigator') {
@@ -27,6 +30,15 @@ router.get('/', auth, (req, res, next) => {
     res.status(403).json({ error: 'Access denied. Admin, compliance, or investigator role required.' });
   }
 }, caseController.getAll);
+
+// Get cases by user ID (Admin, Compliance, Investigator can view their own cases)
+router.get('/user/:userId', auth, (req, res, next) => {
+  if (req.user.role === 'admin' || req.user.role === 'compliance' || req.user.role === 'investigator') {
+    next();
+  } else {
+    res.status(403).json({ error: 'Access denied. Admin, compliance, or investigator role required.' });
+  }
+}, caseController.getByUser);
 
 // Get case by ID (Admin, Compliance, Investigator can view)
 router.get('/:id', auth, (req, res, next) => {

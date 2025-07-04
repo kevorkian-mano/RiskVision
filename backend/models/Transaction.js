@@ -6,7 +6,8 @@ const transactionSchema = new mongoose.Schema({
   amount: Number,
   country: String,
   timestamp: { type: Date, default: Date.now },
-  riskScore: { type: Number, default: 0 }
+  riskScore: { type: Number, default: 0 },
+  isFraud: { type: Boolean, default: false }
 });
 
 module.exports = mongoose.model('Transaction', transactionSchema);

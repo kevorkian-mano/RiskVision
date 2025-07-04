@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const Transaction = require('../models/Transaction');
 const User = require('../models/User');
 const socketService = require('../services/socketService');
+const axios = require('axios');
 require('dotenv').config();
 
 // Connect to MongoDB
@@ -40,7 +41,8 @@ const amountRanges = [
   { min: 15000, max: 50000, weight: 2 }   // Very high-risk transactions
 ];
 
-// Calculate risk score based on transaction characteristics
+// Commented out: Rule-based risk scoring (replaced by ML model)
+/*
 function calculateRiskScore(amount, country, timestamp) {
   let score = 0;
   
@@ -66,6 +68,7 @@ function calculateRiskScore(amount, country, timestamp) {
   
   return Math.min(100, Math.max(0, Math.round(score)));
 }
+*/
 
 // Generate random amount based on weighted ranges
 function generateAmount() {
@@ -104,39 +107,22 @@ async function getRandomUserId() {
 // Generate a single transaction
 async function generateTransaction() {
   try {
-    const userId = await getRandomUserId();
     const customerName = generateCustomerName();
     const amount = generateAmount();
     const country = generateCountry();
-    const timestamp = new Date();
     
-    // Calculate risk score
-    const riskScore = calculateRiskScore(amount, country, timestamp);
-    
-    // Create transaction with customer name and timestamp
-    const transaction = await Transaction.create({
-      userId,
-      customerName, // Add customer name field
-      amount,
-      country,
-      timestamp,
-      riskScore
-    });
-    
-    // Populate user info for system tracking
-    await transaction.populate('userId', 'name email');
-    
-    // Broadcast to WebSocket subscribers
-    socketService.broadcastTransaction({
-      ...transaction.toObject(),
-      alertGenerated: riskScore > 70 // High risk transactions generate alerts
-    });
-    
-    console.log(`💳 Generated transaction: $${amount} from ${country} by ${customerName} (Risk: ${riskScore})`);
-    
+    // POST to backend API to create transaction (calls ML model)
+    const response = await axios.post(
+      'http://localhost:5000/api/transactions',
+      { amount, country, customerName },
+      { headers: { Authorization: `Bearer ${process.env.ADMIN_JWT}` } }
+    );
+    const transaction = response.data.transaction;
+    console.log('Using token:', process.env.ADMIN_JWT);
+    console.log(`💳 Created transaction via API: $${amount} from ${country} by ${customerName} | isFraud: ${transaction.isFraud}`);
     return transaction;
   } catch (error) {
-    console.error('Error generating transaction:', error.message);
+    console.error('Error creating transaction via API:', error.response?.data || error.message);
   }
 }
 

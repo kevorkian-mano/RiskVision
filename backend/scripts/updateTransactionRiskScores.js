@@ -7,7 +7,8 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('📊 Connected to MongoDB for risk score update'))
   .catch(err => console.error('MongoDB connection error:', err));
 
-// Calculate risk score based on transaction characteristics
+// Commented out: Rule-based risk scoring (replaced by ML model)
+/*
 function calculateRiskScore(amount, country, timestamp) {
   let score = 0;
   
@@ -33,6 +34,7 @@ function calculateRiskScore(amount, country, timestamp) {
   
   return Math.min(100, Math.max(0, Math.round(score)));
 }
+*/
 
 // Update all existing transactions with risk scores
 async function updateTransactionRiskScores() {
@@ -51,7 +53,9 @@ async function updateTransactionRiskScores() {
     let updatedCount = 0;
     
     for (const transaction of transactions) {
-      const riskScore = calculateRiskScore(transaction.amount, transaction.country, transaction.timestamp);
+      // const riskScore = calculateRiskScore(transaction.amount, transaction.country, transaction.timestamp); // Rule-based scoring is commented out
+      // For now, we'll set a default or a placeholder risk score
+      const riskScore = 0; // Placeholder, as rule-based scoring is removed
       
       await Transaction.findByIdAndUpdate(transaction._id, { riskScore });
       updatedCount++;

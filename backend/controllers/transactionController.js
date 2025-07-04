@@ -2,76 +2,36 @@ const Transaction = require('../models/Transaction');
 const Alert = require('../models/Alert');
 const mongoose = require('mongoose');
 const socketService = require('../services/socketService');
+const { getFraudPrediction } = require('../services/mlService');
 
-// Calculate risk score based on transaction characteristics
+// Commented out: calculateRiskScore and riskRuleEngine (rule-based logic)
+/*
 function calculateRiskScore(amount, country, timestamp) {
   let score = 0;
-  
-  // Amount-based risk
-  if (amount > 10000) score += 30;
-  if (amount > 50000) score += 20;
-  if (amount < 20) score += 25; // Micro-transactions
-  
-  // Country-based risk
-  const suspiciousCountries = ['nigeria', 'russia', 'ukraine', 'belarus', 'iran', 'syria', 'north korea'];
-  if (suspiciousCountries.includes(country.toLowerCase())) {
-    score += 40;
-  }
-  
-  // Time-based risk (late night transactions)
-  const hour = new Date(timestamp).getHours();
-  if (hour >= 23 || hour <= 5) {
-    score += 15;
-  }
-  
-  // Random variation to make it more realistic
-  score += Math.floor(Math.random() * 20) - 10;
-  
+  // ... rule-based logic ...
   return Math.min(100, Math.max(0, Math.round(score)));
 }
 
-// Placeholder risk rule engine
 async function riskRuleEngine(transaction) {
   let alertCreated = null;
-  
-  // Calculate risk score for the transaction
-  const riskScore = calculateRiskScore(transaction.amount, transaction.country, transaction.timestamp);
-  
-  // Update transaction with risk score
-  transaction.riskScore = riskScore;
-  await transaction.save();
-  
-  // Generate alert if risk score is high
-  if (riskScore > 70) {
-    let reason = 'High risk transaction';
-    if (transaction.amount > 10000) reason = 'Amount exceeds threshold';
-    else if (['nigeria', 'russia', 'ukraine', 'belarus'].includes(transaction.country.toLowerCase())) {
-      reason = `Suspicious country: ${transaction.country}`;
-    }
-    else if (new Date(transaction.timestamp).getHours() >= 23 || new Date(transaction.timestamp).getHours() <= 5) {
-      reason = 'Late night transaction';
-    }
-    
-    alertCreated = await Alert.create({
-      transactionId: transaction._id,
-      reason: reason,
-      riskScore: riskScore
-    });
-  }
-  
+  // ... rule-based alert logic ...
   return alertCreated;
 }
+*/
 
 // Add new transaction
 exports.addTransaction = async (req, res) => {
   try {
-    const { amount, country, customerName } = req.body;
+    // Use provided values, or default to high-risk for ML testing
+    let { amount, country, customerName } = req.body;
+    if (!amount) amount = 100000;
+    if (!country) country = 'Nigeria';
     const userId = req.user.id; // Assume req.user is set by auth middleware
     
     // Create transaction with timestamp
     const transaction = await Transaction.create({ 
       userId, 
-      customerName: customerName || 'Unknown Customer', // Add customer name
+      customerName: customerName || 'Unknown Customer',
       amount, 
       country,
       timestamp: new Date()
@@ -80,26 +40,33 @@ exports.addTransaction = async (req, res) => {
     // Populate user info for broadcasting
     await transaction.populate('userId', 'name email');
     
-    // Run risk assessment
-    const alert = await riskRuleEngine(transaction);
+    // ML fraud prediction
+    const prediction = await getFraudPrediction({ amount, country, timestamp: transaction.timestamp });
+    transaction.isFraud = Boolean(prediction.isFraud);
+    await transaction.save();
     
-    // Broadcast transaction to all subscribers
+    // Create alert only if ML model flags as fraud
+    let alert = null;
+    if (transaction.isFraud) {
+      alert = await Alert.create({
+        transactionId: transaction._id,
+        reason: 'ML model flagged as fraud',
+        riskScore: transaction.riskScore // Optional: keep for reference
+      });
+      // Broadcast alert and system message
+      await alert.populate('transactionId');
+      socketService.broadcastAlert(alert);
+      socketService.broadcastSystemMessage(
+        `🚨 ML alert: Transaction $${amount} from ${country} flagged as fraud`,
+        'compliance'
+      );
+    }
+    
+    // Broadcast transaction to all subscribers (include isFraud)
     socketService.broadcastTransaction({
       ...transaction.toObject(),
       alertGenerated: !!alert
     });
-    
-    // If alert was created, broadcast it too
-    if (alert) {
-      await alert.populate('transactionId');
-      socketService.broadcastAlert(alert);
-      
-      // Send system message to compliance team
-      socketService.broadcastSystemMessage(
-        `🚨 New alert generated for transaction $${amount} from ${country}`,
-        'compliance'
-      );
-    }
     
     res.status(201).json({
       transaction,
@@ -221,8 +188,12 @@ exports.getStats = async (req, res) => {
           avgAmount: { $avg: '$amount' },
           maxAmount: { $max: '$amount' },
           minAmount: { $min: '$amount' },
-          avgRiskScore: { $avg: '$riskScore' },
-          highRiskCount: { $sum: { $cond: [{ $gte: ['$riskScore', 70] }, 1, 0] } }
+          // Commented out: Rule-based risk score stats (replaced by ML-based stats)
+          // avgRiskScore: { $avg: '$riskScore' },
+          // highRiskCount: { $sum: { $cond: [{ $gte: ['$riskScore', 70] }, 1, 0] } },
+          // ML-based fraud stats
+          fraudCount: { $sum: { $cond: ['$isFraud', 1, 0] } },
+          fraudRate: { $avg: { $cond: ['$isFraud', 1, 0] } }
         }
       }
     ]);

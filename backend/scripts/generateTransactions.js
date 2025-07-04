@@ -45,6 +45,32 @@ const COUNTRIES = {
   'Argentina': { risk: 0.6, currency: 'ARS' }
 };
 
+// --- USER PROFILE GENERATION ---
+const NUM_USERS = 100;
+const users = [];
+const allMerchants = Array.from({length: 30}, () => faker.company.name());
+
+for (let i = 0; i < NUM_USERS; i++) {
+  const country = faker.helpers.arrayElement(Object.keys(COUNTRIES));
+  const deviceType = faker.helpers.arrayElement(['mobile', 'desktop', 'tablet']);
+  const browser = faker.helpers.arrayElement(['Chrome', 'Firefox', 'Safari', 'Edge']);
+  const accountAgeDays = faker.number.int({ min: 1, max: 2000 });
+  const homeLocation = {
+    latitude: faker.location.latitude(),
+    longitude: faker.location.longitude()
+  };
+  const favoriteMerchants = faker.helpers.arrayElements(allMerchants, faker.number.int({min: 2, max: 5}));
+  users.push({
+    userId: faker.string.uuid(),
+    country,
+    deviceType,
+    browser,
+    accountAgeDays,
+    homeLocation,
+    favoriteMerchants
+  });
+}
+
 // Generate realistic transaction data
 function generateTransactions() {
   const transactions = [];
@@ -52,56 +78,80 @@ function generateTransactions() {
   const userLastTransactionTime = new Map();
 
   for (let i = 0; i < NUM_TRANSACTIONS; i++) {
-    const userId = faker.string.uuid();
-    const timestamp = faker.date.between({
-      from: '2024-01-01',
-      to: '2024-12-31'
-    });
-    
+    // Pick a user
+    const user = faker.helpers.arrayElement(users);
+    const userId = user.userId;
+    // Weighted random time: more during 8am-8pm, spikes on 1st/15th
+    let hour = faker.number.int({min: 0, max: 23});
+    if (Math.random() < 0.7) hour = faker.number.int({min: 8, max: 20});
+    let day = faker.number.int({min: 1, max: 28});
+    if (Math.random() < 0.2) day = faker.helpers.arrayElement([1, 15]);
+    const month = faker.number.int({min: 0, max: 11});
+    const year = 2024;
+    const timestamp = new Date(year, month, day, hour, faker.number.int({min:0,max:59}), faker.number.int({min:0,max:59}));
+
     // Track user behavior for risk assessment
     const userCount = userTransactionCounts.get(userId) || 0;
     const lastTime = userLastTransactionTime.get(userId);
     const timeDiff = lastTime ? timestamp - lastTime : Infinity;
-    
-    // Update user tracking
     userTransactionCounts.set(userId, userCount + 1);
     userLastTransactionTime.set(userId, timestamp);
 
-    // Generate amount based on risk patterns
+    // Generate amount
     let amount = generateAmount(userCount, timeDiff);
-    
-    // Select country and assess risk
-    const country = selectCountry();
-    const riskScore = calculateRiskScore(amount, country, userCount, timeDiff, timestamp);
-    
-    // Generate transaction
+    // Country: mostly user's home, sometimes random
+    let country = user.country;
+    if (Math.random() < 0.1) country = faker.helpers.arrayElement(Object.keys(COUNTRIES));
+    const countryObj = { name: country, ...COUNTRIES[country] };
+    // Device/browser: mostly user's, sometimes random
+    let deviceType = user.deviceType;
+    let browser = user.browser;
+    if (Math.random() < 0.1) deviceType = faker.helpers.arrayElement(['mobile', 'desktop', 'tablet']);
+    if (Math.random() < 0.1) browser = faker.helpers.arrayElement(['Chrome', 'Firefox', 'Safari', 'Edge']);
+    // Location: mostly home, sometimes random
+    let location = user.homeLocation;
+    if (Math.random() < 0.1) location = { latitude: faker.location.latitude(), longitude: faker.location.longitude() };
+    // Merchant: mostly favorite, sometimes random
+    let merchant = faker.helpers.arrayElement(user.favoriteMerchants);
+    if (Math.random() < 0.15) merchant = faker.company.name();
+    // Type: mostly random
+    const type = faker.helpers.arrayElement(TRANSACTION_TYPES);
+    // Description
+    const description = generateDescription(amount, country);
+    // Risk score
+    // Commented out: Rule-based risk scoring (replaced by ML model)
+    /*
+    const riskScore = calculateRiskScore(amount, countryObj, userCount, timeDiff, timestamp);
+    */
+    // isSuspicious
+    let isSuspicious = false; // Risk scoring is now handled by ML
+    // Add label noise (5%)
+    if (Math.random() < 0.05) isSuspicious = !isSuspicious;
+    // Metadata
+    const metadata = {
+      ipAddress: faker.internet.ip(),
+      deviceType,
+      browser,
+      userAgent: faker.internet.userAgent(),
+      location
+    };
+    // Transaction
     const transaction = {
       id: faker.string.uuid(),
-      userId: userId,
-      amount: amount,
-      currency: country.currency,
-      country: country.name,
+      userId,
+      amount,
+      currency: countryObj.currency,
+      country: countryObj.name,
       timestamp: timestamp.toISOString(),
-      type: faker.helpers.arrayElement(TRANSACTION_TYPES),
-      merchant: faker.company.name(),
-      description: generateDescription(amount, country.name),
-      riskScore: riskScore,
-      isSuspicious: riskScore > 70,
-      metadata: {
-        ipAddress: faker.internet.ip(),
-        deviceType: faker.helpers.arrayElement(['mobile', 'desktop', 'tablet']),
-        browser: faker.helpers.arrayElement(['Chrome', 'Firefox', 'Safari', 'Edge']),
-        userAgent: faker.internet.userAgent(),
-        location: {
-          latitude: faker.location.latitude(),
-          longitude: faker.location.longitude()
-        }
-      }
+      type,
+      merchant,
+      description,
+      riskScore: 0, // Risk scoring is now handled by ML
+      isSuspicious,
+      metadata
     };
-
     transactions.push(transaction);
   }
-
   return transactions.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
 }
 
@@ -145,7 +195,8 @@ function selectCountry() {
   return { name: 'United States', ...COUNTRIES['United States'] };
 }
 
-// Calculate risk score based on multiple factors
+// Commented out: Rule-based risk scoring (replaced by ML model)
+/*
 function calculateRiskScore(amount, country, userCount, timeDiff, timestamp) {
   let score = 0;
   
@@ -171,6 +222,7 @@ function calculateRiskScore(amount, country, userCount, timeDiff, timestamp) {
   
   return Math.min(100, Math.max(0, Math.round(score)));
 }
+*/
 
 // Generate realistic transaction description
 function generateDescription(amount, country) {

@@ -162,6 +162,44 @@ exports.getById = async (req, res) => {
   }
 };
 
+// Get cases by user ID
+exports.getByUser = async (req, res) => {
+  try {
+    const userId = req.params.userId;
+    let query = {};
+    
+    // Role-based filtering
+    if (req.user.role === 'compliance') {
+      // Compliance officers can only see cases they created
+      query.createdBy = userId;
+      if (userId !== req.user._id.toString()) {
+        return res.status(403).json({ error: 'Access denied' });
+      }
+    } else if (req.user.role === 'investigator') {
+      // Investigators can see cases assigned to them
+      query.assignedTo = userId;
+      if (userId !== req.user._id.toString()) {
+        return res.status(403).json({ error: 'Access denied' });
+      }
+    }
+    // Admins can see all cases
+    
+    const cases = await Case.find(query)
+      .populate('alertId')
+      .populate('transactionId', 'amount country timestamp riskScore')
+      .populate('createdBy', 'name email role')
+      .populate('assignedTo', 'name email role')
+      .populate('closedBy', 'name email role')
+      .populate({ path: 'comments', populate: { path: 'userId', select: 'name email role' } })
+      .populate('evidence')
+      .sort({ createdAt: -1 });
+    
+    res.json(cases);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 // Assign investigator
 exports.assignInvestigator = async (req, res) => {
   try {
@@ -439,6 +477,32 @@ exports.closeCase = async (req, res) => {
     res.json(c);
   } catch (err) {
     res.status(400).json({ error: err.message });
+  }
+};
+
+// Get available cases (for investigators to self-assign)
+exports.getAvailable = async (req, res) => {
+  try {
+    // Get cases that are not assigned to anyone or are assigned to the current user
+    const cases = await Case.find({
+      $or: [
+        { assignedTo: null },
+        { assignedTo: req.user._id }
+      ],
+      status: { $ne: 'Closed' }
+    })
+    .populate('alertId')
+    .populate('transactionId', 'amount country timestamp riskScore')
+    .populate('createdBy', 'name email role')
+    .populate('assignedTo', 'name email role')
+    .populate('closedBy', 'name email role')
+    .populate({ path: 'comments', populate: { path: 'userId', select: 'name email role' } })
+    .populate('evidence')
+    .sort({ createdAt: -1 });
+    
+    res.json(cases);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
   }
 };
 

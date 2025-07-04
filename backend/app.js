@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const errorHandler = require('./middleware/errorHandler');
@@ -11,13 +12,11 @@ app.use(express.json());
 // Health check routes
 app.use('/', require('./routes/healthRoutes'));
 
-
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/transactions', require('./routes/transactionRoutes'));
 app.use('/api/alerts', require('./routes/alertRoutes'));
 app.use('/api/cases', require('./routes/caseRoutes'));
 app.use('/api/logs', require('./routes/logRoutes'));
-app.use('/api/rules', require('./routes/ruleRoutes'));
 app.use('/api/announcements', require('./routes/announcementRoutes'));
 app.use('/api/points', require('./routes/pointsRoutes'));
 
