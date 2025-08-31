@@ -308,36 +308,6 @@ Investigators can make the following decisions:
 - **Escalate Case**: Send to senior investigator
 - **Request Verification**: Ask customer to confirm transaction
 
-## 🔧 Configuration
-
-### Email Setup
-1. **Gmail Setup**:
-   - Enable 2-factor authentication
-   - Generate an App Password
-   - Use the App Password in EMAIL_PASSWORD
-
-2. **Other Email Providers**:
-   - Update the email service configuration in `backend/services/emailService.js`
-   - Modify SMTP settings as needed
-
-### Risk Rules Configuration
-- Rules are stored in MongoDB and managed through the Admin Dashboard
-- Each rule has a condition, threshold, and description
-- Rules are evaluated against transaction data in real-time
-
-## 🧪 Testing
-
-### Backend Tests
-```bash
-cd backend
-npm test
-```
-
-### Frontend Tests
-```bash
-cd frontend
-npm test
-```
 
 ## 📁 Project Structure
 
@@ -372,28 +342,6 @@ RiskVision/
 - CORS configuration
 - Environment variable management
 
-## 🚀 Deployment
-
-### Heroku Deployment
-1. Create a Heroku account and install Heroku CLI
-2. Create a new Heroku app
-3. Add MongoDB add-on (MongoDB Atlas)
-4. Set environment variables in Heroku dashboard
-5. Deploy using Git
-
-```bash
-heroku create your-riskvision-app
-heroku config:set NODE_ENV=production
-heroku config:set MONGODB_URI=your_mongodb_uri
-heroku config:set JWT_SECRET=your_jwt_secret
-git push heroku main
-```
-
-### Docker Deployment
-```bash
-# Build and run with Docker Compose
-docker-compose up --build
-```
 
 ## 🤝 Contributing
 
@@ -406,29 +354,6 @@ docker-compose up --build
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/yourusername/RiskVision/issues) page
-2. Create a new issue with detailed description
-3. Contact the development team
-
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with core functionality
-- **v1.1.0** - Added email integration and user management
-- **v1.2.0** - Enhanced case management and decision workflow
-- **v1.3.0** - Added real-time notifications and improved UI
-- **v1.4.0** - Added comprehensive points management system and announcement features
-
-## 🙏 Acknowledgments
-
-- Material-UI for the component library
-- MongoDB for the database solution
-- Express.js community for the web framework
-- React team for the frontend framework
 
 ---
 
