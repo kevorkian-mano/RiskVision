@@ -9,7 +9,7 @@ import {
   Container,
   CircularProgress,
 } from '@mui/material';
-import { Security, Visibility, VisibilityOff } from '@mui/icons-material';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { useAuth } from '../contexts/AuthContext.jsx';
 import { useNavigate } from 'react-router-dom';
 
@@ -80,21 +80,28 @@ const Login = () => {
         >
           <Box
             sx={{
-              backgroundColor: 'primary.main',
-              borderRadius: '50%',
-              width: 60,
-              height: 60,
+              width: 80,
+              height: 80,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               marginBottom: 2,
             }}
           >
-            <Security sx={{ color: 'white', fontSize: 30 }} />
+            <img 
+              src="/R-lgog.jpg?v=2" 
+              alt="RiskVision Logo" 
+              style={{ 
+                width: '100%', 
+                height: '100%', 
+                objectFit: 'contain',
+                borderRadius: '8px'
+              }} 
+            />
           </Box>
           
           <Typography component="h1" variant="h4" gutterBottom>
-            RiskVision
+            RiskVision®
           </Typography>
           
           <Typography variant="body2" color="text.secondary" align="center" sx={{ mb: 3 }}>

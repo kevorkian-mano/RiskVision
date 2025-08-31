@@ -38,7 +38,7 @@ const Dashboard = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            RiskVision - {user.name} ({user.role})
+            RiskVision® - {user.name} ({user.role})
           </Typography>
           <Button color="inherit" onClick={handleLogout}>
             Logout

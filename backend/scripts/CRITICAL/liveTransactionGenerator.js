@@ -173,7 +173,7 @@ function startLiveGeneration() {
   // Then generate every minute (60000 milliseconds)
   setInterval(async () => {
       await generateTransaction();
-  }, 6000); // Exactly 1 minute
+  }, 60000); // Exactly 1 minute
 }
 
 // Generate burst of transactions (for testing)
