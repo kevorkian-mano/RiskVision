@@ -2,17 +2,33 @@
 
 A comprehensive financial fraud detection and case management system built with Node.js/Express backend and React frontend. The system provides real-time transaction monitoring, automated risk scoring, case management workflows, and role-based access control for financial institutions.
 
-<img src="assets/Login Page.png" alt="Dashboard" width="400"/>
-<img src="assets/A1.png" alt="Dashboard" width="400"/>
-<img src="assets/A2.png" alt="Dashboard" width="400"/>
-<img src="assets/A3.png" alt="Dashboard" width="400"/>
-<img src="assets/C1.png" alt="Dashboard" width="400"/>
-<img src="assets/C2.png" alt="Dashboard" width="400"/>
-<img src="assets/C3.png" alt="Dashboard" width="400"/>
-<img src="assets/C4.png" alt="Dashboard" width="400"/>
-<img src="assets/I1.png" alt="Dashboard" width="400"/>
-<img src="assets/I2.png" alt="Dashboard" width="400"/>
-<img src="assets/I3.png" alt="Dashboard" width="400"/>
+
+
+<img src="assets/Login Page.png" alt="Dashboard" width="1000"/>
+<table>
+  <tr>
+    <td><img src="assets/A1.png" alt="Dashboard" width="400"/></td>
+    <td><img src="assets/A2.png" alt="Dashboard" width="400"/></td>
+  </tr>
+    <tr>
+    <td><img src="assets/A3.png" alt="Dashboard" width="400"/></td>
+    <td><img src="assets/C1.png" alt="Dashboard" width="400"/></td>
+  </tr>
+   </tr>
+  <tr>
+    <td><img src="assets/C2.png" alt="Dashboard" width="400"/></td>
+    <td><img src="assets/C3.png" alt="Dashboard" width="400"/></td>
+  </tr>
+   <tr>
+    <td><img src="assets/C4.png" alt="Dashboard" width="400"/></td>
+    <td><img src="assets/I1.png" alt="Dashboard" width="400"/></td>
+  </tr>
+   <tr>
+    <td><img src="assets/I2.png" alt="Dashboard" width="400"/></td>
+    <td><img src="assets/I3.png" alt="Dashboard" width="400"/></td>
+  </tr>
+</table>
+
 
 
 
