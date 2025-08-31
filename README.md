@@ -2,8 +2,8 @@
 
 A comprehensive financial fraud detection and case management system built with Node.js/Express backend and React frontend. The system provides real-time transaction monitoring, automated risk scoring, case management workflows, and role-based access control for financial institutions.
 
-![Dashboard](assets/A1.png)
 
+<img src="assets/A1.png" alt="Dashboard" width="400"/>
 
 
 
