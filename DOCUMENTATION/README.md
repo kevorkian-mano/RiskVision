@@ -125,7 +125,25 @@ Before running this application, make sure you have the following installed:
 - MongoDB (v4.4 or higher)
 - npm or yarn package manager
 
-## 🚀 Installation & Setup
+
+🔍 How the ML Integration Works
+When a transaction is created in the backend, it automatically calls the ML API
+The ML API receives transaction data (amount, country, hour) and returns fraud prediction
+The backend stores the isFraud result with the transaction
+The frontend displays ML-driven fraud status instead of risk scores
+
+
+
+
+## 🚀 Setup Step
+
+
+### 🔍 How the ML Integration Works
+- When a transaction is created in the backend, it automatically calls the ML API
+- The ML API receives transaction data (amount, country, hour) and returns fraud prediction
+- The backend stores the isFraud result with the transaction
+- The frontend displays ML-driven fraud status instead of risk scores
+  
 
 ### 1. Clone the Repository
    ```bash
@@ -186,35 +204,35 @@ npm run seed
 
 ## 🏃‍♂️ Running the Application
 
-### Development Mode
+### 🔄 Complete Startup Process
+- To run the full RiskVision system with ML, you need 3 terminals:
+  
+#### Terminal 1: MongoDB
+   ```bash
+brew services start mongodb-community
+mongod
+```
 
-1. **Start Backend Server**
+#### Terminal 2: ML API
+   ```bash
+cd ml
+pip install -r requirements.txt
+uvicorn ml_api:app --host 0.0.0.0 --port 8000 --reload
+```
+
+#### Terminal 3: Backend
    ```bash
 cd backend
 npm run dev
 ```
-The backend will run on `http://localhost:5000`
 
-2. **Start Frontend Development Server**
-```bash
+
+#### Terminal 4: Frontend
+   ```bash
 cd frontend
 npm start
 ```
-The frontend will run on `http://localhost:3000`
 
-### Production Mode
-
-1. **Build Frontend**
-```bash
-cd frontend
-npm run build
-```
-
-2. **Start Production Server**
-```bash
-cd backend
-npm start
-```
 
 ## 👤 Default Users
 
