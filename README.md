@@ -135,9 +135,7 @@ The frontend displays ML-driven fraud status instead of risk scores
 
 
 
-## 🚀 Setup
-
-
+## 🚀 Setup Step
 
 
 ### 🔍 How the ML Integration Works
@@ -145,9 +143,7 @@ The frontend displays ML-driven fraud status instead of risk scores
 - The ML API receives transaction data (amount, country, hour) and returns fraud prediction
 - The backend stores the isFraud result with the transaction
 - The frontend displays ML-driven fraud status instead of risk scores
-
-
-## 🚀 Installation
+  
 
 ### 1. Clone the Repository
    ```bash
@@ -210,23 +206,33 @@ npm run seed
 
 ### 🔄 Complete Startup Process
 - To run the full RiskVision system with ML, you need 3 terminals:
-- 
+  
 #### Terminal 1: MongoDB
+   ```bash
 brew services start mongodb-community
 mongod
+```
 
 #### Terminal 2: ML API
+   ```bash
 cd ml
 pip install -r requirements.txt
 uvicorn ml_api:app --host 0.0.0.0 --port 8000 --reload
+```
 
 #### Terminal 3: Backend
+   ```bash
 cd backend
 npm run dev
+```
+
 
 #### Terminal 4: Frontend
+   ```bash
 cd frontend
 npm start
+```
+
 
 ## 👤 Default Users
 
